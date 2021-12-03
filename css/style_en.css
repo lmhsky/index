@@ -1,0 +1,18 @@
+#en_div{
+	font-size: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: antiquewhite;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+#en_div_big{
+	background: #090300;
+}
+
+
+body{
+	background: #090300;
+	color: #5B5B5B;
+}
