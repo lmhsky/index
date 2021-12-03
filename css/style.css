@@ -6,10 +6,11 @@ a:hover{color:#02DF82;}
 	color: #01A252;
 }
 
-h2 {
+#h2_ti {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	animation-name: change;
+	font-size: 30px;
 	animation-duration: 8s;
 	animation-iteration-count: infinite
 }
@@ -88,8 +89,22 @@ a{
 		margin-right: 10px;
 		margin-left: 10px;
 		width: 20%;
-		
 	}
+
+	#sub_one a div{
+		/* font-weight:bold; */
+		color:#22ac2b;
+	}
+	
+	.list_title{
+		font-weight:bold;
+		color:#22ac2b;
+	}
+
+	/* #sub_one div{
+		background-color:#347D39;
+	} */
+
 	#sub_two{
 		margin-right: 10px;
 		width: 20%;
@@ -119,18 +134,18 @@ a{
 	/*调整item*/
 	.item {
 		width: 90%;
-		height: 30px;
+		height: 35px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
 		background: #45484C;
-		padding: 10px;
+		padding: 8px;
 		margin-top:10px;
 		/* margin: 10px 0 0 2.5%; */
 		float: left;
 		/* font-weight: 300; */
 		color: #E0E0E0;
-		font-size: 14px;
+		font-size: 16px;
 		word-break:keep-all;    
 		white-space:nowrap;     
 		overflow:hidden;       
@@ -173,14 +188,14 @@ a{
 	}
 
 	.toolbox{
-		margin-left: 10%; 
-		margin-right: 10%; 
+		margin-left: 6%; 
+		margin-right: 6%; 
 		font-family:Microsoft Yahei;
 		overflow: hidden;
 		/* background: #FF9D6F; */
 		/* padding-bottom: 20px;
 		padding-top: 20px; */
-		padding-bottom: 20px;
+		padding-bottom: 48px;
 	}
 
 	.tablebox {
@@ -288,6 +303,17 @@ a{
 		position:absolute;
 	}*/
 
+	#sub_one a div{
+		/* font-weight:bold; */
+		color:#22ac2b;
+	}
+	
+	.list_title{
+		font-weight:bold;
+		color:#22ac2b;
+	}
+
+	
 	img {
 		visibility: hidden;
 		/* padding: 5px; */
