@@ -72,7 +72,6 @@ a{
 		font-family:Microsoft Yahei;
 		/* overflow: hidden; */
 		background: #090300;
-		/* padding-bottom: 20px; */
 
 		/* flex-flow: row wrap; */
 		/* align-content: flex-start; */
@@ -82,6 +81,7 @@ a{
 		justify-content: center;
 		align-items: center;
 		*/
+		/* padding-top: 20px; */
 		padding-bottom: 20px;
 	}
 
