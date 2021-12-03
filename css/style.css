@@ -439,7 +439,21 @@ a{
 		
 	} */
 
+	#sub_one a div{
+		/* font-weight:bold; */
+		color:#22ac2b;
+	}
+	
+	.list_title{
+		font-weight:bold;
+		color:#22ac2b;
+	}
 
+	
+	.list_title{
+		font-weight:bold;
+		color:#22ac2b;
+	}
 	img {
 		visibility: hidden;
 		/* padding: 5px; */
