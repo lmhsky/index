@@ -30,11 +30,11 @@ body{
 @media (min-width: 768px) and (max-width:992px){
 
 	#en_div{
-		font-size: 20px;
-		margin-left: 3px;
-		margin-right: 3px;
+		font-size: 16px;
+		margin-left: 5px;
+		margin-right: 5px;
 		background-color: antiquewhite;
-		padding: 2px;
+		padding: 52px;
 		/* padding-left: 10px; */
 	}
 	
@@ -56,11 +56,11 @@ body{
 /* 小屏幕 */
 @media (min-width: 0px) and (max-width:768px) {
 	#en_div{
-		font-size: 20px;
-		margin-left: 3px;
-		margin-right: 3px;
+		font-size: 16px;
+		margin-left:5px ;
+		margin-right: 5px;
 		background-color: antiquewhite;
-		padding: 2px;
+		padding: 5px;
 		/* padding-left: 10px; */
 	}
 	
