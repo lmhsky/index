@@ -105,6 +105,11 @@ a{
 		color:#22ac2b;
 	}
 
+	#engineer{
+		font-weight:bold;
+		color:cadetblue;
+	}
+
 	/* #sub_one div{
 		background-color:#347D39;
 	} */
@@ -377,6 +382,11 @@ a{
 		color:#22ac2b;
 	}
 
+	#engineer{
+		font-weight:bold;
+		color:cadetblue;
+	}
+
 	
 	img {
 		visibility: hidden;
@@ -479,7 +489,7 @@ a{
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		background: #626569;
 		padding: 5px;
 		margin: 5px 0 0 2.5%;
 		float: left;
@@ -557,6 +567,12 @@ a{
 		font-weight:bold;
 		color:#22ac2b;
 	}
+
+	#engineer{
+		font-weight:bold;
+		color:cadetblue;
+	}
+	
 	img {
 		visibility: hidden;
 		/* padding: 5px; */
