@@ -300,6 +300,7 @@ a{
 	
 
 	.logo{
+		vertical-align: middle;
 		margin: -8px 18px 0 0;
 		background-image: url(logo.png);
 		width: 107px;
@@ -575,10 +576,13 @@ a{
 	
 
 	.logo{
+		width: 100%;
+		height: 100%;
 		margin: -8px 18px 0 0;
 		background-image: url(logo.png);
-		width: 107px;
-		height: 53px;
+		/* width: 107px;
+		height: 53px; */
+		vertical-align:middle;
 		float: left;
 	}
 	.search-form{
@@ -966,7 +970,7 @@ a{
 		
 	}
 	
-	}
+
 }
 
 
