@@ -13,12 +13,12 @@
             background-size: 100%;
         }
 
-        body{
+        body {
             background: url("img/tanner-unsplash.jpg") no-repeat center center fixed;
-                    /*兼容浏览器版本*/
-                    -webkit-background-size: cover;
-                    -o-background-size: cover;                
-                    background-size: cover;
+            /*兼容浏览器版本*/
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
     </style>
 
@@ -50,10 +50,20 @@
 
 </head>
 
-<body  class="b-page b-page_com b-page_com i-bem">
+<body class="b-page b-page_com b-page_com i-bem">
     <div class='b-layout'>
         <div class="b-line b-line__center">
             <div class='main'>
+                <div class='fruits'>
+                    <img src="./img/猴子.png">
+                    <img src="./img/草莓.png">
+                    <img src="./img/橙子.png">
+                    <img src="./img/梨子.png">
+                    <img src="./img/荔枝.png">
+                    <img src="./img/苹果.png">
+                    <img src="./img/柿子.png">
+                </div>
+
                 <!-- <p id="time" style="color: blueviolet;"></p>
                 <script>
                     function mtime() {
@@ -65,40 +75,48 @@
                     setInterval(function () { mtime() }, 1000);
                 </script> -->
 
-                <form class="search2 mini-suggest 
-                    mini-suggest_search_yes 
-                    mini-suggest_personal_yes 
-                    mini-suggest_theme_transparent 
-                    mini-suggest_request_xhr 
-                    mini-suggest_separate-popup_yes 
-                    mini-suggest_autofocus_yes 
-                    mini-suggest_footer_hide 
-                    mini-suggest_ahead_yes 
-                    mini-suggest_favicon_yes 
-                    search2_type_2021 i-bem" action="https://cn.bing.com/search" target="_blank">
+                <div>
+                    <!-- <div class='logo'><a class="home-link" href="https://yandex.com/" data-statlog="logo.default"
+                            data-statlog-showed="1">
+                            <div class="logo__image_bg" role="img" aria-label="Yandex"></div>
+                        </a>
+                    </div> -->
 
-                    <div class='search2__input'>
-                        <span class="input input_size_search 
-                            input_theme_search 
-                            input_search2-clear-hide_yes 
-                            input_ahead_yes 
-                            input_autofocus_capture 
-                            input_clear_yes i-bem">
-                            <span class="input__box">
-                                <input class="input__control 
-                                input__input 
-                                mini-suggest__input" tabindex="2" autocomplete="off" autocorrect="off"
-                                    autocapitalize="off" spellcheck="false" aria-autocomplete="list"
-                                    aria-label="Request" name="q" maxlength="400" name="text" />
-                    </div>
-                    <div class='search2__button'>
-                        <button class="button mini-suggest__button button_theme_search button_size_search i-bem"
-                            tabindex="-1" role="button" type="submit">
-                            <span class="button__text">Search</span>
-                        </button>
-                    </div>
+                    <form class="search2 mini-suggest 
+                        mini-suggest_search_yes 
+                        mini-suggest_personal_yes 
+                        mini-suggest_theme_transparent 
+                        mini-suggest_request_xhr 
+                        mini-suggest_separate-popup_yes 
+                        mini-suggest_autofocus_yes 
+                        mini-suggest_footer_hide 
+                        mini-suggest_ahead_yes 
+                        mini-suggest_favicon_yes 
+                        search2_type_2021 i-bem" action="https://cn.bing.com/search" target="_blank">
 
-                </form>
+                        <div class='search2__input'>
+                            <span class="input input_size_search 
+                                input_theme_search 
+                                input_search2-clear-hide_yes 
+                                input_ahead_yes 
+                                input_autofocus_capture 
+                                input_clear_yes i-bem">
+                                <span class="input__box">
+                                    <input class="input__control 
+                                    input__input 
+                                    mini-suggest__input" tabindex="2" autocomplete="off" autocorrect="off"
+                                        autocapitalize="off" spellcheck="false" aria-autocomplete="list"
+                                        aria-label="Request" name="q" maxlength="400" name="text" />
+                        </div>
+                        <div class='search2__button'>
+                            <button class="button mini-suggest__button button_theme_search button_size_search i-bem"
+                                tabindex="-1" role="button" type="submit">
+                                <span class="button__text">Search</span>
+                            </button>
+                        </div>
+                        <div class="search2__placeholder" aria-hidden="true">Finds everything</div>
+                    </form>
+                </div>
 
                 <div class="container">
 
@@ -436,8 +454,14 @@
                     </div>
 
                 </div>
-
             </div>
+        </div>
+
+        <div class="b-line b-line__mfooter" role="contentinfo" data-bem="{}">
+            <a class="home-link mfooter__item mfooter__link" href="" data-statlog="foot.feedback"
+                data-statlog-showed="1">联系邮箱: lmh_job@126.com</a>
+            <a class="home-link mfooter__item mfooter__link" href="" data-statlog="foot.company"
+                data-statlog-showed="1">建议&反馈</a>
         </div>
     </div>
 </body>

@@ -22,9 +22,14 @@ a:hover{
 	color: #539BF5;
 }
 
+.fruits{
+	margin-bottom: 10px;
+}
 
-
-
+.fruits img{
+	margin-left: 5%;
+	margin-right: 5%;
+}
 
 body{
 	/* background: url("img/tanner-unsplash.jpg") no-repeat center fixed;
@@ -1288,7 +1293,6 @@ body {
 }
 
 
-
 .popup {
 	display: none;
 	border: 1px solid transparent;
@@ -1509,7 +1513,7 @@ body {
 }
 
 .b-line__center {
-	top: 20%;
+	top: 13%;
 	padding: 0;
 	margin-top: -20px
 }
