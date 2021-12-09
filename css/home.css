@@ -1,3 +1,6 @@
+#time{
+	color:#539BF5;
+}
 #lil:hover{
 	color:#539BF5;
 }
@@ -21,8 +24,14 @@ a:hover{
 
 
 
+
+
 body{
-	background: #090300;
+	/* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -o-background-size: cover;                
+                background-size: cover; */
+	/* background:#000;  */
 	color: #5B5B5B;
 }
 a{
@@ -38,7 +47,9 @@ a{
 }
 
 
-/* @media screen and (max-width:1229px) {
+/* 
+ background-color:transparent;
+@media screen and (max-width:1229px) {
 	.container__tabs .tabs {
 		margin-left: 140px
 	}
@@ -57,6 +68,11 @@ a{
 } */
 
 .main {
+	background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;
+	/*兼容浏览器版本*/
+	-webkit-background-size: cover;
+	-o-background-size: cover;                
+	background-size: cover;
 	max-width: 30%;
 	margin: 0 auto
 }	
@@ -112,7 +128,7 @@ a{
 		position : absolute;
 		width : 100%;
 		height : 100%;
-		background:#090300;
+		background:transparent;
 	}
 
 	.sub_webbox{
@@ -122,7 +138,7 @@ a{
 		/* color: #24292e; */
 		font-family:Microsoft Yahei;
 		/* overflow: hidden; */
-		background: #090300;
+		background: transparent;
 
 		/* flex-flow: row wrap; */
 		/* align-content: flex-start; */
@@ -185,6 +201,7 @@ a{
 	}
 
 	.container{
+		background: transparent;
 		margin-top: 20px;
 		display: flex;
 	}
@@ -1161,9 +1178,9 @@ html.utilityfocus .home-link:focus {
 	margin-right: 80px
 }
 
-.change-time .link,.change-time .link:visited,body {
+/* .change-time .link,.change-time .link:visited,body {
 	color: #000
-}
+} */
 
 .change-time__clock {
 	font-size: 18px;
@@ -1256,7 +1273,7 @@ input {
 
 body {
 	font: .8em Arial,Helvetica,sans-serif;
-	background: rgb(0, 0, 0);
+	/* background: rgb(0, 0, 0); */
 	margin: 0
 }
 
@@ -1433,154 +1450,7 @@ body {
 	display: none
 }
 
-.b-sethome__link:link {
-	color: #000
-}
 
-.dropdown {
-	display: inline
-}
-
-.popup__tail,.popup__tail:after {
-	position: absolute;
-	width: 17px;
-	height: 17px
-}
-
-.popup__tail {
-	z-index: 9;
-	display: block;
-	font: 0/0 a
-}
-
-.popup__tail:after {
-	bottom: 1px;
-	left: 1px;
-	content: ''
-}
-
-.popup_to_left .popup__tail,.popup_to_top .popup__tail {
-	-webkit-transform-origin: top left;
-	transform-origin: top left
-}
-
-.popup_to_top .popup__tail {
-	bottom: -18px;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg)
-}
-
-.popup_to_left .popup__tail {
-	right: -18px;
-	margin-top: 24.04px;
-	-webkit-transform: rotate(-135deg);
-	transform: rotate(-135deg)
-}
-
-.popup_to_bottom .popup__tail,.popup_to_right .popup__tail {
-	-webkit-transform-origin: 100% 100%;
-	transform-origin: 100% 100%
-}
-
-.popup_to_bottom .popup__tail {
-	top: -18px;
-	margin-left: -17px;
-	-webkit-transform: rotate(135deg);
-	transform: rotate(135deg)
-}
-
-.popup_to_right .popup__tail {
-	left: -18px;
-	margin-top: 7.04px;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg)
-}
-
-.b-menu-vert__layout,.b-menu-vert__layout-unit,.b-menu-vert__separator {
-	margin: 0;
-	padding: 0;
-	list-style: none
-}
-
-.b-menu-vert__item-content {
-	display: none
-}
-
-.b-menu-vert__item-content_visibility_visible {
-	display: block
-}
-
-.dropdown-menu__menu_theme_ffffff .link_pseudo_yes>.link__inner {
-	border-bottom: 0
-}
-
-.dropdown-menu__menu_theme_ffffff .link {
-	cursor: pointer;
-	-webkit-transition: color .15s ease-out;
-	transition: color .15s ease-out
-}
-
-.dropdown-menu__menu_theme_ffffff .link:focus {
-	outline: none
-}
-
-.dropdown-menu__popup_size_m .dropdown-menu__menu {
-	padding: 4px 0
-}
-
-.dropdown-menu__popup_size_m .b-menu-vert__layout-unit {
-	padding: 5px 10px
-}
-
-.dropdown-menu__popup_size_m .link {
-	font-size: 15px;
-	line-height: 22px
-}
-
-.dropdown-menu__popup .popup__content {
-	padding: 0
-}
-
-.dropdown-menu__popup.dropdown-menu__popup_list_yes .popup__content {
-	padding: 5px 0
-}
-
-.dropdown-menu__popup_list_yes .home-link,.dropdown-menu__popup_list_yes .link {
-	font-size: 13px;
-	line-height: 1.4;
-	padding: 5px 15px;
-	color: #000;
-	display: block;
-	text-decoration: none
-}
-
-.dropdown-menu__popup_list_yes .home-link:hover,.dropdown-menu__popup_list_yes .link:hover {
-	background-color: #fee9a5;
-	color: #000!important
-}
-
-.dropdown-menu__popup_list_yes .b-menu-vert__item__content {
-	color: #999
-}
-
-.b-menu-vert__separator {
-	border-bottom: 1px solid #ccc
-}
-
-.image {
-	font: 0/0 a;
-	border: 0
-}
-
-.user {
-	position: relative;
-	display: inline-block;
-	white-space: nowrap;
-	text-decoration: none;
-	border: 0;
-	outline: 0;
-	-webkit-tap-highlight-color: rgba(0,0,0,0)
-}
 
 
 .b-line__bar-right .user .user__name {
@@ -1588,43 +1458,14 @@ body {
 	font-size: 13px
 }
 
-.b-line__bar-right .user.home-link,.popup.popup_domik_trigger .home-link {
+/* .b-line__bar-right .user.home-link,.popup.popup_domik_trigger .home-link {
 	color: #000
-}
+} */
 
 .b-line__bar-right .home-link.user {
 	font-size: 12px
 }
 
-.user .b-ico-mail {
-	vertical-align: bottom;
-	margin-left: 0
-}
-
-.user__name {
-	-webkit-transition: color .15s ease-out;
-	transition: color .15s ease-out
-}
-
-.user__exit {
-	margin-left: 20px
-}
-
-.user__count {
-	margin-left: 25px
-}
-
-html.utilityfocus .user__count:focus {
-	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.07),0 0 6px 2px rgba(255,204,0,.7);
-	box-shadow: 0 1px 0 rgba(0,0,0,.07),0 0 6px 2px rgba(255,204,0,.7)
-}
-
-.username__first-letter {
-	-webkit-transition: color .15s ease-out;
-	transition: color .15s ease-out;
-	color: red;
-	display: inline-block
-}
 
 .b-ico {
 	font: 0/0 a;
@@ -1639,12 +1480,12 @@ html.utilityfocus .user__count:focus {
 	margin-right: 25px
 }
 
-.langswitch>.home-link {
+/* .langswitch>.home-link {
 	font-size: 85%;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #000
-}
+} */
 
 .langswitch__popup {
 	white-space: nowrap
@@ -1658,7 +1499,7 @@ html.utilityfocus .user__count:focus {
 	padding: 0 28px 0 34px;
 	line-height: 2;
 	display: block;
-	color: #000
+	/* color: #000 */
 }
 
 
@@ -1691,10 +1532,10 @@ html.utilityfocus .user__count:focus {
 .mfooter__link:link,.mfooter__link:visited {
 	color: #999
 }
-
+/* 
 .discovery-promo,.discovery-promo:visited {
 	color: #000
-}
+} */
 
 .b-line__promo,.b-line__worldwide {
 	position: absolute;
