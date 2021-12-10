@@ -21,6 +21,11 @@ a:hover{
 
 
 
+@font-face {
+	font-family:item_style;
+	src: url('/fonts/Dressedless_Three.ttf');
+
+  }
 
 @keyframes change {	
 	0% {color:#539BF5;}
