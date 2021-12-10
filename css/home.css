@@ -236,6 +236,15 @@ a{
 	}
 
 	
+	#img_index {
+		/* padding: 3px; */
+		width: 30px;
+		height: 30px;
+		/* border-radius: 30%; */
+		vertical-align: middle;
+		margin-bottom: 20px;
+	}
+
 	img {
 		padding: 3px;
 		width: 25px;
