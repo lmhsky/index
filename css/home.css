@@ -1,4 +1,31 @@
-#time{
+/* .weixin{
+	position:relative;
+  }
+.weixin::after{
+   content: url(/img/tanner-unsplash.jpg);
+   position: absolute;
+   right: -25px;
+   top: -139px;
+   z-index: 99;
+   width:130px;
+   height: 130px;
+   border: 1px solid #949899;
+   border-radius: 4px;
+   transform-origin: top right;
+   transform: scale(0);
+   opacity: 0;
+   -webkit-transition: all .4s ease-in-out;
+   -o-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+ }
+ .weixin:hover::after{
+   transform:scale(1);
+   opacity: 1;
+ } */
+
+
+
+ #time{
 	color:#539BF5;
 }
 #lil:hover{
@@ -9,9 +36,6 @@ a:hover{
 	color:#539BF5;
 }
 
-.logo:hover{
-	color:#539BF5
-}
 
 #sub_one:hover{
 	color:#539BF5;
@@ -50,6 +74,42 @@ a{
 #lill{
 	color: #539BF5 ;
 }
+
+a.a_text:hover { 
+	font-size:25px;
+}
+
+
+img:hover{
+	transform: scale(1.5,1.5);
+	-ms-transform:scale(1.5,1.5);
+	-moz-transform:scale(1.5,1.5);
+	-webkit-transform:scale(1.5,1.5);
+	-o-transform:scale(1.5,1.5);
+	
+}
+
+.item:hover{
+	transform: scale(1.05,1.05);
+	-ms-transform:scale(1.05,1.05);
+	-moz-transform:scale(1.05,1.05);
+	-webkit-transform:scale(1.05,1.05);
+	-o-transform:scale(1.05,1.05);
+	background: #626462;
+	color:#539BF5
+}
+
+
+/* .search2_type_2021:hover{
+	transform: scale(1.05,1.05);
+	-ms-transform:scale(1.05,1.05);
+	-moz-transform:scale(1.05,1.05);
+	-webkit-transform:scale(1.05,1.05);
+	-o-transform:scale(1.05,1.05);
+	background: #626462; 
+	font-size: 25px;
+	font: bold;
+} */
 
 
 /* 
@@ -390,7 +450,7 @@ a{
 		/* width: 2.5rem; */
 		padding-right: .6875rem;
 		padding-left: .125rem;
-		width: 100%;
+		width: 99.5%;
 		background-size: 100% auto
 	}
 
