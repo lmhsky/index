@@ -434,7 +434,7 @@ a{
 	/*调整item*/
 	.c_item {
 		width: 90%;
-		height: 39px;
+		height: 35px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
@@ -458,7 +458,7 @@ a{
 	/*调整item*/
 	.item {
 		width: 90%;
-		height: 39px;
+		height: 35px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;

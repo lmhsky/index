@@ -73,7 +73,7 @@ a{
 } */
 
 .main {
-	background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;
+	/* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
 	/*兼容浏览器版本*/
 	-webkit-background-size: cover;
 	-o-background-size: cover;                
@@ -178,29 +178,29 @@ a{
 
 
 	#sub_one{
-		margin-right: 5px;
+		margin-right: 6px;
 		/* margin-left: 10px; */
 		width: 20%;
 	}
 
 	
 	#sub_two{
-		margin-right: 5px;
+		margin-right: 8px;
 		width: 20%;
 		
 	}
 	#sub_three{
-		margin-right:  5px;
+		margin-right:  8px;
 		width: 20%;
 		
 	}
 	#sub_four{
-		margin-right: 5px;
+		margin-right: 8px;
 		width: 20%;
 		
 	}
 	#sub_five{
-		margin-right: 5px;
+		margin-right: 8px;
 		width: 20%;
 		
 	}
@@ -214,13 +214,13 @@ a{
 
 	/*调整item*/
 	.item {
-		width: 80%;
-		height: 26px;
+		width: 85%;
+		height: 20px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
 		background: #45484C;
-		padding: 8px;
+		padding: 9px;
 		margin-top:10px;
 		/* margin: 10px 0 0 2.5%; */
 		float: left;
@@ -273,33 +273,33 @@ a{
 
 		
 	#sub_one_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.6%;
 		
 	}
 	#sub_two_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.67%;
 		
 	}
 	#sub_three_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.67%;
 		
 	}
 	#sub_four_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.67%;
 		
 	}
 	#sub_five_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.6%;
 		
 	}
 
 	#sub_six_tool{
-		margin-left: 10px;
+		margin-left: 12px;
 		width: 16.6%;
 		
 	}
