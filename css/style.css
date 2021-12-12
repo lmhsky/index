@@ -381,11 +381,6 @@ a{
 		padding-bottom: 20px;
 	}
 
-	#sub_one{
-		margin-right: 10px;
-		margin-left: 10px;
-		width: 20%;
-	}
 
 	/* #sub_one a div{
 		font-weight:bold;
@@ -405,6 +400,12 @@ a{
 	/* #sub_one div{
 		background-color:#347D39;
 	} */
+
+	#sub_one{
+		margin-right: 10px;
+		margin-left: 10px;
+		width: 20%;
+	}
 
 	#sub_two{
 		margin-right: 10px;
@@ -512,8 +513,8 @@ a{
 	}
 
 	.toolbox{
-		margin-left: 6%; 
-		margin-right: 6%; 
+		margin-left: 16%; 
+		margin-right: 16%; 
 		font-family:Microsoft Yahei;
 		overflow: hidden;
 		/* background: #FF9D6F; */
@@ -537,17 +538,17 @@ a{
 	}
 	#sub_two_tool{
 		margin-left: 10px;
-		width: 16.67%;
+		width: 16.6%;
 		
 	}
 	#sub_three_tool{
 		margin-left: 10px;
-		width: 16.67%;
+		width: 16.6%;
 		
 	}
 	#sub_four_tool{
 		margin-left: 10px;
-		width: 16.67%;
+		width: 16.6%;
 		
 	}
 	#sub_five_tool{
@@ -940,6 +941,8 @@ a{
 	}
 
 	.container_tool{
+		margin-left: 20%;
+		margin-right: 20%;
 		display: flex;
 	
 	}
