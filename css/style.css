@@ -162,7 +162,9 @@ a{
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 15px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 25px;
 		margin-top:20px;
 		/* margin: 10px 0 0 2.5%; */
@@ -186,7 +188,9 @@ a{
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 15px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 25px;
 		margin-top:20px;
 		/* margin: 10px 0 0 2.5%; */
@@ -434,12 +438,15 @@ a{
 
 	/*调整item*/
 	.c_item {
-		width: 90%;
+		width: 80%;
 		height: 35px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
+		
 		padding: 8px;
 		margin-top:10px;
 		/* margin: 10px 0 0 2.5%; */
@@ -458,12 +465,14 @@ a{
 
 	/*调整item*/
 	.item {
-		width: 90%;
+		width: 85%;
 		height: 35px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 8px;
 		margin-top:10px;
 		/* margin: 10px 0 0 2.5%; */
@@ -638,12 +647,14 @@ a{
 	
 	/*调整item*/
 	.c_item {
-		width: 15%;
+		width: 14%;
 		height: 25px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 8px;
 		margin: 8px 0 0 2.5%;
 		float: left;
@@ -665,12 +676,14 @@ a{
 
 	/*调整item*/
 	.item {
-		width: 15%;
+		width: 14%;
 		height: 25px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 8px;
 		margin: 8px 0 0 2.5%;
 		float: left;
@@ -810,12 +823,14 @@ a{
 
 	/*调整item*/
 	.c_item {
-		width: 18%;
+		width: 17%;
 		height: 25px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #626569;
+		/* background: #626569; */
+		background: #234E65;
+
 		padding: 5px;
 		margin: 5px 0 0 2.5%;
 		float: left;
@@ -835,12 +850,14 @@ a{
 
 	/*调整item*/
 	.item {
-		width: 18%;
+		width: 17%;
 		height: 25px;
 		border: 1px solid #45484C;
 		/* box-shadow: 1px 2px 3px #f2f6f8; */
 		border-radius: 5px;
-		background: #45484C;
+		/* background: #45484C; */
+		background: #234E65;
+
 		padding: 5px;
 		margin: 5px 0 0 2.5%;
 		float: left;
