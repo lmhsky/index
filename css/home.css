@@ -366,6 +366,7 @@ img:hover{
 		/* border-radius: 30%; */
 		vertical-align: middle;
 		margin-bottom: 20px;
+		border-radius: 50%;
 	}
 
 	img {
