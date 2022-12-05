@@ -23,8 +23,6 @@
         }
     </style>
 
-
-
     <!-- 
         指定切换背景图
         <script type="text/javascript">
@@ -48,10 +46,41 @@
         }
     </script> -->
 
+    <script type="text/javascript">
+        window.onload = function () {
+            window.requestAnimationFrame(getDate)
+        }
 
+        function getDate() {
+            window.setTimeout(function () {
+                window.requestAnimationFrame(getDate)
+            }, 1000 / 2)
+
+            var d = new Date();
+            var year = d.getFullYear()  //获取年
+            var month = d.getMonth() + 1;  //获取月，从Date 对象返回月份0 ~ 11
+            var day = d.getDay()    //获取日
+            var days = d.getDate() //获取日期
+            var hour = d.getHours()   //获取小时
+            var minute = d.getMinutes()  //获取分钟
+            var second = d.getSeconds()   //获取秒
+            if (month < 10) month = "0" + month
+            if (days < 10) days = "0" + days
+            if (hour < 10) hour = "0" + hour
+            if (minute < 10) minute = "0" + minute
+            if (second < 10) second = "0" + second
+            var week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六")
+            var Tools = document.getElementById("Main")
+            var da = year + "-" + month + "-" + days + " " + week[day] + " " + hour + " : " + minute + " :" + second
+            Tools.innerHTML = da
+        }
+    </script>
 </head>
 
 <body class="b-page b-page_com b-page_com i-bem">
+
+    <span ></span>
+
     <div class='b-layout'>
         <div class="a-line a-line__center">
 
@@ -63,27 +92,28 @@
                         <img id="img_index" src="./img/leetcode.png" alt="" title="leetcode刷题">
                     </a> -->
 
-                    <a target="_blank" href="https://www.bilibili.com/">
-                        <img id="img_index" src="./img/icon_bilibili-circle.png" alt="" title="哔哩哔哩">
-                    </a>
                     <!-- <a target="_blank" href="https://www.icourse163.org/">
                         <img id="img_index" src="./img/苹果.png" alt="" title="大学MOOC">
                     </a> -->
 
+                    <a target="_blank" href="https://www.bilibili.com/">
+                        <img class="img-packets1" id="img_index" src="./img/bilibili.png" alt="" title="哔哩哔哩">
+                    </a>
+
                     <a target="_blank" href="https://email.163.com/">
-                        <img id="img_index" src="./img/邮箱.png" alt="" title="网易邮箱">
+                        <img class="img-packets2" id="img_index" src="./img/邮箱.png" alt="" title="网易邮箱">
                     </a>
 
                     <a target="_blank" href="https://mail.google.com/mail">
-                        <img id="img_index" src="./img/gmail.png" alt="" title="谷歌gmail">
+                        <img class="img-packets3" id="img_index" src="./img/gmail.png" alt="" title="谷歌gmail">
                     </a>
 
                     <a target="_blank" href="https://pan.baidu.com/">
-                        <img id="img_index" src="./img/云盘.png" alt="" title="百度云盘">
+                        <img class="img-packets4" id="img_index" src="./img/云盘.png" alt="" title="百度云盘">
                     </a>
 
                     <a target="_blank" href="https://www.aliyundrive.com/">
-                        <img id="img_index" src="./img/云盘2.png" alt="" title="阿里云盘">
+                        <img class="img-packets5" id="img_index" src="./img/云盘2.png" alt="" title="阿里云盘">
                     </a>
                     <!-- <img src="./img/猴子.png">
                     <img src="./img/草莓.png">
@@ -132,7 +162,7 @@
                             <button class="button 
                             button_theme_search 
                             button_size_search i-bem" tabindex="-1" role="button" type="submit">
-                                <span class="button__text"><strong class="a_text"> Bing Search</strong></span>
+                                <span class="button__text"><strong class="a_text text-packets">Bing Search</strong></span>
                             </button>
                         </div>
                         <div class="search2__placeholder" aria-hidden="true">Finds everything</div>
@@ -195,20 +225,17 @@
                             </div>
                         </a> -->
 
-
                         <!-- <a target="_blank" href="https://cn.bing.com/">
                             <div class="item">
                                 <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">Bing</div>
                             </div>
                         </a> -->
 
-
                         <a target="_blank" href="https://www.google.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/可口可乐汽水.png" alt=""> google</div>
                             </div>
                         </a>
-
 
                         <a target="_blank" href="https://github.com/">
                             <div class="item">
@@ -240,13 +267,11 @@
                             </div>
                         </a>
 
-
                         <!-- <a target="_blank" href="https://github.com/readme/podcast">
                             <div class="item">
                                 <div class="logo"><img src="img/冰淇淋.png" alt=""> github 播客</div>
                             </div>
                         </a> -->
-
 
                         <!-- <a target="_blank" href="https://sourceforge.net/">
                             <div class="item">
@@ -254,13 +279,11 @@
                             </div>
                         </a> -->
 
-
                         <a target="_blank" href="https://searchcode.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/水果杯2.png" alt=""> SearchCode</div>
                             </div>
                         </a>
-
 
                         <!-- <a target="_blank" href="https://yandex.com/">
                             <div class="item">
@@ -271,7 +294,7 @@
 
                         <a target="_blank" href="https://www.programcreek.com/java-api-examples/index.php">
                             <div class="item">
-                                <div class="logo"><img src="img/冰淇淋.png" alt="  ">java Search</div>
+                                <div class="logo"><img src="img/冰淇淋.png" alt="  "> java Search</div>
                             </div>
                         </a>
 
@@ -281,6 +304,13 @@
                                 </div>
                             </div>
                         </a> -->
+                        <a target="_blank" href="https://quickref.cn/">
+                            <div class="item">
+                                <div class="logo"><img src="img/雪顶.png" alt="  "> 速查表</div>
+                            </div>
+                        </a>
+
+
                     </div>
 
                     <!-- 第二列 -->
@@ -312,19 +342,11 @@
                             </div>
                         </a>
 
-                        <a target="_blank" href="https://juejin.cn/">
+                        <a target="_blank" href="https://www.devjobsscanner.com/">
                             <div class="item">
-                                <div class="logo"><img src="img/蛋糕2.png" alt="  "> 稀土掘金</div>
+                                <div class="logo"><img src="img/蛋糕2.png" alt="  "> devjobsscanner</div>
                             </div>
                         </a>
-
-                        <a target="_blank" href="https://www.csdn.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/冰棍.png" alt="  "> CSDN</div>
-                            </div>
-                        </a>
-
-
 
                         <a target="_blank" href="https://cloud.tencent.com/">
                             <div class="item">
@@ -345,6 +367,18 @@
                                 <div class="logo"><img src="img/yun.png" alt=""> 华为云</div>
                             </div>
                         </a> -->
+
+                        <a target="_blank" href="https://www.csdn.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/冰棍.png" alt="  "> CSDN</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://juejin.cn/">
+                            <div class="item">
+                                <div class="logo"><img src="img/美食11.png" alt="  "> 稀土掘金</div>
+                            </div>
+                        </a>
 
                     </div>
 
@@ -430,9 +464,13 @@
                             </div>
                         </a>
 
+                        <a target="_blank" href="https://cloud.tencent.com/developer/devdocs">
+                            <div class="item">
+                                <div class="logo"><img src="img/美食12.png" alt="  "> 开发者手册</div>
+                            </div>
+                        </a>
 
                     </div>
-
 
                     <!-- 第四列 -->
                     <div id="sub_four">
@@ -492,6 +530,11 @@
                             </div>
                         </a>
 
+                        <a target="_blank" href="https://developer.mozilla.org/zh-CN/">
+                            <div class="item">
+                                <div class="logo"><img src="img/甜甜圈.png" alt=""> MMDN</div>
+                            </div>
+                        </a>
 
                         <!-- <a target="_blank" href="https://www.runoob.com/">
                             <div class="item">
@@ -505,16 +548,11 @@
                             </div>
                         </a> -->
 
-
-
-
                         <!-- <a target="_blank" href="https://www.infoq.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/no_ladder.png" alt=""> infoq|english</div>
                             </div>
                         </a> -->
-
-
 
                     </div>
 
@@ -579,12 +617,6 @@
                             </div>
                         </a> -->
 
-                        <a target="_blank" href=" https://f-droid.org/">
-                            <div class="item">
-                                <div class="logo"><img src="img/草莓.png" alt=""> f-droid</div>
-                            </div>
-                        </a>
-
                         <a target="_blank" href="https://wordpress.org/">
                             <div class="item">
                                 <div class="logo"><img src="img/水果胡萝卜.png" alt=""> wordpress</div>
@@ -598,28 +630,45 @@
                             </div>
                         </a>
 
+                        <a target="_blank" href=" https://f-droid.org/">
+                            <div class="item">
+                                <div class="logo"><img src="img/草莓.png" alt=""> f-droid</div>
+                            </div>
+                        </a>
 
+
+
+                        <a target="_blank" href="https://termux.dev/en/">
+                            <div class="item">
+                                <div class="logo"><img src="img/mbe风格_沙拉.png" alt=""> Android Termux</div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
             </div>
         </div>
-
-        <div class="b-line b-line__mfooter" role="contentinfo" data-bem="{}">
-
-            <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
-                data-statlog-showed="1">wechat: noteyoung</a>
-
-            <!-- <a class="home-link mfooter__item mfooter__link" href="mailto:lmh_job@126.com" data-statlog="foot.feedback"
-                data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
-
-            <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
-                data-statlog-showed="1">feedback: lmh_job@126.com</a>
-
-            <!-- <a class="home-link mfooter__item mfooter__link" href="" data-statlog="foot.company"
-                data-statlog-showed="1">feedback</a> -->
-        </div>
     </div>
+
+    <div class="b-line b-line__mfooter" role="contentinfo" data-bem="{}">
+
+        <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
+            data-statlog-showed="1">wechat: noteyoung</a>
+
+        <!-- <a class="home-link mfooter__item mfooter__link" href="mailto:lmh_job@126.com" data-statlog="foot.feedback"
+            data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
+
+        <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
+            data-statlog-showed="1">feedback: lmh_job@126.com</a>
+
+        <!-- <a class="home-link mfooter__item mfooter__link" href="" data-statlog="foot.company"
+            data-statlog-showed="1">feedback</a> -->
+
+         <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
+            data-statlog-showed="1" id="Main"></a>
+
+    </div>
+
 </body>
 
 </html>
