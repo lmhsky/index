@@ -24,7 +24,6 @@
         }
     </style>
 
-
     <!-- <script type="text/javascript">
         window.onload = function () {
             window.requestAnimationFrame(getDate)
@@ -54,8 +53,6 @@
         }
     </script> -->
 
-
-
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
@@ -73,10 +70,19 @@
         })();
     </script>
     <!-- End Matomo Code -->
+
+    <script type="text/javascript">
+        function baidu() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://www.baidu.com/s?wd=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+    
 </head>
 
 <body class="b-page b-page_com b-page_com i-bem">
-    
+
     <script type="text/javascript" src="js/sakura-l.js"></script>
 
     <div class='b-layout'>
@@ -139,22 +145,21 @@
                     <div class="logo__image_bg" role="img" aria-label="Yandex"></div>
                     </a>
                     </div> -->
-                    <form class="search2
-                search2_type_2021" action="https://cn.bing.com/search" target="_blank">
-
+                    <!-- 旧版 -->
+                    <!-- <form class="search2 search2_type_2021" action="https://cn.bing.com/search" target="_blank">                        
                         <div class='search2__input'>
                             <span class="input input_size_search 
-                        input_theme_search 
-                        input_search2-clear-hide_yes 
-                        input_ahead_yes 
-                        input_autofocus_capture 
-                        input_clear_yes">
+                                input_theme_search 
+                                input_search2-clear-hide_yes 
+                                input_ahead_yes 
+                                input_autofocus_capture 
+                                input_clear_yes">
                                 <span class="input__box">
                                     <input class="input__control 
-                            input__input 
-                            mini-suggest__input" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off"
-                                        spellcheck="false" aria-autocomplete="list" aria-label="Request" name="q"
-                                        maxlength="400" name="text" />
+                                            input__input 
+                                            mini-suggest__input" tabindex="2" autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" aria-autocomplete="list" aria-label="Request" name="q"
+                                                        maxlength="400" name="text" />
                         </div>
 
                         <div class='search2__button'>
@@ -164,51 +169,96 @@
                             </button>
                         </div>
                         <div class="search2__placeholder" aria-hidden="true">Finds everything</div>
+                    </form> -->
+
+                    <!-- 新版 -->
+                    <!-- <form class="search2 search2_type_2021" target="_blank"> -->
+                    <form class="search2" target="_blank">
+                        <div class='search2__input'>
+                            <span class="input input_size_search 
+                                input_theme_search 
+                                input_search2-clear-hide_yes 
+                                input_ahead_yes 
+                                input_autofocus_capture 
+                                input_clear_yes" target="_blank">
+                                <span class="input__box">
+                                    <input id="baidu_text" class="input__control  
+                                    input__input 
+                                    mini-suggest__input" id="text" name="q" autocomplete="off" value="" autofocu="true"
+                                        spellcheck="true" target="_blank" />
+                        </div>
+                        <div class='search2__button'>
+                            <input 
+                                class="button button_theme_search button_size_search i-bem enjoy-css-submit2"
+                                tabindex="-1" role="button" type="submit"
+                                formaction="https://cn.bing.com/search" value="  Bing  " id="submit" target="_blank"/>
+
+                        </div>
+                        <div class='search2__button'>
+                            <input 
+                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                                tabindex="-1" role="button" type="button" value=" Baidu " id="submit"
+                                onclick="baidu();" target="_blank"/>
+
+                        </div>
+
+                        <div class='search2__button'>
+                            <input
+                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                                tabindex="-1" role="button" type="submit"
+                                formaction="https://www.google.com/search" value="Google" id="submit" target="_blank"/>
+                        </div>
+
+                        <div class='search2__button'>
+                            <input
+                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                                tabindex="-1" role="button" type="submit"
+                                formaction="https://github.com/search" value="Github" id="submit" target="_blank"/>
+                        </div>
+
                     </form>
                 </div>
 
                 <!-- 英文阅读网站-->
                 <!-- <div class="a-line a-line__mfooter" role="contentinfo" data-bem="{}">
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.quora.com/"
-                data-statlog="foot.company" data-statlog-showed="1">quora</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.quora.com/"
+                    data-statlog="foot.company" data-statlog-showed="1">quora</a>
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://learn-anything.xyz/"
-                data-statlog="foot.feedback" data-statlog-showed="1">LearnAnything</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://learn-anything.xyz/"
+                    data-statlog="foot.feedback" data-statlog-showed="1">LearnAnything</a>
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://devrant.com/"
-                data-statlog="foot.company" data-statlog-showed="1">devrant</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://devrant.com/"
+                    data-statlog="foot.company" data-statlog-showed="1">devrant</a>
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://arstechnica.com/"
-                data-statlog="foot.company" data-statlog-showed="1">arstechnica</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://arstechnica.com/"
+                    data-statlog="foot.company" data-statlog-showed="1">arstechnica</a>
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://hndigest.com/"
-                data-statlog="foot.company" data-statlog-showed="1">HackerNewsDigest</a>
-
-
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://technews.acm.org/"
-                data-statlog="foot.company" data-statlog-showed="1">technews</a>
-
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://lobste.rs/"
-                data-statlog="foot.company" data-statlog-showed="1">lobste</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://hndigest.com/"
+                    data-statlog="foot.company" data-statlog-showed="1">HackerNewsDigest</a>
 
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.gsmarena.com/"
-                data-statlog="foot.company" data-statlog-showed="1">gsmarena</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://technews.acm.org/"
+                    data-statlog="foot.company" data-statlog-showed="1">technews</a>
 
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.producthunt.com/m/"
-                data-statlog="foot.company" data-statlog-showed="1">producthunt</a>
-
-
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://alternativeto.net/"
-                data-statlog="foot.company" data-statlog-showed="1">alternativeto</a>
-
-            <a class="a-home-link a-mfooter__item a-mfooter__link" href="./english.html"
-                data-statlog="foot.company" data-statlog-showed="1">more</a>
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://lobste.rs/"
+                    data-statlog="foot.company" data-statlog-showed="1">lobste</a>
 
 
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.gsmarena.com/"
+                    data-statlog="foot.company" data-statlog-showed="1">gsmarena</a>
 
-        </div> -->
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://www.producthunt.com/m/"
+                    data-statlog="foot.company" data-statlog-showed="1">producthunt</a>
+
+
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="https://alternativeto.net/"
+                    data-statlog="foot.company" data-statlog-showed="1">alternativeto</a>
+
+                <a class="a-home-link a-mfooter__item a-mfooter__link" href="./english.html"
+                    data-statlog="foot.company" data-statlog-showed="1">more</a>
+
+                </div> -->
 
                 <!-- 收藏网站 -->
                 <div class="container" style="font-family:item_style;">
@@ -217,23 +267,23 @@
                     <div id="sub_one">
 
                         <!-- <a target="_blank" href="./collect.html">
-                    <div class="item">
-                        <div class="logo" letter-spacing:4px><img src="img/leon.png" alt="">开发工具
-                        </div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo" letter-spacing:4px><img src="img/leon.png" alt="">开发工具
+                                </div>
+                            </div>
+                        </a> -->
 
                         <!-- <a target="_blank" href="https://cn.bing.com/">
-                    <div class="item">
-                        <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">Bing</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">Bing</div>
+                            </div>
+                        </a> -->
 
-                        <a target="_blank" href="https://www.google.com/">
+                        <!-- <a target="_blank" href="https://www.google.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/可口可乐汽水.png" alt=""> google</div>
                             </div>
-                        </a>
+                        </a> -->
 
                         <a target="_blank" href="https://github.com/">
                             <div class="item">
@@ -247,11 +297,11 @@
                             </div>
                         </a>
 
-                        <a target="_blank" href="https://cs.github.com/">
+                        <!-- <a target="_blank" href="https://cs.github.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/12-咖啡.png" alt="  "> gitHub Search</div>
                             </div>
-                        </a>
+                        </a> -->
 
                         <a target="_blank" href="https://octoverse.github.com/">
                             <div class="item">
@@ -266,16 +316,16 @@
                         </a>
 
                         <!-- <a target="_blank" href="https://github.com/readme/podcast">
-                    <div class="item">
-                        <div class="logo"><img src="img/冰淇淋.png" alt=""> github 播客</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/冰淇淋.png" alt=""> github 播客</div>
+                            </div>
+                        </a> -->
 
                         <!-- <a target="_blank" href="https://sourceforge.net/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt=""> sourceforge</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> sourceforge</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://searchcode.com/">
                             <div class="item">
@@ -284,11 +334,11 @@
                         </a>
 
                         <!-- <a target="_blank" href="https://yandex.com/">
-                    <div class="item">
-                        <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">yandex|搜索
-                        </div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">yandex|搜索
+                                </div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://www.programcreek.com/java-api-examples/index.php">
                             <div class="item">
@@ -297,11 +347,23 @@
                         </a>
 
                         <!-- <a target="_blank" href="https://www.boxuegu.com/">
-                    <div class="item">
-                        <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">博学谷
-                        </div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">博学谷
+                                </div>
+                            </div>
+                        </a> -->
+                        <a target="_blank" href="https://so.csdn.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/柠檬.png" alt=""> so.csdn</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://kaifa.baidu.com/home">
+                            <div class="item">
+                                <div class="logo"><img src="img/山竹.png" alt=""> 开发者搜索Beta</div>
+                            </div>
+                        </a>
+
                         <a target="_blank" href="https://quickref.cn/">
                             <div class="item">
                                 <div class="logo"><img src="img/雪顶.png" alt="  "> 速查表</div>
@@ -359,12 +421,11 @@
                             </div>
                         </a>
 
-                        <!-- 
-                <a target="_blank" href=" https://www.huaweicloud.com/">
-                    <div class="item">
-                        <div class="logo"><img src="img/yun.png" alt=""> 华为云</div>
-                    </div>
-                </a> -->
+                        <!-- <a target="_blank" href=" https://www.huaweicloud.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/yun.png" alt=""> 华为云</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://www.csdn.net/">
                             <div class="item">
@@ -385,24 +446,24 @@
 
 
                         <!-- <a target="_blank" href="https://wantwords.thunlp.org/home/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt="">万词王</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt="">万词王</div>
+                            </div>
+                        </a> -->
 
 
                         <!-- <a target="_blank" href="https://unbug.github.io/codelf/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt=""> 变量命名AI神器</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> 变量命名AI神器</div>
+                            </div>
+                        </a> -->
 
 
                         <!-- <a target="_blank" href="https://bitbucket.org/">
-                    <div class="item">
-                        <div class="logo"><img src="img/code.png" alt="">bitbucket|托管</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/code.png" alt="">bitbucket|托管</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://git-scm.com/">
                             <div class="item">
@@ -420,8 +481,6 @@
                                 <div class="logo"><img src="img/桃子.png" alt=""> gitlab-托管</div>
                             </div>
                         </a>
-
-
 
                         <a target="_blank" href="https://gitee.com/">
                             <div class="item">
@@ -442,14 +501,12 @@
                             </div>
                         </a>
 
-
-
                         <!-- <a target="_blank" href="https://yun.itheima.com/">
-                    <div class="item">
-                        <div class="logo"><img src="img/饼干1.png" alt=""> HeiMa视频库</div>
-                    </div>
-                </a>
-                    -->
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> HeiMa视频库</div>
+                            </div>
+                        </a> -->
+
                         <a target="_blank" href="https://visualgo.net/zh-cn/learn/">
                             <div class="item">
                                 <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
@@ -474,10 +531,10 @@
                     <div id="sub_four">
 
                         <!-- <a target="_blank" href="https://snippets.org/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt="">snippets|代码搜索</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt="">snippets|代码搜索</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://hellogithub.com/">
                             <div class="item">
@@ -497,17 +554,7 @@
                                 <div class="logo"><img src="img/猕猴桃.png" alt=""> developer.ibm</div>
                             </div>
                         </a>
-                        <a target="_blank" href="https://so.csdn.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/柠檬.png" alt=""> so.csdn</div>
-                            </div>
-                        </a>
 
-                        <a target="_blank" href="https://kaifa.baidu.com/home">
-                            <div class="item">
-                                <div class="logo"><img src="img/山竹.png" alt=""> 开发者搜索Beta</div>
-                            </div>
-                        </a>
 
                         <a target="_blank" href="https://www.iconfont.cn/">
                             <div class="item">
@@ -528,29 +575,42 @@
                             </div>
                         </a>
 
-                        <a target="_blank" href="https://developer.mozilla.org/zh-CN/">
+                        <a target="_blank" href="https://www.cleverpdf.com/">
                             <div class="item">
-                                <div class="logo"><img src="img/甜甜圈.png" alt=""> MMDN</div>
+                                <div class="logo"><img src="img/12-咖啡.png" alt=""> CleverPDF</div>
                             </div>
                         </a>
 
+                        <a target="_blank" href="http://www.idevtool.com/ ">
+                            <div class="item">
+                                <div class="logo"><img src="img/可口可乐汽水.png" alt=""> 开发者工具</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://www.runoob.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/杨梅.png" alt=""> 菜鸟笔记</div>
+                            </div>
+                        </a>
+
+
                         <!-- <a target="_blank" href="https://www.runoob.com/">
-                    <div class="item">
-                        <div class="logo"><img src="img/杨梅.png" alt=""> 菜鸟笔记</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/杨梅.png" alt=""> 菜鸟笔记</div>
+                            </div>
+                        </a> -->
 
                         <!-- <a target="_blank" href="https://python123.io/">
-                    <div class="item">
-                        <div class="logo"><img src="img/.png" alt=""> python123</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/.png" alt=""> python123</div>
+                            </div>
+                        </a> -->
 
                         <!-- <a target="_blank" href="https://www.infoq.com/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt=""> infoq|english</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> infoq|english</div>
+                            </div>
+                        </a> -->
 
                     </div>
 
@@ -559,24 +619,24 @@
 
 
                         <!-- <a target="_blank" href=" https://gitbook.cn/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt=""> gitbook</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> gitbook</div>
+                            </div>
+                        </a> -->
 
 
                         <!-- <a target="_blank" href="http://www.json.org.cn/tools/JSONEditorOnline2.0/index.htm">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt=""> JSONEditor</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> JSONEditor</div>
+                            </div>
+                        </a> -->
 
 
                         <!-- <a target="_blank" href="https://docs.microsoft.com/zh-cn/learn/">
-                    <div class="item">
-                        <div class="logo"><img src="img/no_ladder.png" alt="">microsoft学院</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt="">microsoft学院</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://www.tiobe.com/tiobe-index/">
                             <div class="item">
@@ -610,10 +670,10 @@
 
 
                         <!-- <a target="_blank" href="https://www.kernel.org/">
-                    <div class="item">
-                        <div class="logo"><img src="img/水果芒果.png" alt=""> Linux kernel</div>
-                    </div>
-                </a> -->
+                            <div class="item">
+                                <div class="logo"><img src="img/水果芒果.png" alt=""> Linux kernel</div>
+                            </div>
+                        </a> -->
 
                         <a target="_blank" href="https://wordpress.org/">
                             <div class="item">
@@ -622,19 +682,23 @@
                         </a>
 
 
-                        <a target="_blank" href="https://so.csdn.net/plugin/jsonPages.html">
+                        <!-- <a target="_blank" href="https://so.csdn.net/plugin/jsonPages.html">
                             <div class="item">
                                 <div class="logo"><img src="img/水果芒果.png" alt=""> json工具</div>
                             </div>
+                        </a> -->
+                        <a target="_blank" href="https://removebg.online/">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果芒果.png" alt=""> RemoveBg</div>
+                            </div>
                         </a>
+
 
                         <a target="_blank" href=" https://f-droid.org/">
                             <div class="item">
                                 <div class="logo"><img src="img/草莓.png" alt=""> f-droid</div>
                             </div>
                         </a>
-
-
 
                         <a target="_blank" href="https://termux.dev/en/">
                             <div class="item">
@@ -649,16 +713,15 @@
     </div>
 
 
-
     <div class="b-line b-line__mfooter" role="contentinfo" data-bem="{}">
         <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
-            data-statlog-showed="1" >wechat: noteyoung</font></a>
+            data-statlog-showed="1">wechat: noteyoung</font></a>
         <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
             data-statlog-showed="1">feedback: lmh_job@126.com</a>
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
             data-statlog-showed="1" id="Main"></a>  -->
         <strong>
-            <a id="headline"> 
+            <a id="headline">
                 <a id="countdown"></a>
                 <a><span id="days"></span>日</a>
                 <a><span id="hours"></span>时</a>
@@ -826,8 +889,8 @@
     </div>
 
 
-    <svg class="svg "
-        version="1.1" id="clock" x="0px" y="0px" width="10%" height="10%" viewBox="50 50 400 500" xml:space="preserve">
+    <svg class="svg " version="1.1" id="clock" x="0px" y="0px" width="10%" height="10%" viewBox="50 50 400 500"
+        xml:space="preserve">
         <circle id="face" fill="#F4F3ED" cx="243.869" cy="250.796" r="130.8" />
         <path id="rim" fill="#383838" d="M243.869,101.184c-82.629,0-149.612,66.984-149.612,149.612c0,82.629,66.983,149.612,149.612,149.612
         S393.48,333.425,393.48,250.796S326.498,101.184,243.869,101.184z M243.869,386.455c-74.922,0-135.659-60.736-135.659-135.659
