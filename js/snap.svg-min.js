@@ -6,8 +6,6 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-// http://www.apache.org/licenses/LICENSE-2.0
-//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -603,8 +601,6 @@ function(a, b) {
 					return (a && a.type ? a.type : I) + R + (Q++)
 						.toString(36)
 				},
-				T = "http://www.w3.org/1999/xlink",
-				U = "http://www.w3.org/2000/svg",
 				V = {};
 			c.url = function(a) {
 				return "url('#" + a + "')"
@@ -1289,7 +1285,7 @@ function(a, b) {
 		}, k.outerSVG = k.toString = j(1), k.innerSVG = j(), k.toDataURL = function() {
 			if (a && a.btoa) {
 				var b = this.getBBox(),
-					d = c.format('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="{x} {y} {width} {height}">{contents}</svg>', {
+					d = c.format('<svg version="1.1" width="{width}" height="{height}" viewBox="{x} {y} {width} {height}">{contents}</svg>', {
 						x: +b.x.toFixed(3),
 						y: +b.y.toFixed(3),
 						width: +b.width.toFixed(3),
@@ -2021,7 +2017,7 @@ function(a, b) {
 						e = b.createElement("div"),
 						f = this.node.cloneNode(!0);
 					return d.appendChild(e), e.appendChild(f), c._.$(f, {
-						xmlns: "http://www.w3.org/2000/svg"
+					
 					}), a = e.innerHTML, d.removeChild(d.firstChild), a
 				}, h.toDataURL = function() {
 					return a && a.btoa ? "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(this))) : void 0
