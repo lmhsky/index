@@ -769,11 +769,8 @@
             setInterval(function () {
                 updateTime()
             }, 1000)
-
-           
-
+            
             function starter() {
-
                 var img1 = document.getElementById("id1"); 
                 var img2 = document.getElementById("id2"); 
                 var img3 = document.getElementById("id3"); 
@@ -789,12 +786,10 @@
                     startTime.setHours(9)
                     startTime.setMinutes(0)
                     startTime.setSeconds(0)
-
                     endTime = new Date()
                     endTime.setHours(18)
                     endTime.setMinutes(0)
                     endTime.setSeconds(0)
-
                     nowTime = new Date()
 
                     if (startTime <= nowTime && endTime >= nowTime) {
@@ -802,40 +797,34 @@
                         targetTime = endTime
                         // alert('here'+targetTime.getHours());
                         // img1.style.display="block"
-                        if(targetTime.getHours()==1){ 
+                        if(targetTime.getHours()==8){ 
                             img1.style.visibility ="visible";   
-                        }else if(targetTime.getHours()==2){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==3){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==4){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==5){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==6){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                            img6.style.visibility ="visible"; 
                         }else if(targetTime.getHours()==7){ 
-                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==6){ 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==5){ 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==4){ 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==3){ 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                            img6.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==2){ 
                             img1.style.visibility ="visible"; 
                             img2.style.visibility ="visible"; 
                             img3.style.visibility ="visible"; 
@@ -843,8 +832,7 @@
                             img5.style.visibility ="visible"; 
                             img6.style.visibility ="visible"; 
                             img7.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==8){ 
-                            // alert('test is ok!'); 
+                        }else if(targetTime.getHours()==1){ 
                             img1.style.visibility ="visible"; 
                             img2.style.visibility ="visible"; 
                             img3.style.visibility ="visible"; 
@@ -853,17 +841,6 @@
                             img6.style.visibility ="visible"; 
                             img7.style.visibility ="visible"; 
                             img8.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()>8){ 
-                            // alert('test is ok!'); 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                            img6.style.visibility ="visible"; 
-                            img7.style.visibility ="visible"; 
-                            img8.style.visibility ="visible"; 
-                            img9.style.visibility ="visible"; 
                         }
                     } else {
                         document.getElementById("headline").innerText = "休息倒计时 "
