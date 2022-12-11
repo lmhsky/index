@@ -173,6 +173,12 @@
 
                     <!-- 新版 -->
                     <!-- <form class="search2 search2_type_2021" target="_blank"> -->
+                    <!-- <h2 class="text-normal" >
+                    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-search">
+                        <path fill-rule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path>
+                    </svg>
+                        Search more than <strong>finds everything</strong>
+                    </h2> -->
                     <form class="search2" target="_blank">
                         <div class='search2__input'>
                             <span class="input input_size_search 
@@ -182,11 +188,11 @@
                                 input_autofocus_capture 
                                 input_clear_yes" target="_blank">
                                 <span class="input__box">
-                                    <input id="baidu_text" class="input__control  
-                                    input__input 
-                                    mini-suggest__input" id="text" name="q" autocomplete="off" value="" autofocu="true"
-                                        spellcheck="true" target="_blank" />
+                                    <input id="baidu_text" class="input__control "  
+                                        name="q" autocomplete="off" value="" type="text"
+                                        autofocu="true"spellcheck="true" target="_blank" />
                         </div>
+
                         <div class='search2__button'>
                             <input 
                                 class="button button_theme_search button_size_search i-bem enjoy-css-submit2"
@@ -194,6 +200,7 @@
                                 formaction="https://cn.bing.com/search" value="  Bing  " id="submit" target="_blank"/>
 
                         </div>
+
                         <div class='search2__button'>
                             <input 
                                 class="button button_theme_search button_size_search i-bem enjoy-css-submit"
@@ -713,23 +720,45 @@
     </div>
 
 
-    <div class="b-line b-line__mfooter" role="contentinfo" data-bem="{}">
+    <div class="b-line" role="contentinfo" data-bem="{}" >
+    
         <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
-            data-statlog-showed="1">wechat: noteyoung</font></a>
-        <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
-            data-statlog-showed="1">feedback: lmh_job@126.com</a>
+        data-statlog-showed="1" >wechat: noteyoung</a>
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
-            data-statlog-showed="1" id="Main"></a>  -->
-        <strong>
-            <a id="headline">
-                <a id="countdown"></a>
-                <a><span id="days"></span>日</a>
-                <a><span id="hours"></span>时</a>
-                <a><span id="minutes"></span>分</a>
-                <a><span id="seconds"></span>秒</a>
-            </a>
-        </strong>
+        data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
+        <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
+        data-statlog-showed="1" id="Main"></a>  -->
 
+        <a id="headline">
+            <a id="countdown"></a>
+            <a><span id="days"></span>日</a>
+            <a><span id="hours"></span>时</a>
+            <a><span id="minutes"></span>分</a>
+            <a><span id="seconds"></span>秒</a>
+            <a>
+                <img src="img/金币.png" alt="" id="id1" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id2" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id3" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id4" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id5" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id6" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id7" style="visibility:hidden">
+                <img src="img/金币.png" alt="" id="id8" style="visibility:hidden">
+                <img src="img/加金币.png" alt="" id="id9" style="visibility:hidden"> 
+
+                <!-- <img src="img/金币.png" alt="" id="id1" style="display:none">
+                <img src="img/金币.png" alt="" id="id2" style="display:none">
+                <img src="img/金币.png" alt="" id="id3" style="display:none">
+                <img src="img/金币.png" alt="" id="id4" style="display:none">
+                <img src="img/金币.png" alt="" id="id5" style="display:none">
+                <img src="img/金币.png" alt="" id="id6" style="display:none">
+                <img src="img/金币.png" alt="" id="id7" style="display:none">
+                <img src="img/金币.png" alt="" id="id8" style="display:none">
+                <img src="img/加金币.png" alt="" id="id9" style="display:none">  -->
+                <!-- 加班的金币 -->
+            </a>
+        </a>
+                
         <script>
             let holiday
             let targetTime
@@ -741,7 +770,20 @@
                 updateTime()
             }, 1000)
 
+           
+
             function starter() {
+
+                var img1 = document.getElementById("id1"); 
+                var img2 = document.getElementById("id2"); 
+                var img3 = document.getElementById("id3"); 
+                var img4 = document.getElementById("id4"); 
+                var img5 = document.getElementById("id5"); 
+                var img6 = document.getElementById("id6"); 
+                var img7 = document.getElementById("id7"); 
+                var img8 = document.getElementById("id8"); 
+                var img9 = document.getElementById("id9"); 
+
                 if (isWorkDay(new Date())) {
                     startTime = new Date()
                     startTime.setHours(9)
@@ -758,20 +800,109 @@
                     if (startTime <= nowTime && endTime >= nowTime) {
                         document.getElementById("headline").innerText = "下班倒计时 "
                         targetTime = endTime
+                        // alert('here'+targetTime.getHours());
+                        // img1.style.display="block"
+                        if(targetTime.getHours()==1){ 
+                            img1.style.visibility ="visible";   
+                        }else if(targetTime.getHours()==2){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==3){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==4){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==5){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==6){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                            img6.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==7){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                            img6.style.visibility ="visible"; 
+                            img7.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()==8){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                            img6.style.visibility ="visible"; 
+                            img7.style.visibility ="visible"; 
+                            img8.style.visibility ="visible"; 
+                        }else if(targetTime.getHours()>8){ 
+                            // alert('test is ok!'); 
+                            img1.style.visibility ="visible"; 
+                            img2.style.visibility ="visible"; 
+                            img3.style.visibility ="visible"; 
+                            img4.style.visibility ="visible"; 
+                            img5.style.visibility ="visible"; 
+                            img6.style.visibility ="visible"; 
+                            img7.style.visibility ="visible"; 
+                            img8.style.visibility ="visible"; 
+                            img9.style.visibility ="visible"; 
+                        }
                     } else {
-                        document.getElementById("headline").innerText = "假期还剩"
+                        document.getElementById("headline").innerText = "休息倒计时 "
                         targetTime = nextWorkDate
                         targetTime.setHours(9)
                         targetTime.setMinutes(0)
                         targetTime.setSeconds(0)
+                        if(targetTime.getHours()>=1){
+                            img1.style.visibility ="hidden"; 
+                            img2.style.visibility ="hidden"; 
+                            img3.style.visibility ="hidden"; 
+                            img4.style.visibility ="hidden"; 
+                            img5.style.visibility ="hidden"; 
+                            img6.style.visibility ="hidden"; 
+                            img7.style.visibility ="hidden"; 
+                            img8.style.visibility ="hidden"; 
+                            img9.style.visibility ="hidden"; 
+                        }
+                         
                     }
                 } else {
                     // document.getElementById("headline").innerText = "假期还剩" + holiday + ""
-                    document.getElementById("headline").innerText = "假期还剩"
+                    document.getElementById("headline").innerText = "假期倒计时 "
                     targetTime = nextWorkDate
                     targetTime.setHours(9)
                     targetTime.setMinutes(0)
                     targetTime.setSeconds(0)
+                    if(targetTime.getHours()>=1){
+                        img1.style.visibility ="hidden"; 
+                        img2.style.visibility ="hidden"; 
+                        img3.style.visibility ="hidden"; 
+                        img4.style.visibility ="hidden"; 
+                        img5.style.visibility ="hidden"; 
+                        img6.style.visibility ="hidden"; 
+                        img7.style.visibility ="hidden"; 
+                        img8.style.visibility ="hidden"; 
+                        img9.style.visibility ="hidden"; 
+                    }
+                   
                 }
 
             }
@@ -886,6 +1017,7 @@
             }
         </script>
 
+      
     </div>
 
 
