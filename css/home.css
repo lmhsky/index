@@ -23,6 +23,9 @@
    opacity: 1;
  } 
  */
+#weahther_font:hover {
+    color: #539BF5;
+}
 
 .a-line {
   white-space: nowrap;
@@ -5484,9 +5487,7 @@ div#tbCommentBodyPreview {
   }
 }
 
-#open-button:hover {
-  /* cursor: url(https://blog-static.cnblogs.com/files/NanKe-Studying/diy-mouse001.ico?t=1659077658), pointer; */
-}
+
 
 .menu-button-scroll {
   left: -17px !important;
@@ -6725,9 +6726,7 @@ table#blogCalendar>tbody>tr>td>a {
   cursor: pointer;
 }
 
-#dayNightSwitch:hover {
-  /* cursor: url(https://blog-static.cnblogs.com/files/NanKe-Studying/mouse002.ico), pointer; */
-}
+
 
 #dayNightSwitch .onOff {
   background: #324164;
@@ -7177,6 +7176,10 @@ table#blogCalendar>tbody>tr>td>a {
     padding-left: 5px;
     padding-right: 5px;
     box-shadow: unset;
+  }
+
+  #wearher_font:hover {
+    filter: brightness(1.1);
   }
 
   .entrylistPosttitle a:link,

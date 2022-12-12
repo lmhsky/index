@@ -110,10 +110,22 @@
             window.open(url, "_blank")
         }
     </script>
+ 
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=iKwglTh4wOIW6Q5N9KcsYP0MDPam7CB0"></script>
 
+    <script type="text/javascript">
+        var map = new BMap.Map("container");
+        var nowCity = new BMap.LocalCity();
+        nowCity.get(bdGetPosition);
+        function bdGetPosition(result){
+            var cityName = result.name; 
+            // alert('cityName'+nowCity);
+            document.getElementById("wearher_font").innerText = cityName+"➦点击查看天气";
+            document.getElementById("wearher_font").style.color = "#ff0000";
+            document.getElementById("wearher_font").style.font
+        }
+    </script>
 
-
-    
 </head>
 
 <body class="b-page b-page_com b-page_com i-bem">
@@ -253,7 +265,7 @@
                                 formaction="https://github.com/search" value="Github" id="submit" target="_blank"/>
                         </div>
                     </form>
-                   
+                
                     <div class="other_search">
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
@@ -813,7 +825,7 @@
 
 
     <div class="b-line" role="contentinfo" data-bem="{}" >
-    
+
         <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
         data-statlog-showed="1" >wechat: noteyoung</a>
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
@@ -850,6 +862,9 @@
                 <!-- 加班的金币 -->
             </a>
         </a>
+
+        <a id="wearher_font" class="home-link mfooter__item mfooter__link weixin" 
+        href="https://www.msn.cn/zh-cn/weather/forecast" target="_blank"></a>
                 
         <script>
             let holiday
