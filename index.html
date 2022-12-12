@@ -78,6 +78,41 @@
             window.open(url, "_blank")
         }
     </script>
+
+    <script type="text/javascript">
+        function baidu_kaifa() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://kaifa.baidu.com/searchPage?wd=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function Java_Search() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://www.programcreek.com/java-api-examples/?action=search&ClassName=' + text+"&submit=Search";
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function Search_Code() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://searchcode.com/?q=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function Stackover_Flow() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://stackoverflow.com/questions/tagged/' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+
+
     
 </head>
 
@@ -91,7 +126,6 @@
             <div class='main'>
 
                 <div class='fruits'>
-
                     <!-- <a target="_blank" href="https://leetcode-cn.com/">
                     <img id="img_index" src="./img/leetcode.png" alt="" title="leetcode刷题">
                     </a> -->
@@ -192,7 +226,6 @@
                                         name="q" autocomplete="off" value="" type="text"
                                         autofocu="true"spellcheck="true" target="_blank" />
                         </div>
-
                         <div class='search2__button'>
                             <input 
                                 class="button button_theme_search button_size_search i-bem enjoy-css-submit2"
@@ -200,7 +233,6 @@
                                 formaction="https://cn.bing.com/search" value="  Bing  " id="submit" target="_blank"/>
 
                         </div>
-
                         <div class='search2__button'>
                             <input 
                                 class="button button_theme_search button_size_search i-bem enjoy-css-submit"
@@ -208,22 +240,57 @@
                                 onclick="baidu();" target="_blank"/>
 
                         </div>
-
                         <div class='search2__button'>
                             <input
                                 class="button button_theme_search button_size_search i-bem enjoy-css-submit"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://www.google.com/search" value="Google" id="submit" target="_blank"/>
                         </div>
-
                         <div class='search2__button'>
                             <input
-                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                                class=" button_theme_search enjoy-css-submit"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://github.com/search" value="Github" id="submit" target="_blank"/>
                         </div>
-
                     </form>
+                   
+                    <div class="other_search">
+                        <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Java_Search();" target="_blank"><strong>JavaSearch</strong></a>
+
+                        <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
+
+                        <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
+                        
+                    </div>
+                    <!-- <input 
+                        class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                        tabindex="-1" role="button" type="button" value=" Java Search " id="submit"
+                        onclick="baidu();" target="_blank"/> -->
+                    
+              
+                        <!-- <a target="_blank" href="https://kaifa.baidu.com/home">
+                            <div class="item">
+                                <div class="logo"><img src="img/山竹.png" alt=""> 开发者搜索Beta</div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://www.programcreek.com/java-api-examples/index.php">
+                            <div class="item">
+                                <div class="logo"><img src="img/冰淇淋.png" alt="  "> java Search</div>
+                            </div>
+                        </a>
+
+                        
+                        <a target="_blank" href="https://searchcode.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果杯2.png" alt=""> SearchCode</div>
+                            </div> -->
+                            
                 </div>
 
                 <!-- 英文阅读网站-->
@@ -334,12 +401,6 @@
                             </div>
                         </a> -->
 
-                        <a target="_blank" href="https://searchcode.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/水果杯2.png" alt=""> SearchCode</div>
-                            </div>
-                        </a>
-
                         <!-- <a target="_blank" href="https://yandex.com/">
                             <div class="item">
                                 <div class="logo" letter-spacing:4px><img src="img/search.png" alt="">yandex|搜索
@@ -347,11 +408,24 @@
                             </div>
                         </a> -->
 
+                        <!-- <a target="_blank" href="https://kaifa.baidu.com/home">
+                            <div class="item">
+                                <div class="logo"><img src="img/山竹.png" alt=""> 开发者搜索Beta</div>
+                            </div>
+                        </a>
                         <a target="_blank" href="https://www.programcreek.com/java-api-examples/index.php">
                             <div class="item">
                                 <div class="logo"><img src="img/冰淇淋.png" alt="  "> java Search</div>
                             </div>
                         </a>
+
+                        
+                        <a target="_blank" href="https://searchcode.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果杯2.png" alt=""> SearchCode</div>
+                            </div>
+                        </a> -->
+
 
                         <!-- <a target="_blank" href="https://www.boxuegu.com/">
                             <div class="item">
@@ -364,10 +438,22 @@
                                 <div class="logo"><img src="img/柠檬.png" alt=""> so.csdn</div>
                             </div>
                         </a>
-
-                        <a target="_blank" href="https://kaifa.baidu.com/home">
+                        <a target="_blank" href=" https://www.acwing.com/">
                             <div class="item">
-                                <div class="logo"><img src="img/山竹.png" alt=""> 开发者搜索Beta</div>
+                                <div class="logo" letter-spacing:4px><img src="img/山竹.png" alt="">acwing
+                                </div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://regex101.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/冰淇淋.png" alt="  "> 正则表达式</div>
+                            </div>
+                        </a>
+                        
+                        <a target="_blank" href="https://www.linuxcool.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果杯2.png" alt=""> Linux命令大全</div>
                             </div>
                         </a>
 
@@ -383,12 +469,11 @@
                     <!-- 第二列 -->
                     <div id="sub_two">
 
-                        <a target="_blank" href="http://stackoverflow.com/">
+                        <!-- <a target="_blank" href="http://stackoverflow.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/圣诞-饼干.png" alt="">stackoverflow</div>
                             </div>
-                        </a>
-
+                        </a> -->
                         <a target="_blank" href="https://news.ycombinator.com/news">
                             <div class="item">
                                 <div class="logo"><img src="img/饼干-Biscuit.png" alt=""> Hacker News</div>
@@ -439,6 +524,13 @@
                                 <div class="logo"><img src="img/冰棍.png" alt="  "> CSDN</div>
                             </div>
                         </a>
+
+                        <a target="_blank" href=" https://Segmentfault.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/圣诞-饼干.png" alt="">segmentfault</div>
+                            </div>
+                        </a>
+
 
                         <a target="_blank" href="https://juejin.cn/">
                             <div class="item">
@@ -736,7 +828,7 @@
             <a><span id="minutes"></span>分</a>
             <a><span id="seconds"></span>秒</a>
             <a>
-                <img src="img/金币.png" alt="" id="id1" style="visibility:hidden">
+                <!-- <img src="img/金币.png" alt="" id="id1" style="visibility:hidden">
                 <img src="img/金币.png" alt="" id="id2" style="visibility:hidden">
                 <img src="img/金币.png" alt="" id="id3" style="visibility:hidden">
                 <img src="img/金币.png" alt="" id="id4" style="visibility:hidden">
@@ -744,7 +836,7 @@
                 <img src="img/金币.png" alt="" id="id6" style="visibility:hidden">
                 <img src="img/金币.png" alt="" id="id7" style="visibility:hidden">
                 <img src="img/金币.png" alt="" id="id8" style="visibility:hidden">
-                <img src="img/加金币.png" alt="" id="id9" style="visibility:hidden"> 
+                <img src="img/加金币.png" alt="" id="id9" style="visibility:hidden">  -->
 
                 <!-- <img src="img/金币.png" alt="" id="id1" style="display:none">
                 <img src="img/金币.png" alt="" id="id2" style="display:none">
@@ -771,15 +863,15 @@
             }, 1000)
             
             function starter() {
-                var img1 = document.getElementById("id1"); 
-                var img2 = document.getElementById("id2"); 
-                var img3 = document.getElementById("id3"); 
-                var img4 = document.getElementById("id4"); 
-                var img5 = document.getElementById("id5"); 
-                var img6 = document.getElementById("id6"); 
-                var img7 = document.getElementById("id7"); 
-                var img8 = document.getElementById("id8"); 
-                var img9 = document.getElementById("id9"); 
+                // var img1 = document.getElementById("id1"); 
+                // var img2 = document.getElementById("id2"); 
+                // var img3 = document.getElementById("id3"); 
+                // var img4 = document.getElementById("id4"); 
+                // var img5 = document.getElementById("id5"); 
+                // var img6 = document.getElementById("id6"); 
+                // var img7 = document.getElementById("id7"); 
+                // var img8 = document.getElementById("id8"); 
+                // var img9 = document.getElementById("id9"); 
 
                 if (isWorkDay(new Date())) {
                     startTime = new Date()
@@ -797,91 +889,130 @@
                         targetTime = endTime
                         // alert('here'+targetTime.getHours());
                         // img1.style.display="block"
-                        if(targetTime.getHours()==8){ 
-                            img1.style.visibility ="visible";   
-                        }else if(targetTime.getHours()==7){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==6){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==5){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==4){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==3){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                            img6.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==2){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                            img6.style.visibility ="visible"; 
-                            img7.style.visibility ="visible"; 
-                        }else if(targetTime.getHours()==1){ 
-                            img1.style.visibility ="visible"; 
-                            img2.style.visibility ="visible"; 
-                            img3.style.visibility ="visible"; 
-                            img4.style.visibility ="visible"; 
-                            img5.style.visibility ="visible"; 
-                            img6.style.visibility ="visible"; 
-                            img7.style.visibility ="visible"; 
-                            img8.style.visibility ="visible"; 
-                        }
+                        // if(targetTime.getHours()==8){ 
+                        //     img1.style.visibility ="visible";   
+                        // }else if(targetTime.getHours()==7){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==6){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==5){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        //     img4.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==4){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        //     img4.style.visibility ="visible"; 
+                        //     img5.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==3){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        //     img4.style.visibility ="visible"; 
+                        //     img5.style.visibility ="visible"; 
+                        //     img6.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==2){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        //     img4.style.visibility ="visible"; 
+                        //     img5.style.visibility ="visible"; 
+                        //     img6.style.visibility ="visible"; 
+                        //     img7.style.visibility ="visible"; 
+                        // }else if(targetTime.getHours()==1){ 
+                        //     img1.style.visibility ="visible"; 
+                        //     img2.style.visibility ="visible"; 
+                        //     img3.style.visibility ="visible"; 
+                        //     img4.style.visibility ="visible"; 
+                        //     img5.style.visibility ="visible"; 
+                        //     img6.style.visibility ="visible"; 
+                        //     img7.style.visibility ="visible"; 
+                        //     img8.style.visibility ="visible"; 
+                        // }
                     } else {
                         document.getElementById("headline").innerText = "休息倒计时 "
                         targetTime = nextWorkDate
                         targetTime.setHours(9)
                         targetTime.setMinutes(0)
                         targetTime.setSeconds(0)
-                        if(targetTime.getHours()>=1){
-                            img1.style.visibility ="hidden"; 
-                            img2.style.visibility ="hidden"; 
-                            img3.style.visibility ="hidden"; 
-                            img4.style.visibility ="hidden"; 
-                            img5.style.visibility ="hidden"; 
-                            img6.style.visibility ="hidden"; 
-                            img7.style.visibility ="hidden"; 
-                            img8.style.visibility ="hidden"; 
-                            img9.style.visibility ="hidden"; 
-                        }
+                        // alert('targetTime='+targetTime+' endTime='+endTime);
+                        // alert('here'+targetTime.getHours());
+                        // alert('here'+targetTime.getMinutes());
+                        // alert('here'+targetTime.getSeconds());
+                        // if(targetTime.getHours()>=1){
+                        //     img1.style.visibility ="hidden"; 
+                        //     img2.style.visibility ="hidden"; 
+                        //     img3.style.visibility ="hidden"; 
+                        //     img4.style.visibility ="hidden"; 
+                        //     img5.style.visibility ="hidden"; 
+                        //     img6.style.visibility ="hidden"; 
+                        //     img7.style.visibility ="hidden"; 
+                        //     img8.style.visibility ="hidden"; 
+                        //     img9.style.visibility ="hidden"; 
+                        // }
                          
                     }
                 } else {
                     // document.getElementById("headline").innerText = "假期还剩" + holiday + ""
-                    document.getElementById("headline").innerText = "假期倒计时 "
+                    document.getElementById("headline").innerText = "周末  "
                     targetTime = nextWorkDate
                     targetTime.setHours(9)
                     targetTime.setMinutes(0)
                     targetTime.setSeconds(0)
-                    if(targetTime.getHours()>=1){
-                        img1.style.visibility ="hidden"; 
-                        img2.style.visibility ="hidden"; 
-                        img3.style.visibility ="hidden"; 
-                        img4.style.visibility ="hidden"; 
-                        img5.style.visibility ="hidden"; 
-                        img6.style.visibility ="hidden"; 
-                        img7.style.visibility ="hidden"; 
-                        img8.style.visibility ="hidden"; 
-                        img9.style.visibility ="hidden"; 
-                    }
+                    // if(targetTime.getHours()>=1){
+                    //     img1.style.visibility ="hidden"; 
+                    //     img2.style.visibility ="hidden"; 
+                    //     img3.style.visibility ="hidden"; 
+                    //     img4.style.visibility ="hidden"; 
+                    //     img5.style.visibility ="hidden"; 
+                    //     img6.style.visibility ="hidden"; 
+                    //     img7.style.visibility ="hidden"; 
+                    //     img8.style.visibility ="hidden"; 
+                    //     img9.style.visibility ="hidden"; 
+                    // }
                    
                 }
 
+            }
+
+            function PrefixInteger(num, length) {
+                //alert('PrefixInteger='+(num / Math.pow(10, length)).toFixed(length).substr(2));
+                return (num / Math.pow(10, length)).toFixed(length).substr(2);
+            }
+
+            function getNextWorkTime() {
+                date = new Date()
+                for (let i = 0; i < 100; i++) {
+                    date.setDate(date.getDate() + 1)
+                    if (isWorkDay(date)) {
+                        nextWorkDate = date
+                        return
+                    }
+                }
+            }
+
+            function updateTime() {
+                let nowTime = new Date()
+                let offsetTime = targetTime.getTime() - nowTime.getTime()
+                offsetTime = parseInt(offsetTime / 1000)
+                let days = parseInt(offsetTime / (24 * 60 * 60))
+                let hours = parseInt(offsetTime % (24 * 60 * 60) / (60 * 60))
+                let minutes = parseInt(offsetTime % (60 * 60) / 60)
+                let seconds = offsetTime % 60
+                if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+                    getNextWorkTime()
+                    starter()
+                }
+                document.getElementById('days').innerText = PrefixInteger(days, 2)
+                document.getElementById('hours').innerText = PrefixInteger(hours, 2)
+
+                document.getElementById('minutes').innerText = PrefixInteger(minutes, 2)
+                document.getElementById('seconds').innerText = PrefixInteger(seconds, 2)
             }
 
             function isWorkDay(now) {
@@ -922,7 +1053,6 @@
                     { "date": "2022-10-06 00:00:00", "name": "国庆节" },
                     { "date": "2022-10-07 00:00:00", "name": "国庆节" },
                 ]
-
                 let holiday_work = [
                     { "date": "2022-01-29 00:00:00", "name": "春节调休" },
                     { "date": "2022-01-30 00:00:00", "name": "春节调休" },
@@ -960,44 +1090,15 @@
                 return flag
             }
 
-            function getNextWorkTime() {
-                date = new Date()
-                for (let i = 0; i < 100; i++) {
-                    date.setDate(date.getDate() + 1)
-                    if (isWorkDay(date)) {
-                        nextWorkDate = date
-                        return
-                    }
-                }
-            }
+           
 
-            function PrefixInteger(num, length) {
-                return (num / Math.pow(10, length)).toFixed(length).substr(2);
-            }
-
-            function updateTime() {
-                let nowTime = new Date()
-                let offsetTime = targetTime.getTime() - nowTime.getTime()
-                offsetTime = parseInt(offsetTime / 1000)
-                let days = parseInt(offsetTime / (24 * 60 * 60))
-                let hours = parseInt(offsetTime % (24 * 60 * 60) / (60 * 60))
-                let minutes = parseInt(offsetTime % (60 * 60) / 60)
-                let seconds = offsetTime % 60
-                if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
-                    getNextWorkTime()
-                    starter()
-                }
-                document.getElementById('days').innerText = PrefixInteger(days, 2)
-                document.getElementById('hours').innerText = PrefixInteger(hours, 2)
-                document.getElementById('minutes').innerText = PrefixInteger(minutes, 2)
-                document.getElementById('seconds').innerText = PrefixInteger(seconds, 2)
-            }
+           
         </script>
 
       
     </div>
 
-
+    <!--  时钟 -->
     <svg class="svg " version="1.1" id="clock" x="0px" y="0px" width="10%" height="10%" viewBox="50 50 400 500"
         xml:space="preserve">
         <circle id="face" fill="#F4F3ED" cx="243.869" cy="250.796" r="130.8" />
@@ -4478,6 +4579,7 @@
                 }), d
             });
     </script>
+    
     <script>
         var s = Snap(document.getElementById("clock"));
 

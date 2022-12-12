@@ -64,7 +64,8 @@
   position: absolute;
   /* position: relative; */
   text-align: center;
-  bottom: 8px
+  bottom: 8px;
+  background-color:transparent;
 }
 
 .b-line a{ 
@@ -107,7 +108,7 @@
   color: #539BF5;
 }
 
-a:hover {
+#container a:hover {
   color: #539BF5;
 }
 
@@ -763,6 +764,41 @@ html.utilityfocus .home-link:focus {
   display: block
 }
 
+.other_search { 
+  /* width:200px; 
+  height:200px;
+  background:#009966;  */
+  float:right;
+  margin-right: 10px;
+}
+
+/* a:hover {
+  color: #f60;
+} */
+
+.italic_font {
+  /* display: block; */
+  color: rgb(217, 210, 210);
+  font-style:normal;
+  text-align: center;
+  padding: 6px 6px;
+  /* text-decoration: none; */
+  border-radius: 0.5;
+  background-color: #077356;
+}
+
+.italic_font:hover {
+  transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  background: #035842;
+  /* border: 1px solid #7fa481;
+  color: rgba(255, 255, 255, 0.9); */
+}
+
+
 .main__item__tabs {
   padding-right: 69px;
   padding-bottom: 30px
@@ -810,7 +846,6 @@ body {
   /* background: rgb(0, 0, 0); */
   margin: 0
 }
-
 
 
 .container__tabs .tabs {
@@ -1506,6 +1541,7 @@ body {
   .search2 {
     display: inline-table;
     border-collapse: collapse;
+    margin-right: 7px;
   }
 
   .search2__input {
@@ -2793,19 +2829,6 @@ body {
   top: 100px;
 }
 
-a:hover {
-  /* cursor: url(https://blog-static.cnblogs.com/files/NanKe-Studying/diy-mouse001.ico), pointer; */
-}
-
-body {
-  /* cursor: url("https://blog-static.cnblogs.com/files/NanKe-Studying/auik2-s8xa2.ico?t=1659079921"),auto; */
-}
-
-/* .article-info-tag,
-button {
-  text-transform: uppercase;
-} */
-
 .day,
 .postMeta,
 .postSticky {
@@ -2975,9 +2998,7 @@ a {
   outline: 0;
 }
 
-a:hover {
-  color: #f60;
-}
+
 
 .clear {
   clear: both;
