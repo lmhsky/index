@@ -1,4 +1,4 @@
-/* .weixin{
+/* .weixin{  .container {
 	position:relative;
   }
 .weixin::after{
@@ -1402,15 +1402,15 @@ body {
 
   .item {
     width: 85%;
-    height: 16px;
+    height: 14px;
     border: 1px solid #45484C;
-    border-radius: 5px;
+    border-radius: 3px;
     background: #45484C;
     padding: 9px;
-    margin-top: 10px;
+    margin-top: 8px;
     float: left;
     color: #E0E0E0;
-    font-size: 15px;
+    font-size: 14px;
     word-break: keep-all;
     white-space: nowrap;
     overflow: hidden;
@@ -1419,12 +1419,7 @@ body {
     vertical-align: middle;
   }
 
-  .container {
-    margin-left: 2px;
-    background: transparent;
-    margin-top: 10px;
-    display: flex;
-  }
+
 
   #img_index {
     width: 30px;
@@ -1583,10 +1578,14 @@ body {
   }
 
   .container {
+    margin-left: 2px;
     background: transparent;
-    margin-top: 20px;
+    display: flex;
+    background: transparent;
+    margin-top: 25px;
     width: 100%;
   }
+ 
 }
 
 
