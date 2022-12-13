@@ -24,7 +24,7 @@
  } 
  */
 #weahther_font:hover {
-    color: #539BF5;
+  color: #539BF5;
 }
 
 .a-line {
@@ -91,15 +91,7 @@
   color: #539BF5;
 }
 
-.fruits {
-  margin-top: 80px;
-  margin-bottom: 10px;
-}
 
-.fruits img {
-  margin-left: 5%;
-  margin-right: 5%;
-}
 
 body {
   /* background: url("img/tanner-unsplash.jpg") no-repeat center fixed;
@@ -722,11 +714,11 @@ html.utilityfocus .home-link:focus {
   display: block
 }
 
-.other_search { 
+.other_search {
   /* width:200px; 
   height:200px;
   background:#009966;  */
-  float:right;
+  float: right;
   margin-right: 10px;
 }
 
@@ -737,7 +729,7 @@ html.utilityfocus .home-link:focus {
 .italic_font {
   /* display: block; */
   color: rgb(217, 210, 210);
-  font-style:normal;
+  font-style: normal;
   text-align: center;
   padding: 6px 6px;
   /* text-decoration: none; */
@@ -1281,50 +1273,58 @@ body {
 /* 屏幕适配 */
 /* 大屏幕（大于等于1200px） */
 @media screen and (min-width: 1000px) {
-
+  .fruits {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
   
-.main {
-  /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
-  /*兼容浏览器版本*/
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  max-width: 30%;
-  margin: 0 auto
-}
+  .fruits img {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.b-line {
-  white-space: nowrap;
-  margin: 0 auto;
-  min-width: 800px;
-  left: 30px;
-  right: 30px;
-  position: absolute;
-  /* position: relative; */
-  text-align: center;
-  bottom: 8px;
-  background-color:transparent;
-}
+  .main {
+    /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
+    /*兼容浏览器版本*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 30%;
+    margin: 0 auto
+  }
 
-.b-line a{ 
-  font-size:13px;
-  /* width: 200px;
+  .b-line {
+    white-space: nowrap;
+    margin: 0 auto;
+    min-width: 800px;
+    left: 30px;
+    right: 30px;
+    position: absolute;
+    /* position: relative; */
+    text-align: center;
+    bottom: 8px;
+    background-color: transparent;
+  }
+
+  .b-line a {
+    font-size: 13px;
+    /* width: 200px;
   height: 200px; */
-  /* position: absolute; */
-  /* top: 50%;
+    /* position: absolute; */
+    /* top: 50%;
   bottom: 50%; */
-  /* margin-left: -100px;
+    /* margin-left: -100px;
   margin-top: -100px; */
-}
+  }
 
-.b-line img{ 
-  width:18px;
-  height:18px;
-  margin-bottom: 3px;
-  /* position: inherit; */
-  /* position: absolute; */
-  /* position:fixed; */
-}
+  .b-line img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 3px;
+    /* position: inherit; */
+    /* position: absolute; */
+    /* position:fixed; */
+  }
 
 
 
@@ -1593,56 +1593,64 @@ body {
     margin-top: 25px;
     width: 100%;
   }
- 
+
 }
 
 
 /* 中等屏幕（大于等于992px） */
 @media screen and (min-width: 850px) and (max-width:1000px) {
-
+  .fruits {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
   
-.main {
-  /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
-  /*兼容浏览器版本*/
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  max-width: 30%;
-  margin: 0 auto
-}
+  .fruits img {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.b-line {
-  white-space: nowrap;
-  margin: 0 auto;
-  min-width: 800px;
-  left: 30px;
-  right: 30px;
-  position: absolute;
-  /* position: relative; */
-  text-align: center;
-  bottom: 8px;
-  background-color:transparent;
-}
+  .main {
+    /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
+    /*兼容浏览器版本*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 30%;
+    margin: 0 auto
+  }
 
-.b-line a{ 
-  font-size:13px;
-  /* width: 200px;
+  .b-line {
+    white-space: nowrap;
+    margin: 0 auto;
+    min-width: 800px;
+    left: 30px;
+    right: 30px;
+    position: absolute;
+    /* position: relative; */
+    text-align: center;
+    bottom: 8px;
+    background-color: transparent;
+  }
+
+  .b-line a {
+    font-size: 13px;
+    /* width: 200px;
   height: 200px; */
-  /* position: absolute; */
-  /* top: 50%;
+    /* position: absolute; */
+    /* top: 50%;
   bottom: 50%; */
-  /* margin-left: -100px;
+    /* margin-left: -100px;
   margin-top: -100px; */
-}
+  }
 
-.b-line img{ 
-  width:18px;
-  height:18px;
-  margin-bottom: 3px;
-  /* position: inherit; */
-  /* position: absolute; */
-  /* position:fixed; */
-}
+  .b-line img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 3px;
+    /* position: inherit; */
+    /* position: absolute; */
+    /* position:fixed; */
+  }
 
 
   * {
@@ -1948,34 +1956,48 @@ body {
 @media screen and (min-width: 0px) and (max-width:850px) {
 
 
-  .input_size_search{
-    width: 155%;
-    float: left;
+  .fruits {
+    display: none;
+    /* margin-top: 48px; */
+    /* margin-bottom: 10px; */
   }
 
-.bing {
-  display: none;
-}
-.baidu {
-  display: none;
+  .input_size_search {
+    display: none;
   }
 
- .other_search{
-  display: none;
- }
+  .search_region{
+    display: none;
+  }
+
+  .bing {
+    display: none;
+  }
+
+  .baidu {
+    display: none;
+  }
+
+  .other_search {
+    display: none;
+  }
+
   .mfooter__item {
     display: none;
   }
-.wearher_font{
-  display: none;
-}
 
-.google {
-  display: none;
-}
-.github{
-  display: none;
-}
+  .wearher_font {
+    display: none;
+  }
+
+  .google {
+    display: none;
+  }
+
+  .github {
+    display: none;
+  }
+
   .b-line {
     /* white-space: nowrap;
     margin: 0 auto;
@@ -1987,12 +2009,12 @@ body {
     bottom: 8px
   }
 
-  .svg{
+  .svg {
     display: none;
   }
-  
-  .b-line a{ 
-    font-size:13px;
+
+  .b-line a {
+    font-size: 13px;
     /* width: 200px;
     height: 200px; */
     /* position: absolute; */
@@ -2001,27 +2023,27 @@ body {
     /* margin-left: -100px;
     margin-top: -100px; */
   }
-  
-  .b-line img{ 
-    width:18px;
-    height:18px;
+
+  .b-line img {
+    width: 18px;
+    height: 18px;
     margin-bottom: 3px;
     /* position: inherit; */
     /* position: absolute; */
     /* position:fixed; */
   }
 
-  
-  
-.main {
-  /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
-  /*兼容浏览器版本*/
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  max-width: 90%;
-  margin: 0 auto
-}
+
+
+  .main {
+    /* background: url("/img/tanner-unsplash.jpg") no-repeat center center fixed;*/
+    /*兼容浏览器版本*/
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 90%;
+    margin: 0 auto
+  }
 
 
   .webbox {
@@ -2032,7 +2054,7 @@ body {
   }
 
   #h2_ti {
-    margin-top: 25px;
+    /* margin-top: 25px; */
     margin-bottom: 20px;
     animation-name: change;
     font-size: 20px;
@@ -2042,7 +2064,7 @@ body {
 
   /*调整item*/
   .item {
-    width: 20%;
+    width: 26%;
     height: 25px;
     border: 1px solid #45484C;
     /* box-shadow: 1px 2px 3px #f2f6f8; */
@@ -2053,7 +2075,7 @@ body {
     float: left;
     /* font-weight: 300; */
     color: #E0E0E0;
-    font-size: 8px;
+    font-size: 12px;
     word-break: keep-all;
     white-space: nowrap;
     overflow: hidden;
@@ -2230,12 +2252,14 @@ body {
   }
 
   .container {
+    margin-top: 48px;
     background: transparent;
-    margin-top: 35px;
-    width: 50%;
+    /* margin-top: 35px; */
+    width: 45%;
   }
 
 }
+
 /* 小屏幕 */
 
 
