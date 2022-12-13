@@ -128,7 +128,7 @@
 
 </head>
 
-<body class="b-page b-page_com b-page_com i-bem">
+<body class="b-page_com">
 
     <script type="text/javascript" src="js/sakura-l.js"></script>
 
@@ -185,7 +185,7 @@
                     setInterval(function () { mtime() }, 1000);
                 </script> -->
 
-                <div>
+                <div class="search_region">
                     <!-- <div class='logo'><a class="home-link" href="https://yandex.com/" data-statlog="logo.default"
                     data-statlog-showed="1">
                     <div class="logo__image_bg" role="img" aria-label="Yandex"></div>
@@ -227,40 +227,38 @@
                     </h2> -->
                     <form class="search2" target="_blank">
                         <div class='search2__input'>
-                            <span class="input input_size_search 
-                                input_theme_search 
-                                input_search2-clear-hide_yes 
-                                input_ahead_yes 
-                                input_autofocus_capture 
-                                input_clear_yes" target="_blank">
-                                <span class="input__box">
-                                    <input id="baidu_text" class="input__control "  
+                            <span class="input input_size_search" target="_blank">
+                                <input id="baidu_text" class="input__control "  
                                         name="q" autocomplete="off" value="" type="text"
                                         autofocu="true"spellcheck="true" target="_blank" />
+                            </span> 
                         </div>
+
                         <div class='search2__button'>
                             <input 
-                                class="button button_theme_search button_size_search i-bem enjoy-css-submit2"
+                            class="button_theme_search enjoy-css-submit bing"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://cn.bing.com/search" value="  Bing  " id="submit" target="_blank"/>
 
                         </div>
+
                         <div class='search2__button'>
                             <input 
-                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                            class="button_theme_search enjoy-css-submit baidu"
                                 tabindex="-1" role="button" type="button" value=" Baidu " id="submit"
                                 onclick="baidu();" target="_blank"/>
 
                         </div>
+                    
                         <div class='search2__button'>
                             <input
-                                class="button button_theme_search button_size_search i-bem enjoy-css-submit"
+                                class="button_theme_search enjoy-css-submit google"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://www.google.com/search" value="Google" id="submit" target="_blank"/>
                         </div>
                         <div class='search2__button'>
                             <input
-                                class=" button_theme_search enjoy-css-submit"
+                                class="button_theme_search enjoy-css-submit github"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://github.com/search" value="Github" id="submit" target="_blank"/>
                         </div>
@@ -850,28 +848,28 @@
 
     <div class="b-line" role="contentinfo" data-bem="{}" >
 
-        <a class="home-link mfooter__item mfooter__link weixin" href="javascript:" data-statlog="foot.company"
+        <a class="mfooter__item" href="javascript:" data-statlog="foot.company"
         data-statlog-showed="1" >+wechat: noteyoung</a>
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
         data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback"
         data-statlog-showed="1" id="Main"></a>  -->
 
-        <a id="wearher_font" class="" target="_blank">  ➦看天气[</a>
+        <a id="wearher_font" class="wearher_font" target="_blank">  ➦看天气[</a>
         <a id="wearher_font" class="" 
         href="https://weather.cma.cn/" target="_blank" style='color:#ce823b' ><strong>气象局</strong></a>
         <a id="wearher_font" class="" 
         href="https://www.msn.cn/zh-cn/weather/forecast" target="_blank" style='color:#96683e' ><strong> MSN</strong></a>
-        <a id="wearher_font" class=""  target="_blank"  >]</a>
+        <a id="wearher_font" class="wearher_font"  target="_blank"  >]</a>
 
-        <a id="wearher_font" class="" target="_blank">  ➦看日历[</a>
+        <a id="wearher_font" class="wearher_font" target="_blank">  ➦看日历[</a>
         <a id="wearher_font" class="" 
         href="http://rl.yozocloud.cn/" target="_blank" style='color:#ce823b' ><strong>永中</strong></a>
         <a id="wearher_font" class="" 
         href="https://rili.wps.cn/" target="_blank" style='color:#96683e' ><strong> 金山</strong></a>
-        <a id="wearher_font" class=""  target="_blank"  >]</a>
+        <a id="wearher_font" class="wearher_font"  target="_blank"  >]</a>
 
-        <a id="wearher_font" class="" target="_blank">  ➦看地图[</a>
+        <a id="wearher_font" class="wearher_font" target="_blank">  ➦看地图[</a>
         <a id="wearher_font" class="" 
         href="https://map.baidu.com/" target="_blank" style='color:#ce823b' ><strong>百度</strong></a>
         <a id="wearher_font" class="" 
@@ -880,7 +878,7 @@
         href="https://map.qq.com/" target="_blank" style='color:#ce823b' ><strong> 腾讯</strong></a>
         <a id="wearher_font" class="" 
         href="https://cn.bing.com/maps" target="_blank" style='color:#96683e' ><strong> BingMaps</strong></a>
-        <a id="wearher_font" class=""  target="_blank"  >]</a>
+        <a id="wearher_font" class="wearher_font"  target="_blank"  >]</a>
 
         <!-- <a id="headline">
             <a id="countdown"></a>
