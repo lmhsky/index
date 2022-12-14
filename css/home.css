@@ -1410,12 +1410,12 @@ body {
 
   .item {
     width: 85%;
-    height: 14px;
+    height: 13px;
     border: 1px solid #45484C;
     border-radius: 3px;
     background: #45484C;
     padding: 9px;
-    margin-top: 8px;
+    margin-top: 6px;
     float: left;
     color: #E0E0E0;
     font-size: 14px;
