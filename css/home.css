@@ -1955,7 +1955,6 @@ body {
 /* 小屏幕 */
 @media screen and (min-width: 0px) and (max-width:850px) {
 
-
   .fruits {
     display: none;
     /* margin-top: 48px; */
@@ -1963,18 +1962,29 @@ body {
   }
 
   .input_size_search {
-    display: none;
+    /* display: none; */
+    margin-top: 48px;
+    width: 135%;
+
   }
 
-  .search_region{
+  /* .search_region{
     display: none;
-  }
+  } */
 
   .bing {
     display: none;
   }
 
   .baidu {
+    display: none;
+  }
+
+  .google {
+    display: none;
+  }
+
+  .github {
     display: none;
   }
 
@@ -1990,13 +2000,7 @@ body {
     display: none;
   }
 
-  .google {
-    display: none;
-  }
-
-  .github {
-    display: none;
-  }
+ 
 
   .b-line {
     /* white-space: nowrap;
