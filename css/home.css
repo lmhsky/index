@@ -92,6 +92,10 @@
 }
 
 
+.developer{
+  margin-left: 20%;
+  float: left;
+}
 
 body {
   /* background: url("img/tanner-unsplash.jpg") no-repeat center fixed;
@@ -1269,12 +1273,11 @@ body {
 }
 
 
-
 /* 屏幕适配 */
 /* 大屏幕（大于等于1200px） */
 @media screen and (min-width: 1000px) {
   .fruits {
-    margin-top: 80px;
+    margin-top: 48px;
     margin-bottom: 10px;
   }
   
@@ -1600,7 +1603,7 @@ body {
 /* 中等屏幕（大于等于992px） */
 @media screen and (min-width: 850px) and (max-width:1000px) {
   .fruits {
-    margin-top: 80px;
+    margin-top: 48px;
     margin-bottom: 10px;
   }
   
