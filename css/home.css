@@ -93,7 +93,8 @@
 
 
 .developer{
-  margin-left: 20%;
+  /* margin-left: 20%; */
+  margin-top: 15px;
   float: left;
 }
 
@@ -1593,7 +1594,7 @@ body {
     background: transparent;
     display: flex;
     background: transparent;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 100%;
   }
 
@@ -1752,7 +1753,7 @@ body {
 
   .container {
     background: transparent;
-    margin-top: 35px;
+    margin-top: 30px;
     display: flex;
   }
 
@@ -1949,8 +1950,7 @@ body {
 
   .container {
     background: transparent;
-    margin-top: 35px;
-    margin-top: 35px;
+    margin-top: 30px;
     width: 100%;
   }
 }
@@ -2259,7 +2259,7 @@ body {
   }
 
   .container {
-    margin-top: 48px;
+    margin-top: 30px;
     background: transparent;
     /* margin-top: 35px; */
     width: 45%;
