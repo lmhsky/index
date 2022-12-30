@@ -742,13 +742,13 @@ html.utilityfocus .home-link:focus {
 
 .italic_font {
   /* display: block; */
-  color: rgb(217, 210, 210);
+  color: rgb(223, 218, 218);
   font-style: normal;
   text-align: center;
-  padding: 6px 6px;
+  padding: 2px 2px;
   /* text-decoration: none; */
   border-radius: 0.5;
-  background-color: #077356;
+  background-color: #307e69;
 }
 
 .italic_font:hover {
@@ -1155,6 +1155,20 @@ body {
 }
 
 
+.img-packets6 {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  /* background: url("https://www.baidu.com/static/img/test.png") no-repeat;
+    background-size: 100% 100%; */
+  animation-name: upAnimation;
+  transform-origin: center bottom;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5;
+  animation-direction: reverse;
+}
 
 .text-packets {
   display: inline-block;

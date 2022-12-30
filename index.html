@@ -120,13 +120,7 @@
         }
     </script>
 
-    <script type="text/javascript">
-        function DuckDuckgo_Search() {
-            text = document.getElementById('baidu_text').value;
-            url = 'https://duckduckgo.com' + text;
-            window.open(url, "_blank")
-        }
-    </script>
+    
 
     <script type="text/javascript">
         function Ask_Search() {
@@ -144,6 +138,21 @@
         }
     </script>
 
+     <script type="text/javascript">
+        function Geek_Search() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://s.geekbang.org/search/c=0/k='+text+'/t=';
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function DuckDuckgo_Search() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://duckduckgo.com' + text;
+            window.open(url, "_blank")
+        }
+    </script>
 
 
 
@@ -202,6 +211,13 @@
                     <a target="_blank" href="https://www.aliyundrive.com/">
                         <img class="img-packets5" id="img_index" src="./img/云盘2.png" alt="" title="阿里云盘">
                     </a>
+
+                    <a target="_blank" href="https://www.douyin.com/">
+                        <img class="img-packets6" id="img_index" src="./img/抖音.png" alt="" title="抖音">
+                    </a>
+
+                    
+
                     <!-- <img src="./img/猴子.png">
                     <img src="./img/草莓.png">
                     <img src="./img/橙子.png">
@@ -289,16 +305,18 @@
                     
                         <div class='search2__button'>
                             <input
-                                class="button_theme_search enjoy-css-submit google"
-                                tabindex="-1" role="button" type="submit"
-                                formaction="https://www.google.com/search" value="Google" id="submit" target="_blank"/>
-                        </div>
-                        <div class='search2__button'>
-                            <input
                                 class="button_theme_search enjoy-css-submit github"
                                 tabindex="-1" role="button" type="submit"
                                 formaction="https://github.com/search" value="Github" id="submit" target="_blank"/>
                         </div>
+
+                        <div class='search2__button'>
+                            <input
+                                class="button_theme_search enjoy-css-submit google"
+                                tabindex="-1" role="button" type="submit"
+                                formaction="https://www.google.com/search" value="Google⇡" id="submit" target="_blank"/>
+                        </div>
+
                     </form>
                 
                     <div class="other_search">
@@ -306,16 +324,23 @@
                         onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
 
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
-                        onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
+                        onclick="Geek_Search();" target="_blank"><strong>极客搜索</strong></a>
 
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
-                        onclick="Quora_Flow();" target="_blank"><strong>quora</strong></a>
+                        onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Java_Search();" target="_blank"><strong>JavaSearch</strong></a>
 
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
+
+                        <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Quora_Flow();" target="_blank"><strong>quora⇡</strong></a>
+
+                        <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo⇡</Strong></a>
+
                         
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a> -->
@@ -323,8 +348,7 @@
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Ask_Search();" target="_blank"><strong>Ask</strong></a> -->
                        
-                        <!-- <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
-                        onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo</Strong></a> -->
+                       
            
                     </div>
                     <!-- <input 
