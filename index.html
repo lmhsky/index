@@ -115,7 +115,7 @@
     <script type="text/javascript">
         function Quora_Flow() {
             text = document.getElementById('baidu_text').value;
-            url = 'https://www.quora.com/' + text;
+            url = 'https://www.quora.com/search?q=' + text;
             window.open(url, "_blank")
         }
     </script>
@@ -125,10 +125,11 @@
     <script type="text/javascript">
         function Ask_Search() {
             text = document.getElementById('baidu_text').value;
-            url = 'http://www.ask.com/' + text;
+            url = 'https://www.ask.com/web?q=' + text;
             window.open(url, "_blank")
         }
     </script>
+    
 
     <script type="text/javascript">
         function Yandex_Search() {
@@ -149,7 +150,7 @@
     <script type="text/javascript">
         function DuckDuckgo_Search() {
             text = document.getElementById('baidu_text').value;
-            url = 'https://duckduckgo.com' + text;
+            url = 'https://duckduckgo.com/?q=' + text;
             window.open(url, "_blank")
         }
     </script>
@@ -335,18 +336,19 @@
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
 
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a> 
+
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Quora_Flow();" target="_blank"><strong>quora⇡</strong></a>
 
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo⇡</Strong></a>
 
-                        
-                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
-                        onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a> -->
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="Ask_Search();" target="_blank"><strong>Ask⇡</strong></a>
 
-                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
-                        onclick="Ask_Search();" target="_blank"><strong>Ask</strong></a> -->
+                       
                        
                        
            
