@@ -130,7 +130,15 @@
         }
     </script>
     
+    <script type="text/javascript">
+        function yahoo_Search() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://search.yahoo.com/search?p=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
 
+    
     <script type="text/javascript">
         function Yandex_Search() {
             text = document.getElementById('baidu_text').value;
@@ -342,16 +350,16 @@
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Quora_Flow();" target="_blank"><strong>quora⇡</strong></a>
 
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
+                        onclick="yahoo_Search();" target="_blank"><strong>yahoo⇡</strong></a>
+
                         <a style="cursor:pointer"  class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo⇡</Strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"  id="submit"
                         onclick="Ask_Search();" target="_blank"><strong>Ask⇡</strong></a>
 
-                       
-                       
-                       
-           
+            
                     </div>
                     <!-- <input 
                         class="button button_theme_search button_size_search i-bem enjoy-css-submit"
