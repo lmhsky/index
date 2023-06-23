@@ -94,7 +94,7 @@
 
 .developer{
   /* margin-left: 20%; */
-  margin-top: 15px;
+  margin-top: 0px;
   float: left;
 }
 
@@ -103,6 +103,19 @@
   margin-top: 0px;
   float: left;
 }
+
+.ai{
+  /* margin-left: 20%; */
+  margin-top: 0px;
+  float: left;
+}
+
+.cc{
+  /* margin-left: 20%; */
+  margin-top: 10px;
+  float: left;
+}
+
 
 
 
