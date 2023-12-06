@@ -9,6 +9,11 @@ Version: 1.0
 License: GNU General Public License v2.0
 License URI: http://www.chuangzaoshi.com/
  */
+
+.search1__input{
+    padding: 10px;
+}
+
 html,
 body,
 ol,
@@ -195,6 +200,7 @@ hr,
 .d-inline {
     display: inline !important
 }
+
 
 .d-block {
     display: block !important
