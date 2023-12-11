@@ -10,7 +10,7 @@ License: GNU General Public License v2.0
 License URI: http://www.chuangzaoshi.com/
  */
 
-.search1__input{
+.search1__input {
     padding: 10px;
 }
 
@@ -3389,6 +3389,40 @@ body {
     }
 }
 
+
+.main_timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 603px) {
+    .main_timeline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.content_timeline {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 603px) {
+    .content_timeline {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 .app-container {
     padding: 0 50px
 }
@@ -3402,6 +3436,8 @@ body {
 .app-container .navbar-end {
     margin-right: 16px
 }
+
+
 
 .content {
     margin-top: 30px;
