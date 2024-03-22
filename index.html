@@ -84,18 +84,27 @@
     <script type="text/javascript">
         function baidu() {
             text = document.getElementById('baidu_text').value;
+           
+
             url = 'https://www.baidu.com/s?wd=' + text;
             window.open(url, "_blank")
         }
     </script>
 
-    <script type="text/javascript">
-        function pocket() {
+<script type="text/javascript">
+        function ecosia_Search() {
             text = document.getElementById('baidu_text').value;
-            url = 'https://getpocket.com/zh-cn/' + text;
+            if (text.length === 0) {
+                //console.log("This is an empty string!");
+                url = 'https://www.ecosia.org/';
+            }else{
+                url = 'https://www.ecosia.org/search?method=index&q=' + text;
+            }
+
+            
             window.open(url, "_blank")
         }
-    </script>
+    </script> 
 
     <script type="text/javascript">
         function baidu_kaifa() {
@@ -327,23 +336,21 @@
                         </div>
 
                         <div class='search2__button'>
-                            <input class="button_theme_search enjoy-css-submit github" tabindex="-1" role="button"
-                                type="submit" formaction="https://github.com/search" value="Github" id="submit"
+                            <input class="button_theme_search enjoy-css-submit google" tabindex="-1" role="button"
+                                type="submit" formaction="https://www.google.com/search" value="Google⇡" id="submit"
                                 target="_blank" />
                         </div>
 
                         <div class='search2__button'>
-                            <input class="button_theme_search enjoy-css-submit google" tabindex="-1" role="button"
-                                type="submit" formaction="https://www.google.com/search" value="Google⇡" id="submit"
+                            <input class="button_theme_search enjoy-css-submit github" tabindex="-1" role="button"
+                                type="submit" formaction="https://github.com/search" value="Github" id="submit"
                                 target="_blank" />
                         </div>
 
                     </form>
 
                     <div class="other_search">
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="pocket();" target="_blank"><strong>pocket<font color="yellow">⇡
-                                </font></strong></a>
+
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
@@ -361,23 +368,31 @@
                             id="submit" onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a>
+                            id="submit" onclick="Ask_Search();" target="_blank"><strong>Ask<font color="yellow">⇡</font>
+                            </strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Quora_Flow();" target="_blank"><strong>quora<font color="yellow">⇡
                                 </font></strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a>
+
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="yahoo_Search();" target="_blank"><strong>yahoo<font color="yellow">⇡
                                 </font></strong></a>
 
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
-                                    color="yellow">⇡</font></Strong></a>
+                                <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                                id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
+                                        color="yellow">⇡</font></Strong></a>
+
+                                        
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="Ask_Search();" target="_blank"><strong>Ask<font color="yellow">⇡</font>
-                            </strong></a>
+                            id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a>
+
+
 
                         <!-- <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
                             <svg class="octicon" width="13" height="13" style="color: rgb(255, 80, 0);">
@@ -487,7 +502,7 @@
 
                 <div class='developer'>
                     <a id="wearher_font" class="wearher_font" target="_blank">AOSP: </a>
-                   
+
                     <!-- <u><a id="wearher_font" class="" href="./android_boot.html" target="_blank"
                         style='color:#ce3b6c'><strong>Android Boot</strong></a></u> -->
 
@@ -581,7 +596,7 @@
                 </div> -->
 
                 <div class='ai'>
-                  
+
                     <a id="wearher_font" class="wearher_font" target="_blank">AI Tool: </a>
 
                     <!-- 
@@ -615,6 +630,11 @@
 
                 <div class='blog'>
                     <a id="wearher_font" class="wearher_font" target="_blank">blog: </a>
+
+                  
+
+                                <u><a id="wearher_font" class="" href="https://getpocket.com/" target="_blank"
+                                    style='color:#ce823b'><strong>pocket</strong></a></u>
 
                     <u><a id="wearher_font" class="" href="https://toutiao.io/" target="_blank"
                             style='color:#ce823b'><strong>开发者头条</strong></a></u>
@@ -926,23 +946,17 @@
                             </div>
                         </a>
 
-
+                        <a target="_blank" href=" https://www.huaweicloud.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/牛油果_b.png" alt=""> 华为云</div>
+                            </div>
+                        </a>
 
                         <!-- <a target="_blank" href="https://www.csdn.net/">
                             <div class="item">
                                 <div class="logo"><img src="img/冰棍.png" alt="  "> CSDN</div>
                             </div>
                         </a> -->
-
-
-
-
-                        <a target="_blank" href="https://www.diagrams.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/美食11.png" alt=""> draw.io</div>
-                            </div>
-                        </a>
-
 
 
                         <a target="_blank" href="https://www.processon.com/">
@@ -1147,11 +1161,7 @@
                             </div>
                         </a>
 
-                        <a target="_blank" href=" https://www.huaweicloud.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/yun.png" alt=""> 华为云</div>
-                            </div>
-                        </a>
+
                         <!-- <a target="_blank" href="https://www.runoob.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/树木.png" alt=""> 菜鸟笔记</div>
@@ -1161,6 +1171,13 @@
                         <a target="_blank" href="https://tool.browser.qq.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/树木.png" alt=""> 帮小忙</div>
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" href="https://www.diagrams.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/美食11.png" alt=""> draw.io</div>
                             </div>
                         </a>
 
