@@ -477,6 +477,13 @@ html.utilityfocus .home-link:focus {
 }
 
 
+
+.search2__input {
+  padding-top:0.1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
 .search2_type_2021 .search2__input {
   display: block
 }

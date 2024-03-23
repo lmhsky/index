@@ -84,27 +84,43 @@
     <script type="text/javascript">
         function baidu() {
             text = document.getElementById('baidu_text').value;
-           
-
             url = 'https://www.baidu.com/s?wd=' + text;
             window.open(url, "_blank")
         }
     </script>
 
+
 <script type="text/javascript">
+    function wikipedia() {
+        text = document.getElementById('baidu_text').value;
+       
+        if (text.length === 0) {
+                //console.log("This is an empty string!");
+                url = ' https://www.wikipedia.org/';
+            } else {
+                url = 'https://zh.wikipedia.org/wiki/' + text;
+            }
+        
+        window.open(url, "_blank")
+    }
+</script>
+
+
+
+    <script type="text/javascript">
         function ecosia_Search() {
             text = document.getElementById('baidu_text').value;
             if (text.length === 0) {
                 //console.log("This is an empty string!");
                 url = 'https://www.ecosia.org/';
-            }else{
+            } else {
                 url = 'https://www.ecosia.org/search?method=index&q=' + text;
             }
 
-            
+
             window.open(url, "_blank")
         }
-    </script> 
+    </script>
 
     <script type="text/javascript">
         function baidu_kaifa() {
@@ -146,8 +162,6 @@
             window.open(url, "_blank")
         }
     </script>
-
-
 
     <script type="text/javascript">
         function Ask_Search() {
@@ -324,14 +338,14 @@
 
                         <div class='search2__button'>
                             <input class="button_theme_search enjoy-css-submit bing" tabindex="-1" role="button"
-                                type="submit" formaction="https://cn.bing.com/search" value="  Bing  " id="submit"
+                                type="submit" formaction="https://cn.bing.com/search" value="Bing" id="submit"
                                 target="_blank" />
 
                         </div>
 
                         <div class='search2__button'>
                             <input class="button_theme_search enjoy-css-submit baidu" tabindex="-1" role="button"
-                                type="button" value=" Baidu " id="submit" onclick="baidu();" target="_blank" />
+                                type="button" value="Baidu" id="submit" onclick="baidu();" target="_blank" />
 
                         </div>
 
@@ -340,6 +354,13 @@
                                 type="submit" formaction="https://www.google.com/search" value="Google⇡" id="submit"
                                 target="_blank" />
                         </div>
+
+                        <div class='search2__button'>
+                            <input class="button_theme_search enjoy-css-submit wikipedia" tabindex="-1" role="button"
+                                type="button" value="wikipedia⇡" id="submit" onclick="wikipedia();" target="_blank" />
+
+                        </div>
+
 
                         <div class='search2__button'>
                             <input class="button_theme_search enjoy-css-submit github" tabindex="-1" role="button"
@@ -383,11 +404,11 @@
                             id="submit" onclick="yahoo_Search();" target="_blank"><strong>yahoo<font color="yellow">⇡
                                 </font></strong></a>
 
-                                <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                                id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
-                                        color="yellow">⇡</font></Strong></a>
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
+                                    color="yellow">⇡</font></Strong></a>
 
-                                        
+
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a>
@@ -631,10 +652,10 @@
                 <div class='blog'>
                     <a id="wearher_font" class="wearher_font" target="_blank">blog: </a>
 
-                  
 
-                                <u><a id="wearher_font" class="" href="https://getpocket.com/" target="_blank"
-                                    style='color:#ce823b'><strong>pocket</strong></a></u>
+
+                    <u><a id="wearher_font" class="" href="https://getpocket.com/" target="_blank"
+                            style='color:#ce823b'><strong>pocket</strong></a></u>
 
                     <u><a id="wearher_font" class="" href="https://toutiao.io/" target="_blank"
                             style='color:#ce823b'><strong>开发者头条</strong></a></u>
