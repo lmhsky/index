@@ -89,6 +89,15 @@
         }
     </script>
 
+    <script type="text/javascript">
+        function openai() {
+            //text = document.getElementById('baidu_text').value;
+            url = 'https://chat.openai.com/';
+            window.open(url, "_blank")
+        }
+    </script>
+
+
 
     <script type="text/javascript">
         function wikipedia() {
@@ -356,17 +365,27 @@
                         </div>
 
                         <div class='search2__button'>
+                            <input class="button_theme_search enjoy-css-submit github" tabindex="-1" role="button"
+                                type="submit" formaction="https://github.com/search" value="Github" id="submit"
+                                target="_blank" />
+                        </div>
+
+                        <div class='search2__button'>
+                            <input class="button_theme_search enjoy-css-submit baidu" tabindex="-1" role="button"
+                                type="button" value="ChatGPT⇡" id="submit" onclick="openai();" target="_blank" />
+
+                        </div>
+
+                        <div class='search2__button'>
                             <input class="button_theme_search enjoy-css-submit wikipedia" tabindex="-1" role="button"
                                 type="button" value="wikipedia⇡" id="submit" onclick="wikipedia();" target="_blank" />
 
                         </div>
 
 
-                        <div class='search2__button'>
-                            <input class="button_theme_search enjoy-css-submit github" tabindex="-1" role="button"
-                                type="submit" formaction="https://github.com/search" value="Github" id="submit"
-                                target="_blank" />
-                        </div>
+
+
+
 
                     </form>
 
@@ -622,7 +641,7 @@
                     <a id="wearher_font" class="wearher_font" target="_blank">AI Tool: </a>
 
                     <u><a id="wearher_font" class="" href="https://openai.com/" target="_blank"
-                            style='color:#ce823b'><strong>Chat GPT</strong></a></u>
+                            style='color:#ce823b'><strong>OpenAI</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://openai.com/sora" target="_blank"
@@ -640,6 +659,11 @@
                     <u><a id="wearher_font" class="" href="https://github.com/features/copilot" target="_blank"
                             style='color:#ce823b'><strong>Github copilot</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="  https://codeium.com/" target="_blank"
+                            style='color:#ce823b'><strong>codeium</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
 
                     <u><a id="wearher_font" class="" href="https://colab.google/" target="_blank"
                             style='color:#ce823b'><strong>google colab</strong></a></u>
