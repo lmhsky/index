@@ -140,6 +140,31 @@
     </script>
 
     <script type="text/javascript">
+        function kimi() {
+            //text = document.getElementById('baidu_text').value;
+            url = 'https://kimi.moonshot.cn/';
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function wenxinyiyan() {
+            //text = document.getElementById('baidu_text').value;
+            url = 'https://yiyan.baidu.com/';
+            window.open(url, "_blank")
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        function ai360() {
+            //text = document.getElementById('baidu_text').value;
+            url = 'https://so.360.com/';
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
         function Java_Search() {
             text = document.getElementById('baidu_text').value;
             url = 'https://www.programcreek.com/java-api-examples/?action=search&ClassName=' + text + '&submit=Search';
@@ -382,15 +407,18 @@
 
                         </div>
 
-
-
-
-
-
                     </form>
 
                     <div class="other_search">
 
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="kimi();" target="_blank"><strong>kimi</strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="wenxinyiyan();" target="_blank"><strong>文心一言</strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="ai360();" target="_blank"><strong>360AI搜索</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
@@ -427,12 +455,8 @@
                             id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
                                     color="yellow">⇡</font></Strong></a>
 
-
-
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a>
-
-
 
                         <!-- <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
                             <svg class="octicon" width="13" height="13" style="color: rgb(255, 80, 0);">
@@ -508,8 +532,56 @@
 
                 </div> -->
 
-
                 <div class='cc'>
+
+                    <a id="wearher_font" class="wearher_font" target="_blank">AI Tool: </a>
+
+                    <u><a id="wearher_font" class="" href="https://openai.com/" target="_blank"
+                            style='color:#ce823b'><strong>OpenAI</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://openai.com/sora" target="_blank"
+                            style='color:#ce823b'><strong>sora</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://pika.art/home" target="_blank"
+                            style='color:#ce823b'><strong>pika</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://www.midjourney.com/home" target="_blank"
+                            style='color:#ce823b'><strong>midjourney</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://github.com/features/copilot" target="_blank"
+                            style='color:#ce823b'><strong>Github copilot</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="  https://codeium.com/" target="_blank"
+                            style='color:#ce823b'><strong>codeium</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
+                    <u><a id="wearher_font" class="" href="https://colab.google/" target="_blank"
+                            style='color:#ce823b'><strong>google colab</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class=""
+                            href="https://developer.android.google.cn/studio/preview/studio-bot/" target="_blank"
+                            style='color:#ce823b'><strong>Studio bot</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+                    <!-- 
+                    <u><a id="wearher_font" class="" href="./ai.html" target="_blank"
+                            style='color:#ce3b6c'><strong>AI大全</strong></a></u>
+                             -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce3b6c'><strong>&nbsp;</strong></a> -->
+
+                    <!-- <u><a id="wearher_font" class="" href="https://marketplace.visualstudio.com/vscode" target="_blank"
+                            style='color:#ce823b'><strong>VS Code(Extensions)</strong></a></u> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                </div>
+
+                <div class='ai'>
 
                     <a id="wearher_font" class="wearher_font" target="_blank">Linux: </a>
                     <!--  -->
@@ -636,54 +708,8 @@
                             style='color:#ce823b'><strong>SylixOS</strong></a></u>
                     <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a>
                 </div> -->
-                <div class='ai'>
-
-                    <a id="wearher_font" class="wearher_font" target="_blank">AI Tool: </a>
-
-                    <u><a id="wearher_font" class="" href="https://openai.com/" target="_blank"
-                            style='color:#ce823b'><strong>OpenAI</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="https://openai.com/sora" target="_blank"
-                            style='color:#ce823b'><strong>sora</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="https://pika.art/home" target="_blank"
-                            style='color:#ce823b'><strong>pika</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="https://www.midjourney.com/home" target="_blank"
-                            style='color:#ce823b'><strong>midjourney</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="https://github.com/features/copilot" target="_blank"
-                            style='color:#ce823b'><strong>Github copilot</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="  https://codeium.com/" target="_blank"
-                            style='color:#ce823b'><strong>codeium</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
 
-                    <u><a id="wearher_font" class="" href="https://colab.google/" target="_blank"
-                            style='color:#ce823b'><strong>google colab</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class=""
-                            href="https://developer.android.google.cn/studio/preview/studio-bot/" target="_blank"
-                            style='color:#ce823b'><strong>Studio bot</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                    <!-- 
-                    <u><a id="wearher_font" class="" href="./ai.html" target="_blank"
-                            style='color:#ce3b6c'><strong>AI大全</strong></a></u>
-                             -->
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce3b6c'><strong>&nbsp;</strong></a> -->
-
-                    <!-- <u><a id="wearher_font" class="" href="https://marketplace.visualstudio.com/vscode" target="_blank"
-                            style='color:#ce823b'><strong>VS Code(Extensions)</strong></a></u> -->
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                </div>
                 <div class='blog'>
                     <a id="wearher_font" class="wearher_font" target="_blank">blog: </a>
 
