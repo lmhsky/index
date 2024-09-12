@@ -206,6 +206,16 @@
     </script>
 
     <script type="text/javascript">
+        function reddit_Search() {
+            text = document.getElementById('baidu_text').value;
+            url = 'https://www.reddit.com/search/?q=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+
+
+    <script type="text/javascript">
         function yahoo_Search() {
             text = document.getElementById('baidu_text').value;
             url = 'https://search.yahoo.com/search?p=' + text;
@@ -285,24 +295,41 @@
                     <a target="_blank" href="https://www.aliyundrive.com/">
                         <img class="img-packets5" id="img_index" src="./img/阿里云盘b.png" alt="" title="阿里云盘">
                     </a>
-                    
-                    <a target="_blank" href="https://email.163.com/">
+
+                    <a target="_blank" href="https://www.weiyun.com/">
+                        <img class="img-packets6" id="img_index" src="./img/腾讯微云.png" alt="" title="腾讯微云">
+                    </a>
+
+                    <a target="_blank" href="https://www.dropbox.com/">
+                        <img class="img-packets4" id="img_index" src="./img/dropbox.png" alt="" title="dropbox">
+                    </a>
+
+                    <a target="_blank" href="https://drive.google.com/drive/home">
+                        <img class="img-packets5" id="img_index" src="./img/drive.png" alt="" title="drive">
+                    </a>
+
+                    <a target="_blank"
+                        href="https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage">
+                        <img class="img-packets6" id="img_index" src="./img/OneDrive.png" alt="" title="onedrive">
+
+                    </a>
+                    <!-- <a target="_blank" href="https://email.163.com/">
                         <img class="img-packets2" id="img_index" src="./img/126邮箱b.png" alt="" title="网易邮箱">
                     </a>
 
                     <a target="_blank" href="https://mail.google.com/mail">
                         <img class="img-packets3" id="img_index" src="./img/Gmail邮箱b.png" alt="" title="谷歌gmail">
-                    </a>
+                    </a> -->
 
-                    <a target="_blank" href="https://www.bilibili.com/">
+                    <!-- <a target="_blank" href="https://www.bilibili.com/">
                         <img class="img-packets1" id="img_index" src="./img/哔哩哔哩b.png" alt="" title="哔哩哔哩">
-                    </a>
+                    </a> -->
 
 
 
-                    <a target="_blank" href="https://www.youtube.com/">
+                    <!-- <a target="_blank" href="https://www.youtube.com/">
                         <img class="img-packets6" id="img_index" src="./img/youtube.png" alt="" title="Youtube">
-                    </a>
+                    </a> -->
                     <!-- <a target="_blank" href="https://www.douyin.com/">
                         <img class="img-packets6" id="img_index" src="./img/抖音b.png" alt="" title="抖音">
                     </a> -->
@@ -435,13 +462,18 @@
                             id="submit" onclick="Geek_Search();" target="_blank"><strong>极客搜索</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
+                            id="submit" onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow👓</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Java_Search();" target="_blank"><strong>JavaSearch</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="reddit_Search();" target="_blank"><strong>reddit<font color="yellow">⇡
+                                </font>
+                            </strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Ask_Search();" target="_blank"><strong>Ask<font color="yellow">⇡</font>
@@ -451,8 +483,6 @@
                             id="submit" onclick="Quora_Flow();" target="_blank"><strong>quora<font color="yellow">⇡
                                 </font></strong></a>
 
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a>
 
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
@@ -465,6 +495,10 @@
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a>
+
 
                         <!-- <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
                             <svg class="octicon" width="13" height="13" style="color: rgb(255, 80, 0);">
@@ -550,40 +584,35 @@
                             style='color:#ce823b'><strong>OpenAI</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://openai.com/sora" target="_blank"
-                            style='color:#ce583b'><strong>◉sora</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://openai.com/sora" target="_blank"
+                            style='color:#ce583b'><strong>◉sora</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://pika.art/home" target="_blank"
-                            style='color:#ce583b'><strong>◉pika</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://pika.art/home" target="_blank"
+                            style='color:#ce583b'><strong>◉pika</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
+                    <!-- 
                     <u><a id="wearher_font" class="" href="https://www.midjourney.com/home" target="_blank"
-                            style='color:#ce583b'><strong>◉midjourney</strong></a></u>
+                            style='color:#ce583b'><strong>◉midjourney</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                    <u><a id="wearher_font" class=""
-                        href="https://tongyi.aliyun.com/qianwen/" target="_blank"
-                        style='color:#ce583b'><strong>◉通义千问</strong></a></u>
-                                           
-                    <u><a id="wearher_font" class=""
-                        href="https://yuanbao.tencent.com/chat/naQivTmsDa" target="_blank"
-                        style='color:#ce583b'><strong>◉腾讯元宝</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://tongyi.aliyun.com/qianwen/" target="_blank"
+                            style='color:#ce583b'><strong>◉通义千问</strong></a></u>
 
-                    <u><a id="wearher_font" class=""
-                        href="https://yiyan.baidu.com/" target="_blank"
-                        style='color:#ce583b'><strong>◉文心一言</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://yuanbao.tencent.com/chat/naQivTmsDa" target="_blank"
+                            style='color:#ce583b'><strong>◉腾讯元宝</strong></a></u>
 
-                    <u><a id="wearher_font" class=""
-                        href="https://xinghuo.xfyun.cn/desk" target="_blank"
-                        style='color:#ce583b'><strong>◉讯飞星火</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://yiyan.baidu.com/" target="_blank"
+                            style='color:#ce583b'><strong>◉文心一言</strong></a></u>
 
-                    <u><a id="wearher_font" class=""
-                        href="https://kimi.moonshot.cn/" target="_blank"
-                        style='color:#ce583b'><strong>◉kimi</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://xinghuo.xfyun.cn/desk" target="_blank"
+                            style='color:#ce583b'><strong>◉讯飞星火</strong></a></u>
 
-                        
+                    <u><a id="wearher_font" class="" href="https://kimi.moonshot.cn/" target="_blank"
+                            style='color:#ce583b'><strong>◉kimi</strong></a></u>
+
+
                     <u><a id="wearher_font" class="" href="https://github.com/features/copilot" target="_blank"
-                        style='color:#e4af7f'><strong>Github copilot</strong></a></u>
+                            style='color:#e4af7f'><strong>Github copilot</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="  https://codeium.com/" target="_blank"
@@ -596,9 +625,9 @@
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class=""
-                        href="https://developer.android.google.cn/studio/preview/studio-bot/" target="_blank"
-                        style='color:#e4af7f'><strong>Studio bot</strong></a></u>
-                                                    
+                            href="https://developer.android.google.cn/studio/preview/studio-bot/" target="_blank"
+                            style='color:#e4af7f'><strong>Studio bot</strong></a></u>
+
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
                     <!-- 
                     <u><a id="wearher_font" class="" href="./ai.html" target="_blank"
@@ -627,7 +656,7 @@
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://www.yoctoproject.org/" target="_blank"
-                        style='color:#ce823b'><strong>yocto</strong></a></u>
+                            style='color:#ce823b'><strong>yocto</strong></a></u>
 
                     <u><a id="wearher_font" class="" href="https://www.debian.org/" target="_blank"
                             style='color:#ce823b'><strong>debian</strong></a></u>
@@ -758,17 +787,17 @@
                             style='color:#487ece'><strong>语雀</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://www.dropbox.com/" target="_blank"
-                            style='color:#487ece'><strong>dropbox</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://www.dropbox.com/" target="_blank"
+                            style='color:#487ece'><strong>dropbox</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://drive.google.com/drive/home" target="_blank"
-                            style='color:#487ece'><strong>drive</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://drive.google.com/drive/home" target="_blank"
+                            style='color:#487ece'><strong>drive</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class=""
+                    <!-- <u><a id="wearher_font" class=""
                             href="https://www.microsoft.com/zh-cn/microsoft-365/onedrive/online-cloud-storage"
-                            target="_blank" style='color:#487ece'><strong>onedrive</strong></a></u>
+                            target="_blank" style='color:#487ece'><strong>onedrive</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://www.zhipin.com/" target="_blank"
@@ -778,6 +807,34 @@
                     <u><a id="wearher_font" class="" href="https://www.linkedin.com/" target="_blank"
                             style='color:#487ece'><strong>linkedin</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://www.lagou.com/wn/" target="_blank"
+                            style='color:#487ece'><strong>拉钩网</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://email.163.com/" target="_blank"
+                            style='color:#487ece'><strong>126邮箱</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://www.yeah.net/" target="_blank"
+                            style='color:#487ece'><strong>yeah.net</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
+                    <u><a id="wearher_font" class="" href="https://wx.mail.qq.com/" target="_blank"
+                            style='color:#487ece'><strong>qq邮箱</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://mail.google.com/mail" target="_blank"
+                            style='color:#487ece'><strong>谷歌gmail</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
+                    <u><a id="wearher_font" class="" href="https://login.live.com/" target="_blank"
+                            style='color:#487ece'><strong>Outlook</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
 
                 </div>
 
@@ -790,7 +847,7 @@
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://wx.zsxq.com/dweb2/login" target="_blank"
-                        style='color:#ce823b'><strong>◉知识星球</strong></a></u>
+                            style='color:#ce823b'><strong>◉知识星球</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
 
@@ -928,7 +985,7 @@
 
                         <a target="_blank" href="https://github.com/">
                             <div class="item">
-                                <div class="logo"><img src="img/橘子汽水.png" alt="  "> github</div>
+                                <div class="logo"><img src="img/橘子汽水.png" alt="  "> github👓</div>
                             </div>
                         </a>
 
@@ -953,6 +1010,12 @@
                         <a target="_blank" href="https://github.com/features/copilot">
                             <div class="item">
                                 <div class="logo"><img src="img/水果卷.png" alt=""> github copilot</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://news.ycombinator.com/news">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干-Biscuit.png" alt=""> Hacker News👓</div>
                             </div>
                         </a>
 
@@ -1035,11 +1098,7 @@
                             </div>
                         </a>
 
-                        <a target="_blank" href="https://news.ycombinator.com/news">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干-Biscuit.png" alt=""> Hacker News</div>
-                            </div>
-                        </a>
+
 
                         <!-- <a target="_blank" href="https://toutiao.io/">
                             <div class="item">
@@ -1515,8 +1574,8 @@
                 style='color:#ce823b'><strong> google</strong></a></u>
 
         <u><a id="wearher_font" class="" href="https://www.deepl.com/zh/translator" target="_blank"
-            style='color:#96683e'><strong> deepl</strong></a></u>
-    
+                style='color:#96683e'><strong> deepl</strong></a></u>
+
         <u><a id="wearher_font" class="" href="https://www.iciba.com/translate" target="_blank"
                 style='color:#ce823b'><strong> 金山</strong></a></u>
 
