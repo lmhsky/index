@@ -148,10 +148,24 @@ $ git push origin main
             window.open(url, "_blank")
         }
     </script>
+
     <script type="text/javascript">
         function baidu_kaifa() {
             text = document.getElementById('baidu_text').value;
             url = 'https://kaifa.baidu.com/searchPage?wd=' + text;
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
+        function android_kaifa() {
+            text = document.getElementById('baidu_text').value;
+            //console.log(typeof text);
+            if (text.trim().length === 0) {
+               url = 'https://cs.android.com/android';
+            } else {
+               url = 'https://cs.android.com/search?q=' + text+'&sq=&ss=android';
+            }
             window.open(url, "_blank")
         }
     </script>
@@ -478,7 +492,10 @@ $ git push origin main
                             id="submit" onclick="Csdn_Search();" target="_blank"><strong>so.csdn</strong></a> -->
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a>
+                            id="submit" onclick="android_kaifa();" target="_blank"><strong>Android Code Search</strong></a>
+
+                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a> -->
 
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Geek_Search();" target="_blank"><strong>极客搜索</strong></a> -->
@@ -493,13 +510,12 @@ $ git push origin main
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
 
-                     <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                              id="submit" onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="reddit_Search();" target="_blank"><strong>reddit<font color="yellow">⇡
-                                </font>
-                            </strong></a>
+                                </font></strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Ask_Search();" target="_blank"><strong>Ask<font color="yellow">⇡</font>
