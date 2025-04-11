@@ -228,6 +228,32 @@ $ git push origin main
     </script>
 
     <script type="text/javascript">
+        function sourcegraph_search() {
+            text = document.getElementById('baidu_text').value;
+            if (text.trim().length === 0) {
+               url = 'https://sourcegraph.com/search';
+            } else {
+                url = 'https://sourcegraph.com/search?q=' + text;
+            }
+            window.open(url, "_blank")
+        }
+    </script>
+
+
+    <script type="text/javascript">
+        function libhunt_search() {
+            text = document.getElementById('baidu_text').value;
+            if (text.trim().length === 0) {
+               url = 'https://www.libhunt.com/topics';
+            } else {
+               url = 'https://www.libhunt.com/topics?query=' + text;
+            }
+
+            window.open(url, "_blank")
+        }
+    </script>
+
+    <script type="text/javascript">
         function Ask_Search() {
             text = document.getElementById('baidu_text').value;
             url = 'https://www.ask.com/web?q=' + text;
@@ -503,6 +529,14 @@ $ git push origin main
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                         id="submit" onclick="Geek_Searchpro();" target="_blank"><strong>极客AI搜索</strong></a> -->
 
+                        
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                        id="submit" onclick="sourcegraph_search();" target="_blank"><strong>sourcegraph<font color="yellow">⇡
+                            </font></strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                        id="submit" onclick="libhunt_search();" target="_blank"><strong>libhunt<font color="yellow">⇡
+                            </font></strong></a>
               
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Java_Search();" target="_blank"><strong>JavaSearch</strong></a>
@@ -525,19 +559,19 @@ $ git push origin main
                             id="submit" onclick="Quora_Flow();" target="_blank"><strong>quora<font color="yellow">⇡
                                 </font></strong></a>
 
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="yahoo_Search();" target="_blank"><strong>yahoo<font color="yellow">⇡
-                                </font></strong></a>
+                                </font></strong></a> -->
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="DuckDuckgo_Search();" target="_blank"><Strong>DuckDuckgo<font
                                     color="yellow">⇡</font></Strong></a>
 
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a>
+                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="ecosia_Search();" target="_blank"><Strong>ecosia</Strong></a> -->
 
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a>
+                        <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="Yandex_Search();" target="_blank"><strong>Yandex</strong></a> -->
 
 
                         <!-- <button class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
@@ -717,6 +751,8 @@ $ git push origin main
 
                 </div>
 
+    
+
                 <div class='blog'>
                     <a id="wearher_font" class="wearher_font" target="_blank"
                         style='color:#487ece'><strong>AOSP:</strong> </a>
@@ -743,11 +779,6 @@ $ git push origin main
                             style='color:#ce823b'><strong>microG</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-
-
-                    <!-- <u><a id="wearher_font" class="" href="./android_boot.html" target="_blank"
-                        style='color:#ce3b6c'><strong>Android Boot</strong></a></u> -->
-
                     <u><a id="wearher_font" class="" href="https://xdaforums.com/" target="_blank"
                             style='color:#ce823b'><strong>XDAforums</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
@@ -762,11 +793,6 @@ $ git push origin main
 
                     <u><a id="wearher_font" class="" href="https://termius.com/" target="_blank"
                             style='color:#ce823b'><strong>Termius</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-
-                    <u><a id="wearher_font" class="" href="https://android-arsenal.com/" target="_blank"
-                            style='color:#ce823b'><strong>android-arsenal</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://square.github.io/" target="_blank"
@@ -786,6 +812,36 @@ $ git push origin main
                             style='color:#ce823b'><strong>vysor</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
+
+                    <!-- <u><a id="wearher_font" class="" href="https://dev.to/" target="_blank"
+                        style='color:#ce823b'><strong>dev.to</strong></a></u> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <!-- <u><a id="wearher_font" class="" href="https://lvgl.io/" target="_blank"
+                            style='color:#ce823b'><strong>lvgl</strong></a></u> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
+                    <!-- <u><a id="wearher_font" class="" href="https://sourcegraph.com/search" target="_blank"
+                            style='color:#ce823b'><strong>sourcegraph</strong></a></u> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+                
+                    <!-- <u><a id="wearher_font" class="" href="https://www.libhunt.com/topics" target="_blank"
+                        style='color:#ce823b'><strong>libhunt</strong></a></u> -->
+                   <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    
+                    <!-- <u><a id="wearher_font" class="" href="https://gist.github.com/discover" target="_blank"
+                        style='color:#ce823b'><strong>gist.github</strong></a></u> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+    
+                    
+                    <!-- <u><a id="wearher_font" class="" href="https://android-arsenal.com/" target="_blank"
+                        style='color:#ce823b'><strong>android-arsenal</strong></a></u>
+                    <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+
                 </div>
 
                 <div class='blog'>
@@ -793,7 +849,6 @@ $ git push origin main
                     <a id="wearher_font" class="wearher_font" target="_blank"
                         style='color:#487ece'><strong>Linux:</strong> </a>
 
-                    <!--  -->
                     <!-- <u><a id="wearher_font" class="" href="./linux.html" target="_blank"
                             style='color:#ce3b6c'><strong>Linux大全</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce3b6c'><strong>&nbsp;</strong></a> -->
@@ -1273,6 +1328,12 @@ $ git push origin main
                             </div>
                         </a>
 
+                        <a target="_blank" href="https://gist.github.com/discover">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果杯2.png" alt=""> gist.github</div>
+                            </div>
+                        </a>
+
                         <!-- <a target="_blank" href="https://github.com/trending">
                             <div class="item">
                                 <div class="logo"><img src="img/奶茶.png" alt="  "> github trending</div>
@@ -1365,11 +1426,11 @@ $ git push origin main
                             </div>
                         </a>
 
-                        <a target="_blank" href="https://www.linuxcool.com/">
+                        <!-- <a target="_blank" href="https://www.linuxcool.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/水果杯2.png" alt=""> Linux命令大全</div>
                             </div>
-                        </a>
+                        </a> -->
 
                         <a target="_blank" href="https://quickref.cn/">
                             <div class="item">
@@ -1576,6 +1637,12 @@ $ git push origin main
                             </div>
                         </a> -->
 
+                        <a target="_blank" href="https://android-arsenal.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/椰子.png" alt=""> android-arsenal</div>
+                            </div>
+                        </a>
+                        
                         <a target="_blank" href="https://git-scm.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/水果.png" alt=""> git</div>
@@ -1625,7 +1692,18 @@ $ git push origin main
                             </div> -->
                         </a>
 
-                        <a target="_blank" href="https://leetcode-cn.com/">
+                        <a target="_blank" href="https://dev.to/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干.png" alt=""> dev.to</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://visualgo.net/en">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="https://leetcode-cn.com/">
                             <div class="item">
                                 <div class="logo"><img src="img/椰子.png" alt=""> leetcode</div>
                             </div>
@@ -1635,7 +1713,7 @@ $ git push origin main
                             <div class="item">
                                 <div class="logo"><img src="img/饼干.png" alt=""> 牛客网</div>
                             </div>
-                        </a>
+                        </a> -->
 
 
 
@@ -1645,11 +1723,11 @@ $ git push origin main
                             </div>
                         </a> -->
 
-                        <a target="_blank" href="https://visualgo.net/en">
+                        <!-- <a target="_blank" href="https://visualgo.net/en">
                             <div class="item">
                                 <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
                             </div>
-                        </a>
+                        </a> -->
 
                         <!-- <a target="_blank" href="https://time.geekbang.org/">
                             <div class="item">
@@ -1949,6 +2027,17 @@ $ git push origin main
 
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback" data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback" data-statlog-showed="1" id="Main"></a>  -->
+        <a id="wearher_font" class="wearher_font" target="_blank"> ➦旅行[</a>
+        <u><a id="wearher_font" class="" href="https://www.outo.co/" target="_blank"style='color:#ce823b'><strong> outo</strong></a></u>
+        <!-- <u><a id="wearher_font" class="" href="https://zh.airbnb.com/s/experiences" target="_blank"style='color:#96683e'><strong>airbnb</strong></a></u> -->
+        <u><a id="wearher_font" class="" href="https://www.klook.cn/zh-CN/" target="_blank"style='color:#96683e'><strong> 路客</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.getyourguide.com/zh-cn/" target="_blank"style='color:#ce823b'><strong>getyourguide</strong></a></u>
+        <!-- <u><a id="wearher_font" class="" href="https://www.withlocals.com/" target="_blank"style='color:#ce823b'><strong> withlocals</strong></a></u> -->
+        <!-- <u><a id="wearher_font" class="" href="https://www.atlasobscura.com/" target="_blank"style='color:#96683e'><strong> atlasobscura</strong></a></u> -->
+        <!-- <u><a id="wearher_font" class="" href="https://www.viator.com/" target="_blank"style='color:#ce823b'><strong> viator</strong></a></u> -->
+        <u><a id="wearher_font" class="" href="https://www.qyer.com/" target="_blank"style='color:#96683e'><strong> Q穷游</strong></a></u>
+        <!-- <u><a id="wearher_font" class="" href="https://theculturetrip.com/" target="_blank"style='color:#ce823b'><strong> theculturetrip</strong></a></u> -->
+        <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦看天气[</a>
         <u><a id="wearher_font" class="" href="https://www.msn.cn/zh-cn/weather/forecast" target="_blank"style='color:#ce823b'><strong> MSN</strong></a></u>
@@ -1977,9 +2066,9 @@ $ git push origin main
         <!-- <u><a id="wearher_font" class="" href="https://fanyi.baidu.com/" target="_blank" style='color:#ce823b'><strong>百度</strong></a></u>
         <u><a id="wearher_font" class="" href="https://cn.bing.com/translator/" target="_blank"style='color:#96683e'><strong> Bing</strong></a></u> -->
         <u><a id="wearher_font" class="" href="https://fanyi.youdao.com/#/TextTranslate" target="_blank" style='color:#ce823b'><strong>Youdao</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://translate.google.com/" target="_blank" style='color:#ce823b'><strong> google</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.deepl.com/zh/translator" target="_blank"style='color:#96683e'><strong> deepl</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.iciba.com/translate" target="_blank"style='color:#ce823b'><strong> 金山</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://translate.google.com/" target="_blank" style='color:#96683e'><strong> google</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.deepl.com/zh/translator" target="_blank"style='color:#ce823b'><strong> deepl</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.iciba.com/translate" target="_blank"style='color:#96683e'><strong> 金山</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://fanyi.caiyunapp.com/#/" target="_blank"style='color:#ce823b'><strong> 彩云</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://dict.cnki.net/index" target="_blank"style='color:#96683e'><strong> CNKI</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://www.deepl.com/translator" target="_blank"style='color:#ce823b'><strong> Deepl</strong></a></u> -->
