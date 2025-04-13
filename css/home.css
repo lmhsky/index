@@ -27,6 +27,10 @@
   color: #539BF5;
 }
 
+.mfooter__item2 {
+  float: right;
+}
+
 .a-line {
   white-space: nowrap;
   margin: 0 auto;

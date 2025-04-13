@@ -37,7 +37,7 @@ $ git push origin main
         }
 
         body {
-            background: url("img/background_d.png") no-repeat center center fixed;
+            background: url("img/background_l.jpg") no-repeat center center fixed;
             /*兼容浏览器版本*/
             -webkit-background-size: cover;
             -o-background-size: cover;
@@ -162,9 +162,9 @@ $ git push origin main
             text = document.getElementById('baidu_text').value;
             //console.log(typeof text);
             if (text.trim().length === 0) {
-               url = 'https://cs.android.com/android';
+                url = 'https://cs.android.com/android';
             } else {
-               url = 'https://cs.android.com/search?q=' + text+'&sq=&ss=android';
+                url = 'https://cs.android.com/search?q=' + text + '&sq=&ss=android';
             }
             window.open(url, "_blank")
         }
@@ -231,7 +231,7 @@ $ git push origin main
         function sourcegraph_search() {
             text = document.getElementById('baidu_text').value;
             if (text.trim().length === 0) {
-               url = 'https://sourcegraph.com/search';
+                url = 'https://sourcegraph.com/search';
             } else {
                 url = 'https://sourcegraph.com/search?q=' + text;
             }
@@ -244,9 +244,9 @@ $ git push origin main
         function libhunt_search() {
             text = document.getElementById('baidu_text').value;
             if (text.trim().length === 0) {
-               url = 'https://www.libhunt.com/topics';
+                url = 'https://www.libhunt.com/topics';
             } else {
-               url = 'https://www.libhunt.com/topics?query=' + text;
+                url = 'https://www.libhunt.com/topics?query=' + text;
             }
 
             window.open(url, "_blank")
@@ -518,7 +518,8 @@ $ git push origin main
                             id="submit" onclick="Csdn_Search();" target="_blank"><strong>so.csdn</strong></a> -->
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                            id="submit" onclick="android_kaifa();" target="_blank"><strong>Android Code Search</strong></a>
+                            id="submit" onclick="android_kaifa();" target="_blank"><strong>Android Code
+                                Search</strong></a>
 
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="baidu_kaifa();" target="_blank"><strong>开发者搜索</strong></a> -->
@@ -529,15 +530,17 @@ $ git push origin main
                         <!-- <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                         id="submit" onclick="Geek_Searchpro();" target="_blank"><strong>极客AI搜索</strong></a> -->
 
-                        
-                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                        id="submit" onclick="sourcegraph_search();" target="_blank"><strong>sourcegraph<font color="yellow">⇡
-                            </font></strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                        id="submit" onclick="libhunt_search();" target="_blank"><strong>libhunt<font color="yellow">⇡
-                            </font></strong></a>
-              
+                            id="submit" onclick="sourcegraph_search();" target="_blank"><strong>sourcegraph<font
+                                    color="yellow">⇡
+                                </font></strong></a>
+
+                        <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
+                            id="submit" onclick="libhunt_search();" target="_blank"><strong>libhunt<font color="yellow">
+                                    ⇡
+                                </font></strong></a>
+
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="Java_Search();" target="_blank"><strong>JavaSearch</strong></a>
 
@@ -545,7 +548,7 @@ $ git push origin main
                             id="submit" onclick="Search_Code();" target="_blank"><Strong>SearchCode</Strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
-                             id="submit" onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
+                            id="submit" onclick="Stackover_Flow();" target="_blank"><strong>Stackoverflow</strong></a>
 
                         <a style="cursor:pointer" class="italic_font" tabindex="-1" role="button" type="button"
                             id="submit" onclick="reddit_Search();" target="_blank"><strong>reddit<font color="yellow">⇡
@@ -649,7 +652,8 @@ $ git push origin main
                 </div> -->
 
                 <div class='cc'>
-                    <a id="wearher_font" class="wearher_font" target="_blank" style='color:#487ece'><strong>AI大模型:</strong> </a>
+                    <a id="wearher_font" class="wearher_font" target="_blank"
+                        style='color:#487ece'><strong>AI大模型:</strong> </a>
 
                     <!-- <u><a id="wearher_font" class="" href="https://openai.com/" target="_blank"
                             style='color:#ce823b'><strong>OpenAI</strong></a></u> -->
@@ -666,45 +670,59 @@ $ git push origin main
                     <u><a id="wearher_font" class="" href="https://www.midjourney.com/home" target="_blank"
                             style='color:#ce583b'><strong>◉midjourney</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                  
+
                     <u><a id="wearher_font" class="" href="https://yuanbao.tencent.com/" target="_blank"
-                        style='color:#ce583b'><font size="2.5"><strong>⭐腾讯元宝</strong></font></a></u>
-                
+                            style='color:#ce583b'>
+                            <font size="2.5"><strong>⭐腾讯元宝</strong></font>
+                        </a></u>
+
                     <u><a id="wearher_font" class="" href="https://github.com/copilot" target="_blank"
-                        style='color:#ce583b'><font size="2.5"><strong>⭐Github copilot</strong></font></a></u>
-    
-                    <u><a id="wearher_font" class="" href="https://metaso.cn/" target="_blank"
-                        style='color:#ce583b'><font size="2.5"><strong>⭐秘塔AI</strong></font></a></u>
-                        
+                            style='color:#ce583b'>
+                            <font size="2.5"><strong>⭐Github copilot</strong></font>
+                        </a></u>
+
+                    <u><a id="wearher_font" class="" href="https://metaso.cn/" target="_blank" style='color:#ce583b'>
+                            <font size="2.5"><strong>⭐秘塔AI</strong></font>
+                        </a></u>
+
                     <u><a id="wearher_font" class="" href="https://klingai.kuaishou.com/" target="_blank"
-                        style='color:#ce583b'><font size="2.5""><strong>⭐可灵AI</strong></font></a></u>
+                            style='color:#ce583b'>
+                            <font size="2.5""><strong>⭐可灵AI</strong></font></a></u>
                               
-                    <!-- <u><a id="wearher_font" class="" href="https://chat.baidu.com/search" target="_blank"
-                        style='color:#ce823b'><font size="2.5"><strong>chat.baidu</strong></font></a></u>
-                        
+                    <!-- <u><a id=" wearher_font" class="" href="https://chat.baidu.com/search" target="_blank"
+                                style='color:#ce823b'>
+                                <font size="2.5"><strong>chat.baidu</strong></font>
+                        </a></u>
+
                     <u><a id="wearher_font" class="" href="https://ai.geekbang.org/" target="_blank"
-                        style='color:#ce823b'><font size="2.5"><strong>chat.geekbang</strong></font></a></u> 
-                            
+                            style='color:#ce823b'>
+                            <font size="2.5"><strong>chat.geekbang</strong></font>
+                        </a></u>
+
                     <u><a id="wearher_font" class="" href=" https://so.csdn.net/chat" target="_blank"
-                        style='color:#ce823b'><font size="2.5"><strong>chat.csdn</strong></font></a></u>  -->
+                            style='color:#ce823b'>
+                            <font size="2.5"><strong>chat.csdn</strong></font>
+                        </a></u> -->
 
                     <u><a id="wearher_font" class="" href="https://tongyi.aliyun.com/qianwen/" target="_blank"
-                        style='color:#ce823b'><font size="2.5"><strong>⭐通义千问</strong></font></a></u>
+                            style='color:#ce823b'>
+                            <font size="2.5"><strong>⭐通义千问</strong></font>
+                        </a></u>
 
-                       
+
                     <!-- <u><a id="wearher_font" class="" href="https://yiyan.baidu.com/" target="_blank"
                         style='color:#ce583b'><font size="2.5"><strong>文心一言</strong></font></a></u> -->
 
                     <!-- <u><a id="wearher_font" class="" href="https://chat.deepseek.com/" target="_blank"
                         style='color:#ce583b'><font size="2.5"><strong>deepseek</strong></font></a></u> -->
-                                                
+
                     <!-- <u><a id="wearher_font" class="" href="https://www.doubao.com/chat/" target="_blank"
                         style='color:#ce583b'><font size="2.5"><strong>豆包</strong></font></a></u> -->
 
                     <!-- <u><a id="wearher_font" class="" href="https://kimi.moonshot.cn/" target="_blank"
                         style='color:#ce583b'><font size="2.5"><strong>kimi</strong></font></a></u> -->
 
- 
+
                     <!-- <u><a id="wearher_font" class="" href="https://xinghuo.xfyun.cn/desk" target="_blank"
                         style='color:#ce583b'><font size="2.5"><strong>讯飞星火</strong></font></a></u>   -->
 
@@ -730,13 +748,19 @@ $ git push origin main
                             style='color:#e4af7f'><font size="2"><strong>Studio bot</strong></font></a></u> -->
 
                     <u><a id="wearher_font" class="" href="https://www.msn.cn/zh-cn/gaming/ai" target="_blank"
-                        style='color:#ce823b'><font size="2.5"></font><strong>AI大全</strong></font></a></u>
-        
+                            style='color:#ce823b'>
+                            <font size="2.5"></font><strong>AI大全</strong></font>
+                        </a></u>
+
                     <u><a id="wearher_font" class="" href="https://www.futurepedia.io/" target="_blank"
-                            style='color:#ce823b'><font size="2.5"></font><strong>AI Tools</strong></font></a></u>
+                            style='color:#ce823b'>
+                            <font size="2.5"></font><strong>AI Tools</strong></font>
+                        </a></u>
 
                     <u><a id="wearher_font" class="" href="https://zhinan.geekbang.com/" target="_blank"
-                        style='color:#ce823b'><font size="2.5"></font><strong>AI指南</strong></font></a></u>
+                            style='color:#ce823b'>
+                            <font size="2.5"></font><strong>AI指南</strong></font>
+                        </a></u>
 
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
                     <!-- 
@@ -751,7 +775,7 @@ $ git push origin main
 
                 </div>
 
-    
+
 
                 <div class='blog'>
                     <a id="wearher_font" class="wearher_font" target="_blank"
@@ -769,10 +793,10 @@ $ git push origin main
                     <u><a id="wearher_font" class="" href="https://lineageos.org/" target="_blank"
                             style='color:#ce823b'><strong>lineageos</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                    
-                    
+
+
                     <u><a id="wearher_font" class="" href="https://omnirom.org/" target="_blank"
-                        style='color:#ce823b'><strong>OmniROM</strong></a></u>
+                            style='color:#ce823b'><strong>OmniROM</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://microg.org/" target="_blank"
@@ -825,18 +849,18 @@ $ git push origin main
                     <!-- <u><a id="wearher_font" class="" href="https://sourcegraph.com/search" target="_blank"
                             style='color:#ce823b'><strong>sourcegraph</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                
+
                     <!-- <u><a id="wearher_font" class="" href="https://www.libhunt.com/topics" target="_blank"
                         style='color:#ce823b'><strong>libhunt</strong></a></u> -->
-                   <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    
+
                     <!-- <u><a id="wearher_font" class="" href="https://gist.github.com/discover" target="_blank"
                         style='color:#ce823b'><strong>gist.github</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-    
-                    
+
+
                     <!-- <u><a id="wearher_font" class="" href="https://android-arsenal.com/" target="_blank"
                         style='color:#ce823b'><strong>android-arsenal</strong></a></u>
                     <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
@@ -887,9 +911,9 @@ $ git push origin main
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://www.docker.com/" target="_blank"
-                        style='color:#ce823b'><strong>docker</strong></a></u>
-                <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                 
+                            style='color:#ce823b'><strong>docker</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
                 </div>
 
                 <!-- <div class='rtos'>
@@ -1033,32 +1057,37 @@ $ git push origin main
                     <a id="wearher_font" class="wearher_font" target="_blank"
                         style='color:#487ece'><strong>应用市场:</strong> </a>
 
-
-                    <u><a id="wearher_font" class="" href="https://f-droid.org/" target="_blank"
-                            style='color:#ce823b'><strong>f-droid</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://www.microsoft.com/zh-cn/Store" target="_blank"
+                            style='color:#ce823b'><strong>microsoft store</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://www.simplemobiletools.com/" target="_blank"
-                            style='color:#ce823b'><strong>simplemobiletools</strong></a></u>
+                    <u><a id="wearher_font" class="" href="https://play.google.com/store/apps" target="_blank"
+                            style='color:#ce823b'><strong>google store</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://f-droid.org/" target="_blank"
+                        style='color:#ce823b'><strong>f-droid</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://www.apkmirror.com/" target="_blank"
+                        style='color:#ce823b'><strong>apkmirror</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://en.aptoide.com/" target="_blank"
+                        style='color:#ce823b'><strong>aptoide</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <u><a id="wearher_font" class="" href="https://apkpure.com/cn/" target="_blank"
+                        style='color:#ce823b'><strong>apkpure</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                    <!-- <u><a id="wearher_font" class="" href="https://www.simplemobiletools.com/" target="_blank"
+                            style='color:#ce823b'><strong>simplemobiletools</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://hellowindows.cn/" target="_blank"
                             style='color:#ce823b'><strong>hellowindows</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    <u><a id="wearher_font" class="" href="https://www.microsoft.com/zh-cn/Store" target="_blank"
-                            style='color:#ce823b'><strong>microsoft store</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    
-                    <u><a id="wearher_font" class="" href="https://play.google.com/store/apps" target="_blank"
-                        style='color:#ce823b'><strong>google store</strong></a></u>
-                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-
-                    
-
-
-
                     <u><a id="wearher_font" class="" href="https://pc.qq.com/" target="_blank"
                             style='color:#ce823b'><strong>腾讯软件</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
@@ -1068,28 +1097,28 @@ $ git push origin main
                             style='color:#ce823b'><strong>360软件</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="http://m.appchina.com/" target="_blank"
-                            style='color:#ce823b'><strong>应用汇</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="http://m.appchina.com/" target="_blank"
+                            style='color:#ce823b'><strong>应用汇</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://www.wandoujia.com/" target="_blank"
                             style='color:#ce823b'><strong>豌豆荚</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://www.25pp.com/" target="_blank"
-                            style='color:#ce823b'><strong>pp助手</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://www.25pp.com/" target="_blank"
+                            style='color:#ce823b'><strong>pp助手</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://shouji.baidu.com/" target="_blank"
-                            style='color:#ce823b'><strong>百度助手</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://shouji.baidu.com/" target="_blank"
+                            style='color:#ce823b'><strong>百度助手</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://sj.qq.com/" target="_blank"
                             style='color:#ce823b'><strong>应用宝</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
-                    <u><a id="wearher_font" class="" href="https://zhushou.360.cn/" target="_blank"
-                            style='color:#ce823b'><strong>360助手</strong></a></u>
+                    <!-- <u><a id="wearher_font" class="" href="https://zhushou.360.cn/" target="_blank"
+                            style='color:#ce823b'><strong>360助手</strong></a></u> -->
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                 </div>
@@ -1099,17 +1128,17 @@ $ git push origin main
                         style='color:#487ece'><strong>Blog&Read:</strong> </a>
 
                     <u><a id="wearher_font" class="" href="https://getpocket.com/" target="_blank"
-                        style='color:#ce823b'><strong>pocket</strong></a></u>
+                            style='color:#ce823b'><strong>pocket</strong></a></u>
 
                     <u><a id="wearher_font" class="" href="https://wx.zsxq.com/dweb2/login" target="_blank"
                             style='color:#ce823b'><strong>知识星球</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://www.androidauthority.com/" target="_blank"
-                        style='color:#ce823b'><strong>androidauthority</strong></a></u>
-                    
+                            style='color:#ce823b'><strong>androidauthority</strong></a></u>
+
                     <u><a id="wearher_font" class="" href="https://medium.com/androiddevelopers" target="_blank"
-                        style='color:#ce823b'><strong>medium</strong></a></u>
+                            style='color:#ce823b'><strong>medium</strong></a></u>
 
                     <!-- <u><a id="wearher_font" class="" href="https://global.v2ex.co/" target="_blank"
                             style='color:#ce823b'><strong>V2EX</strong></a></u> -->
@@ -1118,9 +1147,9 @@ $ git push origin main
                     <u><a id="wearher_font" class="" href="https://www.csdn.net/" target="_blank"
                             style='color:#ce823b'><strong>CSDN</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
-                         
+
                     <u><a id="wearher_font" class="" href="https://www.51cto.com/" target="_blank"
-                        style='color:#ce823b'><strong>51cto</strong></a></u>
+                            style='color:#ce823b'><strong>51cto</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <!-- <u><a id="wearher_font" class="" href="https://www.oschina.net/" target="_blank"
@@ -1466,11 +1495,199 @@ $ git push origin main
                             </div>
                         </a>
 
+                        <a target="_blank" href="https://calculatingempires.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/企鹅_001.png" alt="  "> 计算帝国</div>
+                            </div>
+                        </a>
 
                     </div>
 
                     <!-- 第二列 -->
                     <div id="sub_two">
+
+                        <!-- <a target="_blank" href="https://wantwords.thunlp.org/home/">
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt="">开放原子开源基金会</div>
+                            </div>
+                        </a> -->
+
+                        <!-- <a target="_blank" href="https://wantwords.thunlp.org/home/">
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt="">万词王</div>
+                            </div>
+                        </a> -->
+
+
+                        <!-- <a target="_blank" href="https://unbug.github.io/codelf/">
+                            <div class="item">
+                                <div class="logo"><img src="img/no_ladder.png" alt=""> 变量命名AI神器</div>
+                            </div>
+                        </a> -->
+
+
+                        <!-- <a target="_blank" href="https://bitbucket.org/">
+                            <div class="item">
+                                <div class="logo"><img src="img/code.png" alt="">bitbucket|托管</div>
+                            </div>
+                        </a> -->
+
+                        <a target="_blank" href=" https://www.simplemobiletools.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/椰子.png" alt=""> Simple Mobile Tools</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://android-arsenal.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/simplemobiletools.png" alt=""> android-arsenal</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://git-scm.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/水果.png" alt=""> git</div>
+                            </div>
+                        </a>
+
+                        <!-- <a target="_blank" href="https://www.tortoisesvn.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/橙子.png" alt=""> svn</div>
+                            </div>
+                        </a> -->
+
+                        <a target="_blank" href="https://about.gitlab.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/桃子.png" alt=""> gitlab-托管</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://gitee.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/火龙果.png" alt=""> gitee-托管</div>
+                            </div>
+                        </a>
+
+                        <!-- <a target="_blank" href="https://gitcode.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/jitui.png" alt=""> gitcode</div>
+                            </div>
+                        </a> -->
+
+                        <a target="_blank" href="https://www.atlassian.com/software/sourcetree">
+                            <div class="item">
+                                <div class="logo"><img src="img/苏打饼.png" alt=""> sourcetree</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://bitbucket.org/product/">
+                            <div class="item">
+                                <div class="logo"><img src="img/菠萝干.png" alt="  "> bitbucket</div>
+                            </div>
+                        </a>
+
+
+                        <!-- <a target="_blank" href=" https://ugit.qq.com/zh/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> ugit</div>
+                            </div> -->
+                        </a>
+
+                        <a target="_blank" href="https://dev.to/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干.png" alt=""> dev.to</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://visualgo.net/en">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
+                            </div>
+                        </a>
+                        <!-- <a target="_blank" href="https://leetcode-cn.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/椰子.png" alt=""> leetcode</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://www.nowcoder.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干.png" alt=""> 牛客网</div>
+                            </div>
+                        </a> -->
+
+
+
+                        <!-- <a target="_blank" href="https://yun.itheima.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> HeiMa视频库</div>
+                            </div>
+                        </a> -->
+
+                        <!-- <a target="_blank" href="https://visualgo.net/en">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
+                            </div>
+                        </a> -->
+
+                        <!-- <a target="_blank" href="https://time.geekbang.org/">
+                            <div class="item">
+                                <div class="logo"><img src="img/苏打饼.png" alt="  "> 极客时间</div>
+                            </div>
+                        </a> -->
+
+
+                        <!-- <a target="_blank" href="https://cloud.tencent.com/developer/devdocs">
+                            <div class="item">
+                                <div class="logo"><img src="img/美食12.png" alt="  "> 开发者手册</div>
+                            </div>
+                        </a> -->
+
+
+
+                        <!-- <a target="_blank" href="https://app.cloud.tencent.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/菠萝干.png" alt="  "> 开源应用中心</div>
+                            </div>
+                        </a> -->
+                        <!-- 
+                        <a target="_blank" href="https://coolshell.cn/">
+                            <div class="item">
+                                <div class="logo"><img src="img/兰花豆.png" alt="  "> coolshell</div>
+                            </div>
+                        </a> -->
+
+                        <a target="_blank" href="https://www.processon.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/梅花.png" alt=""> processon</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://www.diagrams.net/">
+                            <div class="item">
+                                <div class="logo"><img src="img/美食11.png" alt=""> draw.io</div>
+                            </div>
+                        </a>
+
+                        <a target="_blank" href="https://www.iconfont.cn/">
+                            <div class="item">
+                                <div class="logo"><img src="img/西瓜.png" alt=""> 阿里图标</div>
+                            </div>
+                        </a>
+
+
+                        <a target="_blank" href="https://zh.ifixit.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/饼干1.png" alt=""> Fixit</div>
+                            </div>
+                        </a>
+
+
+
+                    </div>
+
+                    <!-- 第三列 -->
+                    <div id="sub_three">
 
                         <a target="_blank" href="https://opensource.alibaba.com/">
                             <div class="item">
@@ -1604,185 +1821,11 @@ $ git push origin main
                             </div>
                         </a> -->
 
-
-
-                    </div>
-
-                    <!-- 第三列 -->
-                    <div id="sub_three">
-
-                        <!-- <a target="_blank" href="https://wantwords.thunlp.org/home/">
+                        <a target="_blank" href="https://www.gitbook.com/">
                             <div class="item">
-                                <div class="logo"><img src="img/no_ladder.png" alt="">开放原子开源基金会</div>
-                            </div>
-                        </a> -->
-
-                        <!-- <a target="_blank" href="https://wantwords.thunlp.org/home/">
-                            <div class="item">
-                                <div class="logo"><img src="img/no_ladder.png" alt="">万词王</div>
-                            </div>
-                        </a> -->
-
-
-                        <!-- <a target="_blank" href="https://unbug.github.io/codelf/">
-                            <div class="item">
-                                <div class="logo"><img src="img/no_ladder.png" alt=""> 变量命名AI神器</div>
-                            </div>
-                        </a> -->
-
-
-                        <!-- <a target="_blank" href="https://bitbucket.org/">
-                            <div class="item">
-                                <div class="logo"><img src="img/code.png" alt="">bitbucket|托管</div>
-                            </div>
-                        </a> -->
-
-                        <a target="_blank" href="https://android-arsenal.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/椰子.png" alt=""> android-arsenal</div>
+                                <div class="logo"><img src="img/xiongmao.png" alt=""> gitbook</div>
                             </div>
                         </a>
-                        
-                        <a target="_blank" href="https://git-scm.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/水果.png" alt=""> git</div>
-                            </div>
-                        </a>
-
-                        <!-- <a target="_blank" href="https://www.tortoisesvn.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/橙子.png" alt=""> svn</div>
-                            </div>
-                        </a> -->
-
-                        <a target="_blank" href="https://about.gitlab.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/桃子.png" alt=""> gitlab-托管</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://gitee.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/火龙果.png" alt=""> gitee-托管</div>
-                            </div>
-                        </a>
-
-                        <!-- <a target="_blank" href="https://gitcode.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/jitui.png" alt=""> gitcode</div>
-                            </div>
-                        </a> -->
-
-                        <a target="_blank" href="https://www.atlassian.com/software/sourcetree">
-                            <div class="item">
-                                <div class="logo"><img src="img/苏打饼.png" alt=""> sourcetree</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://bitbucket.org/product/">
-                            <div class="item">
-                                <div class="logo"><img src="img/菠萝干.png" alt="  "> bitbucket</div>
-                            </div>
-                        </a>
-
-
-                        <!-- <a target="_blank" href=" https://ugit.qq.com/zh/">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干1.png" alt=""> ugit</div>
-                            </div> -->
-                        </a>
-
-                        <a target="_blank" href="https://dev.to/">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干.png" alt=""> dev.to</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://visualgo.net/en">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
-                            </div>
-                        </a>
-                        <!-- <a target="_blank" href="https://leetcode-cn.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/椰子.png" alt=""> leetcode</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://www.nowcoder.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干.png" alt=""> 牛客网</div>
-                            </div>
-                        </a> -->
-
-
-
-                        <!-- <a target="_blank" href="https://yun.itheima.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干1.png" alt=""> HeiMa视频库</div>
-                            </div>
-                        </a> -->
-
-                        <!-- <a target="_blank" href="https://visualgo.net/en">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干1.png" alt=""> visualgo</div>
-                            </div>
-                        </a> -->
-
-                        <!-- <a target="_blank" href="https://time.geekbang.org/">
-                            <div class="item">
-                                <div class="logo"><img src="img/苏打饼.png" alt="  "> 极客时间</div>
-                            </div>
-                        </a> -->
-
-
-                        <!-- <a target="_blank" href="https://cloud.tencent.com/developer/devdocs">
-                            <div class="item">
-                                <div class="logo"><img src="img/美食12.png" alt="  "> 开发者手册</div>
-                            </div>
-                        </a> -->
-
-
-
-                        <!-- <a target="_blank" href="https://app.cloud.tencent.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/菠萝干.png" alt="  "> 开源应用中心</div>
-                            </div>
-                        </a> -->
-                        <!-- 
-                        <a target="_blank" href="https://coolshell.cn/">
-                            <div class="item">
-                                <div class="logo"><img src="img/兰花豆.png" alt="  "> coolshell</div>
-                            </div>
-                        </a> -->
-
-                        <a target="_blank" href="https://www.processon.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/梅花.png" alt=""> processon</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://www.diagrams.net/">
-                            <div class="item">
-                                <div class="logo"><img src="img/美食11.png" alt=""> draw.io</div>
-                            </div>
-                        </a>
-
-                        <a target="_blank" href="https://www.iconfont.cn/">
-                            <div class="item">
-                                <div class="logo"><img src="img/西瓜.png" alt=""> 阿里图标</div>
-                            </div>
-                        </a>
-
-                        
-                        <a target="_blank" href="https://zh.ifixit.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/饼干1.png" alt=""> Fixit</div>
-                            </div>
-                        </a>
-
-                      
-
                     </div>
 
                     <!-- 第四列 -->
@@ -1819,11 +1862,17 @@ $ git push origin main
                                 <div class="logo"><img src="img/夏威夷果.png" alt=""> developer.ibm</div>
                             </div>
                         </a>
-               
+
 
                         <a target="_blank" href=" https://unsplash.com/t/wallpapers">
                             <div class="item">
                                 <div class="logo"><img src="img/牛油果.png" alt=""> unsplash</div>
+                            </div>
+                        </a>
+                        
+                        <a target="_blank" href="https://www.pexels.com/">
+                            <div class="item">
+                                <div class="logo"><img src="img/小熊猫_001.png" alt=""> pexels</div>
                             </div>
                         </a>
 
@@ -1891,10 +1940,19 @@ $ git push origin main
 
                     <!-- 第五列 -->
                     <div id="sub_five">
+                        <a target="_blank" href="https://scratch.mit.edu/">
+                            <div class="item">
+                                <div class="logo"><img src="img/小狐狸_001.png" alt=""> scratch</div>
+                            </div>
+                        </a>
 
-                        
+                        <a target="_blank" href="https://web.stanford.edu/class/archive/cs/cs106a/cs106a.1178/">
+                            <div class="item">
+                                <div class="logo"><img src="img/小兔子_001.png" alt=""> Eclipse</div>
+                            </div>
+                        </a>
 
-                      <a target="_blank" href="https://www.ces.tech/ces-innovation-awards/">
+                        <a target="_blank" href="https://www.ces.tech/ces-innovation-awards/">
                             <div class="item">
                                 <div class="logo"><img src="img/mushroom.png" alt=""> CES</div>
                             </div>
@@ -1930,7 +1988,6 @@ $ git push origin main
                             </div>
                         </a>
 
-
                         <a target="_blank" href="https://sourceforge.net/software/operating-systems/">
                             <div class="item">
                                 <div class="logo"><img src="img/mbe风格_沙拉.png" alt=""> 操作系统</div>
@@ -1948,7 +2005,7 @@ $ git push origin main
                                 <div class="logo"><img src="img/榛子.png" alt=""> 新榜</div>
                             </div>
                         </a>
-                        
+
                         <!-- <a target="_blank" href="https://www.oschina.net/project">
                             <div class="item">
                                 <div class="logo"><img src="img/榛子.png" alt=""> oschina开源软件</div>
@@ -1960,12 +2017,6 @@ $ git push origin main
                                 <div class="logo"><img src="img/mbe风格_沙拉.png" alt=""> AI工具集合</div>
                             </div>
                         </a> -->
-
-                        <a target="_blank" href="https://www.gitbook.com/">
-                            <div class="item">
-                                <div class="logo"><img src="img/xiongmao.png" alt=""> gitbook</div>
-                            </div>
-                        </a>
 
                         <!-- <a target="_blank" href="http://www.json.org.cn/tools/JSONEditorOnline2.0/index.htm">
                             <div class="item">
@@ -1986,7 +2037,7 @@ $ git push origin main
                             </div>
                         </a>
 
-                     
+
 
                         <!-- <a target="_blank" href="https://www.kernel.org/">
                             <div class="item">
@@ -2009,7 +2060,7 @@ $ git push origin main
                                 <div class="logo"><img src="img/葵花籽.png" alt=""> readhub</div>
                             </div>
                         </a> -->
- 
+
 
                         <!-- <a target="_blank" href=" https://www.thoughtco.com/">
                             <div class="item">
@@ -2028,53 +2079,79 @@ $ git push origin main
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback" data-statlog-showed="1">feedback: lmh_job@126.com</a> -->
         <!-- <a class="home-link mfooter__item mfooter__link" href="javascript:" data-statlog="foot.feedback" data-statlog-showed="1" id="Main"></a>  -->
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦旅行[</a>
-        <u><a id="wearher_font" class="" href="https://www.outo.co/" target="_blank"style='color:#ce823b'><strong> outo</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.outo.co/" target="_blank" style='color:#ce823b'><strong>
+                    outo</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://zh.airbnb.com/s/experiences" target="_blank"style='color:#96683e'><strong>airbnb</strong></a></u> -->
-        <u><a id="wearher_font" class="" href="https://www.klook.cn/zh-CN/" target="_blank"style='color:#96683e'><strong> 路客</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.getyourguide.com/zh-cn/" target="_blank"style='color:#ce823b'><strong>getyourguide</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.klook.cn/zh-CN/" target="_blank"
+                style='color:#96683e'><strong> 路客</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.getyourguide.com/zh-cn/" target="_blank"
+                style='color:#ce823b'><strong>getyourguide</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://www.withlocals.com/" target="_blank"style='color:#ce823b'><strong> withlocals</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://www.atlasobscura.com/" target="_blank"style='color:#96683e'><strong> atlasobscura</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://www.viator.com/" target="_blank"style='color:#ce823b'><strong> viator</strong></a></u> -->
-        <u><a id="wearher_font" class="" href="https://www.qyer.com/" target="_blank"style='color:#96683e'><strong> Q穷游</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.qyer.com/" target="_blank" style='color:#96683e'><strong>
+                    Q穷游</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://theculturetrip.com/" target="_blank"style='color:#ce823b'><strong> theculturetrip</strong></a></u> -->
+        <u><a id="wearher_font" class="" href="https://wow-japan.com/" target="_blank" style='color:#ce823b'><strong>
+                    wow-japan</strong></a></u>
+
         <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦看天气[</a>
-        <u><a id="wearher_font" class="" href="https://www.msn.cn/zh-cn/weather/forecast" target="_blank"style='color:#ce823b'><strong> MSN</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://weather.cma.cn/" target="_blank"style='color:#96683e'><strong>气象局</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.msn.cn/zh-cn/weather/forecast" target="_blank"
+                style='color:#ce823b'><strong> MSN</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://weather.cma.cn/" target="_blank"
+                style='color:#96683e'><strong>气象局</strong></a></u>
         <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦看日历[</a>
-        <u><a id="wearher_font" class="" href="https://www.timecha.com/" target="_blank"style='color:#ce823b'><strong>时间查询</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://time.is/en/calendar" target="_blank"style='color:#96683e'><strong>日历</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.timecha.com/" target="_blank"
+                style='color:#ce823b'><strong>时间查询</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://time.is/en/calendar" target="_blank"
+                style='color:#96683e'><strong>日历</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="http://rl.yozocloud.cn/" target="_blank"style='color:#ce823b'><strong>永中</strong></a></u>
         <u><a id="wearher_font" class="" href="https://rili.wps.cn/" target="_blank" style='color:#96683e'><strong>金山</strong></a></u>
         <u><a id="wearher_font" class="" href="https://rili.tencent.com/" target="_blank" style='color:#ce823b'><strong> 腾讯</strong></a></u> -->
         <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦看地图[</a>
-        <u><a id="wearher_font" class="" href="https://map.baidu.com/" target="_blank" style='color:#ce823b'><strong>百度</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://ditu.amap.com/" target="_blank" style='color:#96683e'><strong>高德</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://map.qq.com/" target="_blank" style='color:#ce823b'><strong>腾讯</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://cn.bing.com/maps" target="_blank" style='color:#96683e'><strong>Bing</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.google.com/maps" target="_blank"style='color:#ce823b'><strong>Maps</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://map.baidu.com/" target="_blank"
+                style='color:#ce823b'><strong>百度</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://ditu.amap.com/" target="_blank"
+                style='color:#96683e'><strong>高德</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://map.qq.com/" target="_blank"
+                style='color:#ce823b'><strong>腾讯</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://cn.bing.com/maps" target="_blank"
+                style='color:#96683e'><strong>Bing</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.google.com/maps" target="_blank"
+                style='color:#ce823b'><strong>Maps</strong></a></u>
         <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
         <a id="wearher_font" class="wearher_font" target="_blank"> ➦翻译[</a>
         <!-- <u><a id="wearher_font" class="" href="https://fanyi.youdao.com/index.html#/" target="_blank"style='color:#ce823b'><strong> 有道</strong></a></u> -->
-        <u><a id="wearher_font" class="" href="https://fanyi.qq.com/" target="_blank" style='color:#96683e'><strong>翻译君</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://fanyi.qq.com/" target="_blank"
+                style='color:#96683e'><strong>翻译君</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://fanyi.baidu.com/" target="_blank" style='color:#ce823b'><strong>百度</strong></a></u>
         <u><a id="wearher_font" class="" href="https://cn.bing.com/translator/" target="_blank"style='color:#96683e'><strong> Bing</strong></a></u> -->
-        <u><a id="wearher_font" class="" href="https://fanyi.youdao.com/#/TextTranslate" target="_blank" style='color:#ce823b'><strong>Youdao</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://translate.google.com/" target="_blank" style='color:#96683e'><strong> google</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.deepl.com/zh/translator" target="_blank"style='color:#ce823b'><strong> deepl</strong></a></u>
-        <u><a id="wearher_font" class="" href="https://www.iciba.com/translate" target="_blank"style='color:#96683e'><strong> 金山</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://fanyi.youdao.com/#/TextTranslate" target="_blank"
+                style='color:#ce823b'><strong>Youdao</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://translate.google.com/" target="_blank"
+                style='color:#96683e'><strong> google</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.deepl.com/zh/translator" target="_blank"
+                style='color:#ce823b'><strong> deepl</strong></a></u>
+        <u><a id="wearher_font" class="" href="https://www.iciba.com/translate" target="_blank"
+                style='color:#96683e'><strong> 金山</strong></a></u>
         <!-- <u><a id="wearher_font" class="" href="https://fanyi.caiyunapp.com/#/" target="_blank"style='color:#ce823b'><strong> 彩云</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://dict.cnki.net/index" target="_blank"style='color:#96683e'><strong> CNKI</strong></a></u> -->
         <!-- <u><a id="wearher_font" class="" href="https://www.deepl.com/translator" target="_blank"style='color:#ce823b'><strong> Deepl</strong></a></u> -->
         <a id="wearher_font" class="wearher_font" target="_blank">]</a>
 
-        <a class="mfooter__item" href="javascript:" data-statlog="foot.company" data-statlog-showed="1">+wechat: noteyoung</a>
+        <a id="wearher_font" class="wearher_font" target="_blank"> ➦podcast[</a>
+        <u><a id="wearher_font" class="" href="https://radio.garden/" target="_blank"
+                style='color:#96683e'><strong>radio.garden</strong></a></u>
+        <a id="wearher_font" class="wearher_font" target="_blank">]</a>
+
+        <!-- <a class="mfooter__item" href="javascript:" data-statlog="foot.company" data-statlog-showed="1">+wechat: noteyoung</a> -->
 
         <!-- <a id="headline">
             <a id="countdown"></a>
@@ -2242,212 +2319,217 @@ $ git push origin main
             }
         </script> -->
 
-
     </div>
 
 
-    <!--  时钟 -->
-    <svg class="svg " version="1.1" id="clock" x="0px" y="0px" width="10%" height="10%" viewBox="50 50 400 500"
-        xml:space="preserve">
-        <circle id="face" fill="#F4F3ED" cx="243.869" cy="250.796" r="130.8" />
-        <path id="rim" fill="#383838" d="M243.869,101.184c-82.629,0-149.612,66.984-149.612,149.612c0,82.629,66.983,149.612,149.612,149.612
-        S393.48,333.425,393.48,250.796S326.498,101.184,243.869,101.184z M243.869,386.455c-74.922,0-135.659-60.736-135.659-135.659
-        c0-74.922,60.737-135.659,135.659-135.659c74.922,0,135.658,60.737,135.658,135.659
-        C379.527,325.719,318.791,386.455,243.869,386.455z" />
-        <g id="inner">
-            <g opacity="0.2">
-                <path fill="#C4C4C4" d="M243.869,114.648c-75.748,0-137.154,61.406-137.154,137.153c0,75.749,61.406,137.154,137.154,137.154
-                c75.748,0,137.153-61.405,137.153-137.154C381.022,176.054,319.617,114.648,243.869,114.648z M243.869,382.56
-                c-72.216,0-130.758-58.543-130.758-130.758s58.542-130.758,130.758-130.758c72.216,0,130.758,58.543,130.758,130.758
-                S316.085,382.56,243.869,382.56z" />
+    <div class="b-line2" role="contentinfo2" data-bem="{}">
+        <!--  时钟 -->
+        <svg class="svg " version="1.1" id="clock" x="0px" y="0px" width="10%" height="10%" viewBox="50 50 400 500"
+            xml:space="preserve">
+            <circle id="face" fill="#F4F3ED" cx="243.869" cy="250.796" r="130.8" />
+            <path id="rim" fill="#383838" d="M243.869,101.184c-82.629,0-149.612,66.984-149.612,149.612c0,82.629,66.983,149.612,149.612,149.612
+                                            S393.48,333.425,393.48,250.796S326.498,101.184,243.869,101.184z M243.869,386.455c-74.922,0-135.659-60.736-135.659-135.659
+                                            c0-74.922,60.737-135.659,135.659-135.659c74.922,0,135.658,60.737,135.658,135.659
+                                            C379.527,325.719,318.791,386.455,243.869,386.455z" />
+            <g id="inner">
+                <g opacity="0.2">
+                    <path fill="#C4C4C4" d="M243.869,114.648c-75.748,0-137.154,61.406-137.154,137.153c0,75.749,61.406,137.154,137.154,137.154
+                                        c75.748,0,137.153-61.405,137.153-137.154C381.022,176.054,319.617,114.648,243.869,114.648z M243.869,382.56
+                                        c-72.216,0-130.758-58.543-130.758-130.758s58.542-130.758,130.758-130.758c72.216,0,130.758,58.543,130.758,130.758
+                                        S316.085,382.56,243.869,382.56z" />
+                </g>
+                <g>
+                    <path fill="#282828" d="M243.869,113.637c-75.748,0-137.154,61.406-137.154,137.153c0,75.749,61.406,137.154,137.154,137.154
+                                        c75.748,0,137.153-61.405,137.153-137.154C381.022,175.043,319.617,113.637,243.869,113.637z M243.869,381.548
+                                        c-72.216,0-130.758-58.542-130.758-130.757c0-72.216,58.542-130.758,130.758-130.758c72.216,0,130.758,58.543,130.758,130.758
+                                        C374.627,323.005,316.085,381.548,243.869,381.548z" />
+                </g>
             </g>
-            <g>
-                <path fill="#282828" d="M243.869,113.637c-75.748,0-137.154,61.406-137.154,137.153c0,75.749,61.406,137.154,137.154,137.154
-                c75.748,0,137.153-61.405,137.153-137.154C381.022,175.043,319.617,113.637,243.869,113.637z M243.869,381.548
-                c-72.216,0-130.758-58.542-130.758-130.757c0-72.216,58.542-130.758,130.758-130.758c72.216,0,130.758,58.543,130.758,130.758
-                C374.627,323.005,316.085,381.548,243.869,381.548z" />
+            <g id="markings">
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="243.5" y1="139" x2="243.5" y2="133" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="231.817" y1="139.651" x2="231.19"
+                    y2="133.684" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="220.266" y1="141.52" x2="219.018"
+                    y2="135.65" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="208.973" y1="144.585" x2="207.119"
+                    y2="138.879" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="198.063" y1="148.814" x2="195.623"
+                    y2="143.333" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="187.655" y1="154.161" x2="184.655"
+                    y2="148.965" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="177.862" y1="160.566" x2="174.335"
+                    y2="155.712" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="168.792" y1="167.96" x2="164.778"
+                    y2="163.501" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="160.545" y1="176.262" x2="156.087"
+                    y2="172.246" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="153.211" y1="185.379" x2="148.358"
+                    y2="181.852" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="146.871" y1="195.214" x2="141.675"
+                    y2="192.213" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="141.593" y1="205.658" x2="136.112"
+                    y2="203.216" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="137.436" y1="216.596" x2="131.729"
+                    y2="214.741" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="134.445" y1="227.909" x2="128.576"
+                    y2="226.66" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.653" y1="239.472" x2="126.685"
+                    y2="238.843" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.079" y1="251.16" x2="126.079"
+                    y2="251.158" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.73" y1="262.843" x2="126.762"
+                    y2="263.468" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="134.598" y1="274.395" x2="128.729"
+                    y2="275.64" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="137.664" y1="285.688" x2="131.958"
+                    y2="287.539" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="141.893" y1="296.598" x2="136.412"
+                    y2="299.035" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="147.24" y1="307.006" x2="142.043"
+                    y2="310.004" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="153.645" y1="316.799" x2="148.791"
+                    y2="320.323" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="161.04" y1="325.868" x2="156.58"
+                    y2="329.881" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="169.341" y1="334.115" x2="165.325"
+                    y2="338.572" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="178.459" y1="341.449" x2="174.931"
+                    y2="346.302" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="188.294" y1="347.789" x2="185.292"
+                    y2="352.984" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="198.738" y1="353.066" x2="196.295"
+                    y2="358.548" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="209.676" y1="357.223" x2="207.82"
+                    y2="362.93" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="220.989" y1="360.214" x2="219.739"
+                    y2="366.084" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="232.552" y1="362.006" x2="231.922"
+                    y2="367.975" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="244.239" y1="362.58" x2="244.237"
+                    y2="368.582" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="255.921" y1="361.93" x2="256.547"
+                    y2="367.898" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="267.472" y1="360.062" x2="268.719"
+                    y2="365.932" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="278.765" y1="356.996" x2="280.619"
+                    y2="362.703" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="289.675" y1="352.767" x2="292.116"
+                    y2="358.248" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="300.083" y1="347.42" x2="303.083"
+                    y2="352.616" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="309.876" y1="341.015" x2="313.403"
+                    y2="345.869" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="318.946" y1="333.621" x2="322.96"
+                    y2="338.08" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="327.193" y1="325.319" x2="331.651"
+                    y2="329.334" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="334.527" y1="316.201" x2="339.38"
+                    y2="319.728" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="340.868" y1="306.367" x2="346.063"
+                    y2="309.367" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="346.146" y1="295.924" x2="351.626"
+                    y2="298.364" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="350.303" y1="284.986" x2="356.008"
+                    y2="286.84" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="353.294" y1="273.673" x2="359.162"
+                    y2="274.92" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="355.087" y1="262.11" x2="361.052"
+                    y2="262.737" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="356" y1="250.5" x2="362" y2="250.5" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="355.355" y1="238.781" x2="361.323"
+                    y2="238.153" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="353.489" y1="227.193" x2="359.359"
+                    y2="225.945" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="350.422" y1="215.864" x2="356.129"
+                    y2="214.01" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="346.188" y1="204.918" x2="351.669"
+                    y2="202.477" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="340.833" y1="194.474" x2="346.029"
+                    y2="191.474" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="334.415" y1="184.647" x2="339.269"
+                    y2="181.12" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="327.004" y1="175.545" x2="331.463"
+                    y2="171.529" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="318.684" y1="167.268" x2="322.699"
+                    y2="162.807" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="309.543" y1="159.905" x2="313.07"
+                    y2="155.049" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="299.684" y1="153.538" x2="302.683"
+                    y2="148.34" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="289.212" y1="148.237" x2="291.652"
+                    y2="142.753" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="278.245" y1="144.059" x2="280.097"
+                    y2="138.351" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="266.9" y1="141.05" x2="268.145"
+                    y2="135.179" />
+                <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="255.302" y1="139.244" x2="255.927"
+                    y2="133.275" />
+                <polygon fill="#3F3F3F" points="247.391,133 243.5,141.05 239.609,133 	" />
+                <polygon fill="#3F3F3F" points="188.022,147.021 188.677,155.938 181.283,150.912 	" />
+                <polygon fill="#3F3F3F" points="143.617,188.848 148.643,196.243 139.726,195.588 	" />
+                <polygon fill="#3F3F3F" points="126.074,247.273 134.125,251.165 126.076,255.056 	" />
+                <polygon fill="#3F3F3F" points="140.095,306.644 149.013,305.988 143.988,313.382 	" />
+                <polygon fill="#3F3F3F" points="181.922,351.049 189.318,346.022 188.663,354.938 	" />
+                <polygon fill="#3F3F3F" points="240.349,368.591 244.24,360.54 248.13,368.589 	" />
+                <polygon fill="#3F3F3F" points="299.718,354.569 299.062,345.652 306.457,350.677 	" />
+                <polygon fill="#3F3F3F" points="344.123,312.742 339.096,305.348 348.012,306.002 	" />
+                <polygon fill="#3F3F3F" points="362,254.316 353.951,250.426 362,246.534 	" />
+                <polygon fill="#3F3F3F" points="347.934,194.779 339.018,195.435 344.042,188.04 	" />
+                <polygon fill="#3F3F3F" points="305.984,150.252 298.59,155.277 299.244,146.361 	" />
+                <rect x="282" y="152.98" fill="none" width="17.366" height="27.947" />
+                <text transform="matrix(1 0 0 1 282 174.4307)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">1</text>
+                <rect x="320.699" y="188.474" fill="none" width="17.202" height="26.267" />
+                <text transform="matrix(1 0 0 1 320.6987 209.9229)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">2</text>
+                <rect x="335.04" y="238.872" fill="none" width="21.03" height="24.585" />
+                <text transform="matrix(1 0 0 1 335.0396 260.3213)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">3</text>
+                <rect x="319.699" y="290.242" fill="none" width="17.202" height="23.557" />
+                <text transform="matrix(1 0 0 1 319.6987 311.6914)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">4</text>
+                <rect x="284.5" y="323.319" fill="none" width="19.212" height="22.511" />
+                <text transform="matrix(1 0 0 1 284.5 344.7695)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">5</text>
+                <rect x="235.552" y="336.08" fill="none" width="19.938" height="24.15" />
+                <text transform="matrix(1 0 0 1 235.5522 357.5293)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">6</text>
+                <rect x="189.373" y="322.319" fill="none" width="19.673" height="25.003" />
+                <text transform="matrix(1 0 0 1 189.3726 343.7695)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">7</text>
+                <rect x="151.066" y="287.539" fill="none" width="17.726" height="25.203" />
+                <text transform="matrix(1 0 0 1 151.0664 308.9883)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">8</text>
+                <rect x="136.392" y="241.25" fill="none" width="20.696" height="22.348" />
+                <text transform="matrix(1 0 0 1 136.3916 262.6992)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">9</text>
+                <rect x="149.066" y="191.474" fill="none" width="36.554" height="27.122" />
+                <text transform="matrix(1 0 0 1 149.0664 212.9229)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">10</text>
+                <rect x="184.967" y="158.518" fill="none" width="36.021" height="27.13" />
+                <text transform="matrix(1 0 0 1 184.9673 179.9668)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">11</text>
+                <rect x="225.723" y="144.514" fill="none" width="37.029" height="29.25" />
+                <text transform="matrix(1 0 0 1 225.7227 165.9639)" fill="#303030" font-family="'Futura-Medium'"
+                    font-size="26">12</text>
             </g>
-        </g>
-        <g id="markings">
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="243.5" y1="139" x2="243.5" y2="133" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="231.817" y1="139.651" x2="231.19"
-                y2="133.684" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="220.266" y1="141.52" x2="219.018"
-                y2="135.65" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="208.973" y1="144.585" x2="207.119"
-                y2="138.879" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="198.063" y1="148.814" x2="195.623"
-                y2="143.333" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="187.655" y1="154.161" x2="184.655"
-                y2="148.965" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="177.862" y1="160.566" x2="174.335"
-                y2="155.712" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="168.792" y1="167.96" x2="164.778"
-                y2="163.501" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="160.545" y1="176.262" x2="156.087"
-                y2="172.246" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="153.211" y1="185.379" x2="148.358"
-                y2="181.852" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="146.871" y1="195.214" x2="141.675"
-                y2="192.213" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="141.593" y1="205.658" x2="136.112"
-                y2="203.216" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="137.436" y1="216.596" x2="131.729"
-                y2="214.741" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="134.445" y1="227.909" x2="128.576"
-                y2="226.66" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.653" y1="239.472" x2="126.685"
-                y2="238.843" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.079" y1="251.16" x2="126.079"
-                y2="251.158" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="132.73" y1="262.843" x2="126.762"
-                y2="263.468" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="134.598" y1="274.395" x2="128.729"
-                y2="275.64" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="137.664" y1="285.688" x2="131.958"
-                y2="287.539" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="141.893" y1="296.598" x2="136.412"
-                y2="299.035" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="147.24" y1="307.006" x2="142.043"
-                y2="310.004" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="153.645" y1="316.799" x2="148.791"
-                y2="320.323" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="161.04" y1="325.868" x2="156.58"
-                y2="329.881" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="169.341" y1="334.115" x2="165.325"
-                y2="338.572" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="178.459" y1="341.449" x2="174.931"
-                y2="346.302" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="188.294" y1="347.789" x2="185.292"
-                y2="352.984" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="198.738" y1="353.066" x2="196.295"
-                y2="358.548" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="209.676" y1="357.223" x2="207.82"
-                y2="362.93" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="220.989" y1="360.214" x2="219.739"
-                y2="366.084" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="232.552" y1="362.006" x2="231.922"
-                y2="367.975" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="244.239" y1="362.58" x2="244.237"
-                y2="368.582" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="255.921" y1="361.93" x2="256.547"
-                y2="367.898" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="267.472" y1="360.062" x2="268.719"
-                y2="365.932" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="278.765" y1="356.996" x2="280.619"
-                y2="362.703" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="289.675" y1="352.767" x2="292.116"
-                y2="358.248" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="300.083" y1="347.42" x2="303.083"
-                y2="352.616" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="309.876" y1="341.015" x2="313.403"
-                y2="345.869" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="318.946" y1="333.621" x2="322.96"
-                y2="338.08" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="327.193" y1="325.319" x2="331.651"
-                y2="329.334" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="334.527" y1="316.201" x2="339.38"
-                y2="319.728" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="340.868" y1="306.367" x2="346.063"
-                y2="309.367" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="346.146" y1="295.924" x2="351.626"
-                y2="298.364" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="350.303" y1="284.986" x2="356.008"
-                y2="286.84" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="353.294" y1="273.673" x2="359.162"
-                y2="274.92" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="355.087" y1="262.11" x2="361.052"
-                y2="262.737" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="356" y1="250.5" x2="362" y2="250.5" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="355.355" y1="238.781" x2="361.323"
-                y2="238.153" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="353.489" y1="227.193" x2="359.359"
-                y2="225.945" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="350.422" y1="215.864" x2="356.129"
-                y2="214.01" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="346.188" y1="204.918" x2="351.669"
-                y2="202.477" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="340.833" y1="194.474" x2="346.029"
-                y2="191.474" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="334.415" y1="184.647" x2="339.269"
-                y2="181.12" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="327.004" y1="175.545" x2="331.463"
-                y2="171.529" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="318.684" y1="167.268" x2="322.699"
-                y2="162.807" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="309.543" y1="159.905" x2="313.07"
-                y2="155.049" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="299.684" y1="153.538" x2="302.683"
-                y2="148.34" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="289.212" y1="148.237" x2="291.652"
-                y2="142.753" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="278.245" y1="144.059" x2="280.097"
-                y2="138.351" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="266.9" y1="141.05" x2="268.145"
-                y2="135.179" />
-            <line fill="none" stroke="#3F3F3F" stroke-miterlimit="10" x1="255.302" y1="139.244" x2="255.927"
-                y2="133.275" />
-            <polygon fill="#3F3F3F" points="247.391,133 243.5,141.05 239.609,133 	" />
-            <polygon fill="#3F3F3F" points="188.022,147.021 188.677,155.938 181.283,150.912 	" />
-            <polygon fill="#3F3F3F" points="143.617,188.848 148.643,196.243 139.726,195.588 	" />
-            <polygon fill="#3F3F3F" points="126.074,247.273 134.125,251.165 126.076,255.056 	" />
-            <polygon fill="#3F3F3F" points="140.095,306.644 149.013,305.988 143.988,313.382 	" />
-            <polygon fill="#3F3F3F" points="181.922,351.049 189.318,346.022 188.663,354.938 	" />
-            <polygon fill="#3F3F3F" points="240.349,368.591 244.24,360.54 248.13,368.589 	" />
-            <polygon fill="#3F3F3F" points="299.718,354.569 299.062,345.652 306.457,350.677 	" />
-            <polygon fill="#3F3F3F" points="344.123,312.742 339.096,305.348 348.012,306.002 	" />
-            <polygon fill="#3F3F3F" points="362,254.316 353.951,250.426 362,246.534 	" />
-            <polygon fill="#3F3F3F" points="347.934,194.779 339.018,195.435 344.042,188.04 	" />
-            <polygon fill="#3F3F3F" points="305.984,150.252 298.59,155.277 299.244,146.361 	" />
-            <rect x="282" y="152.98" fill="none" width="17.366" height="27.947" />
-            <text transform="matrix(1 0 0 1 282 174.4307)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">1</text>
-            <rect x="320.699" y="188.474" fill="none" width="17.202" height="26.267" />
-            <text transform="matrix(1 0 0 1 320.6987 209.9229)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">2</text>
-            <rect x="335.04" y="238.872" fill="none" width="21.03" height="24.585" />
-            <text transform="matrix(1 0 0 1 335.0396 260.3213)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">3</text>
-            <rect x="319.699" y="290.242" fill="none" width="17.202" height="23.557" />
-            <text transform="matrix(1 0 0 1 319.6987 311.6914)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">4</text>
-            <rect x="284.5" y="323.319" fill="none" width="19.212" height="22.511" />
-            <text transform="matrix(1 0 0 1 284.5 344.7695)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">5</text>
-            <rect x="235.552" y="336.08" fill="none" width="19.938" height="24.15" />
-            <text transform="matrix(1 0 0 1 235.5522 357.5293)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">6</text>
-            <rect x="189.373" y="322.319" fill="none" width="19.673" height="25.003" />
-            <text transform="matrix(1 0 0 1 189.3726 343.7695)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">7</text>
-            <rect x="151.066" y="287.539" fill="none" width="17.726" height="25.203" />
-            <text transform="matrix(1 0 0 1 151.0664 308.9883)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">8</text>
-            <rect x="136.392" y="241.25" fill="none" width="20.696" height="22.348" />
-            <text transform="matrix(1 0 0 1 136.3916 262.6992)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">9</text>
-            <rect x="149.066" y="191.474" fill="none" width="36.554" height="27.122" />
-            <text transform="matrix(1 0 0 1 149.0664 212.9229)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">10</text>
-            <rect x="184.967" y="158.518" fill="none" width="36.021" height="27.13" />
-            <text transform="matrix(1 0 0 1 184.9673 179.9668)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">11</text>
-            <rect x="225.723" y="144.514" fill="none" width="37.029" height="29.25" />
-            <text transform="matrix(1 0 0 1 225.7227 165.9639)" fill="#303030" font-family="'Futura-Medium'"
-                font-size="26">12</text>
-        </g>
-        <path id="hours" fill="#3A3A3A" d="M242.515,270.21c-0.44,0-0.856-0.355-0.926-0.79l-3.156-19.811c-0.069-0.435-0.103-1.149-0.074-1.588
+            <path id="hours" fill="#3A3A3A" d="M242.515,270.21c-0.44,0-0.856-0.355-0.926-0.79l-3.156-19.811c-0.069-0.435-0.103-1.149-0.074-1.588
         l4.038-62.009c0.03-0.439,0.414-0.798,0.854-0.798h0.5c0.44,0,0.823,0.359,0.852,0.798l4.042,62.205
         c0.028,0.439-0.015,1.152-0.097,1.584l-3.712,19.623c-0.082,0.433-0.508,0.786-0.948,0.786H242.515z" />
-        <path id="minutes" fill="#3A3A3A" d="M247.862,249.75l-2.866,24.244c-0.099,1.198-0.498,2.18-1.497,2.179c-0.999,0-1.397-0.98-1.498-2.179
+            <path id="minutes" fill="#3A3A3A" d="M247.862,249.75l-2.866,24.244c-0.099,1.198-0.498,2.18-1.497,2.179c-0.999,0-1.397-0.98-1.498-2.179
                 l-2.861-24.508c-0.099-1.199,3.479-93.985,3.479-93.985c0.036-1.201-0.117-2.183,0.881-2.183c0.999,0,0.847,0.982,0.882,2.183
                 L247.862,249.75z" />
-        <g id="seconds">
-            <line fill="none" stroke="#BF4116" stroke-miterlimit="10" x1="243.5" y1="143" x2="243.5" y2="266" />
-            <circle fill="none" stroke="#BF4116" stroke-miterlimit="10" cx="243.5" cy="271" r="5" />
-            <circle fill="#BF4116" cx="243.5" cy="251" r="3.917" />
-        </g>
-    </svg>
+            <g id="seconds">
+                <line fill="none" stroke="#BF4116" stroke-miterlimit="10" x1="243.5" y1="143" x2="243.5" y2="266" />
+                <circle fill="none" stroke="#BF4116" stroke-miterlimit="10" cx="243.5" cy="271" r="5" />
+                <circle fill="#BF4116" cx="243.5" cy="251" r="3.917" />
+            </g>
+        </svg>
+        <a class="mfooter__item2" href="javascript:" data-statlog="foot.company" data-statlog-showed="1">
+            <font size="3" color="#2ecc71">WeChat:noteyoung</font>
+        </a>
+    </div>
+
 
     <script>
         ! function (a) {
