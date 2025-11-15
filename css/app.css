@@ -1155,6 +1155,10 @@ img,video {
     max-width: 600px
 }
 
+.max-w-\[800px\] {
+    max-width: 800px
+}
+
 .max-w-\[60px\] {
     max-width: 60px
 }
@@ -1581,6 +1585,13 @@ img,video {
     background-color: rgb(254 240 138/var(--tw-bg-opacity))
 }
 
+
+
+.bg-blue-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(37 99 235/var(--tw-bg-opacity))
+}
+
 .bg-center {
     background-position: 50%
 }
@@ -1963,10 +1974,9 @@ img,video {
     color: #000000a3
 }
 
-.text-blue-500 {
-    --tw-text-opacity: 1;
-    color: rgb(59 130 246/var(--tw-text-opacity))
-}
+
+
+
 
 .text-gray-400 {
     --tw-text-opacity: 1;
@@ -2151,7 +2161,7 @@ body,html {
 }
 
 .header {
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     box-shadow: 0 0 7px #0000004d
 }
 
@@ -2366,6 +2376,95 @@ button.selected>.\[button\.selected\>\&\]\:icon-\[material-symbols--star\] {
     background-color: rgb(153 153 153/var(--tw-bg-opacity))
 }
 
+
+
+.search2 {
+    display: inline-table;
+    border-collapse: collapse
+  }
+
+  .search2__input {
+    width: 100%
+  }
+
+  .search2 {
+    display: table;
+    max-width: none
+  }
+
+  .search2__input {
+    vertical-align: top
+  }
+
+  .search2__button,
+  .search2__input {
+    display: table-cell
+  }
+
+  .search2_type_2021 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: #367F3B;
+    border-radius: .625rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* width: 2.5rem; */
+    padding-right: .6875rem;
+    padding-left: .125rem;
+    width: 88%;
+    background-size: 100% auto
+  }
+  .input_size_search {
+    font-size: 123.1%;
+    border-width: 2px;
+    margin-right: 3px;
+    border-radius: .625rem .375rem .375rem .625rem
+  }
+
+  .button_theme_search:hover {
+    transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    background: #0d6311;
+    /* border: 1px solid #7fa481;
+    color: rgba(255, 255, 255, 0.9); */
+  }
+  
+  .input_size_search .input__control {
+    border-right-width: 40px;
+    border-left-width: 11px
+  }
+  
+  .input_size_search .input__clear {
+    width: 2.25em;
+    height: 100%;
+    background-size: 1rem 1rem
+  }
+  
+  .input_size_search .input__ahead {
+    left: -2px
+  }
+  
+  .input_size_search .input__ahead-hint,
+  .input_size_search .input__control {
+    height: 2.25em
+  }
+  
+  .input_size_search .input__voice-search {
+    width: 2.5rem;
+    background-size: 1.5rem
+  }
+
+  /* .search_region{
+    display: none;
+  } */
+
 .hover\:bg-\[\#ccc\]:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(204 204 204/var(--tw-bg-opacity))
@@ -2378,6 +2477,29 @@ button.selected>.\[button\.selected\>\&\]\:icon-\[material-symbols--star\] {
 
 .hover\:bg-black\/6\.7:hover {
     background-color: rgba(0,0,0,.067)
+}
+
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    overflow: hidden;
+}
+
+
+.container img {
+    float: left;
+    margin-right: 10px;
+
+}
+
+.text-blue-500 {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246/var(--tw-text-opacity))
 }
 
 .hover\:bg-blue-600:hover {

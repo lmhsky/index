@@ -37,7 +37,11 @@ $ git push origin main
         }
 
         body {
-            background: url("img/background_l.jpg") no-repeat center center fixed;
+            /* 
+            .jpg to .webp
+            .png to .webp
+            */
+            background: url("img/background_l.webp") no-repeat center center fixed;
             /*兼容浏览器版本*/
             -webkit-background-size: cover;
             -o-background-size: cover;
@@ -227,6 +231,15 @@ $ git push origin main
         }
     </script>
 
+<script type="text/javascript">
+    function Ask_Search() {
+        text = document.getElementById('baidu_text').value;
+        url = 'https://www.ask.com/web?q=' + text;
+        window.open(url, "_blank")
+    }
+</script>
+
+
     <script type="text/javascript">
         function sourcegraph_search() {
             text = document.getElementById('baidu_text').value;
@@ -253,13 +266,6 @@ $ git push origin main
         }
     </script>
 
-    <script type="text/javascript">
-        function Ask_Search() {
-            text = document.getElementById('baidu_text').value;
-            url = 'https://www.ask.com/web?q=' + text;
-            window.open(url, "_blank")
-        }
-    </script>
 
     <script type="text/javascript">
         function reddit_Search() {
@@ -770,6 +776,12 @@ $ git push origin main
                             <font size="2.5"></font><strong>AI指南</strong></font>
                         </a></u>
 
+                        
+                    <u><a id="wearher_font" class="" href="./ai.html" target="_blank"
+                            style='color:#ce823b'>
+                            <font size="2.5"></font><strong>AI Tools</strong></font>
+                        </a></u>
+
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
                     <!-- 
                     <u><a id="wearher_font" class="" href="./ai.html" target="_blank"
@@ -1071,6 +1083,10 @@ $ git push origin main
 
                     <u><a id="wearher_font" class="" href="https://play.google.com/store/apps" target="_blank"
                             style='color:#ce823b'><strong>google store</strong></a></u>
+                    <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
+
+                     <u><a id="wearher_font" class="" href="https://apps.apple.com/us/iphone/today" target="_blank"
+                            style='color:#ce823b'><strong>app-store</strong></a></u>
                     <!-- <a id="wearher_font" target="_blank" style='color:#ce823b'><strong>&nbsp;</strong></a> -->
 
                     <u><a id="wearher_font" class="" href="https://f-droid.org/" target="_blank"
